@@ -1,0 +1,12 @@
+cd C:\IdeaProjects\GenerateScripts
+git init
+git add .
+git commit -m "Next commit in repository"
+git remote add integration https://github.com/kornilova/Integration.git (copy URL Repository)
+git pull integration master
+git push integration master
+
+
+
+git config --global user.name tusnya88
+git config --global user.email tusnya88@gmail.com
