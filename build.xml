@@ -1,0 +1,78 @@
+<project name="Integration" default="jar" basedir=".">
+    <target name="usage">
+        <echo>Usage: run [parameter](where [parameter] is one of the following)
+            ---------------------------------------------------------------
+            test                                run default tests
+            mybatis                             getting multiple result sets with mybatis(not done yet)
+            ---------------------------------------------------------------
+        </echo>
+    </target>
+    <target name="init">
+        <property name="workdir" value="src"/>
+        <property name="construct" value="construct"/>
+        <property name="libs" value="libs"/>
+        <path id="CP">
+            <fileset dir="${libs}">
+                <include name="**/*.jar"/>
+            </fileset>
+        </path>
+    </target>
+
+    <target name="jdbc">
+        <property name="run.mode" value="jdbc"/>
+        <antcall target="run"/>
+    </target>
+
+    <target name="mybatis">
+        <property name="run.mode" value="mybatis"/>
+        <antcall target="run"/>
+    </target>
+
+    <target name="jar" depends="init">
+        <echo message="Building..."/>
+
+        <delete dir="${construct}"/>
+        <mkdir dir="${construct}"/>
+        <javac destdir="${construct}"
+               source="1.6"
+               target="1.6"
+               classpathref="CP"
+               encoding="Windows-1251"
+               includes="**/*.java"
+               debug="on"
+               deprecation="on">
+            <src path="${workdir}"/>
+        </javac>
+
+        <copy todir="${construct}">
+            <fileset dir="${workdir}">
+                <include name="**/*.*"/>
+                <exclude name="MANIFEST.txt"/>
+            </fileset>
+        </copy>
+
+        <copy todir="${libs}">
+            <fileset dir="${libs}">
+                <include name="**/*.*"/>
+            </fileset>
+        </copy>
+
+
+        <jar manifest="${workdir}/META-INF/manifest.txt"
+             jarfile="${ant.project.name}.jar">
+            <fileset dir="${construct}" includes="**/*" excludes="**/*.java,**/MANIFEST.txt"/>
+        </jar>
+        <delete dir="${construct}"/>
+    </target>
+
+
+    <target name="run" depends="jar">
+        <java jar="${ant.project.name}.jar"
+              fork="true"
+              failonerror="true"
+              maxmemory="128m">
+            <arg value="${run.mode}"/>
+            <classpath refid="CP"/>
+        </java>
+    </target>
+</project>

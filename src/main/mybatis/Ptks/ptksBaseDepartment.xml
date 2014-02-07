@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ptksBaseDepartment">
+
+    <insert id="insert" keyColumn="RDV_ID" parameterType="com.estylesoft.integration.Model.Ptks.BaseDepartmentModel">
+        insert into STH_REG_DIV_PFR (
+        RDV_ID, MRDV_ID, RDV_NAME, RDV_CODE) values (
+        #{id}, (SELECT MRDV_ID FROM STH_MAIN_REG_DIV_PFR WHERE MRDV_CURRENT=1 FETCH FIRST 1 ROWS ONLY),
+        #{name},
+        #{code}
+        )
+     <!--   <selectKey keyProperty="id" resultType="Long" order="AFTER" statementType="STATEMENT">
+            select IDENTITY_VAL_LOCAL() from DUAL
+        </selectKey>-->
+    </insert>
+
+    <delete id="delete" parameterType="java.lang.Long">
+        delete from STH_REG_DIV_PFR
+        where MRDV_ID = (SELECT MRDV_ID FROM STH_MAIN_REG_DIV_PFR WHERE MRDV_CURRENT=1 FETCH FIRST 1 ROWS ONLY)
+        and  RDV_ID=#{id}
+        <!--   <selectKey keyProperty="id" resultType="Long" order="AFTER" statementType="STATEMENT">
+               select IDENTITY_VAL_LOCAL() from DUAL
+           </selectKey>-->
+    </delete>
+
+</mapper>

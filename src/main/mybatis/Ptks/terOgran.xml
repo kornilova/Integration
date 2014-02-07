@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="terOrgan">
+
+    <insert id="insert" keyColumn="TER_ORGAN_ID" parameterType="com.estylesoft.integration.Model.Ptks.TerOrganModel">
+        insert into STH_TERRITORIAL_ORGAN (
+        TER_ORGAN_ID,
+        MRDV_ID,
+        TER_ORGAN_NAME,
+        TER_ORGAN_SHORT_NAME,
+        TER_ORGAN_COMPANY_NAME,
+        TER_ORGAN_CODE,
+        TER_ORGAN_ADDRESS,
+        TER_ORGAN_HEAD_NAME,
+        TER_ORGAN_PHONE,
+        TER_ORGAN_OKATO,
+        TER_ORGAN_INN,
+        TER_ORGAN_KPP,
+        TER_ORGAN_OGRN,
+        TER_ORGAN_COMMENT)
+        values (
+        #{id}, (SELECT MRDV_ID FROM STH_MAIN_REG_DIV_PFR WHERE MRDV_CURRENT=1 FETCH FIRST 1 ROWS ONLY),
+        #{name},
+        #{shortName},
+        #{companyName},
+        #{code},
+        #{address},
+        #{headName},
+        #{phone},
+        #{okato},
+        #{inn},
+        #{kpp},
+        #{ogrn},
+        #{comment}
+        )
+     <!--   <selectKey keyProperty="id" resultType="Long" order="AFTER" statementType="STATEMENT">
+            select IDENTITY_VAL_LOCAL() from DUAL
+        </selectKey>-->
+    </insert>
+
+</mapper>

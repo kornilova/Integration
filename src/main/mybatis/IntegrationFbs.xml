@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="integration">
+
+    <select id="getCodeKbk" resultType="com.estylesoft.integration.Model.TbFbsModelBase">
+        select KBK_CODE as code from FBS_KBK
+    </select>
+
+    <select id="getNameInsurerType" resultType="com.estylesoft.integration.Model.TbFbsModelBase">
+        select INSURER_TYPE_NAME as name from FBS_INSURER_TYPE
+    </select>
+
+</mapper>
+

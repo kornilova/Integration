@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="integration">
+
+    <select id="getCodeFbsIsActualKbk" resultType="com.estylesoft.integration.Model.TbPtksModelBase">
+        select KBK_CODE as code, KBK_ACTUAL_FBS as isFbsActual from STH_KBK
+    </select>
+
+    <select id="getNameFbsIsActualInsurerType" resultType="com.estylesoft.integration.Model.TbPtksModelBase">
+        select TP_NAME as name, TP_ACTUAL_FBS as isFbsActual from STH_TYPE
+    </select>
+
+</mapper>
+
+	
