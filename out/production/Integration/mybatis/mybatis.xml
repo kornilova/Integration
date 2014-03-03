@@ -22,5 +22,20 @@
         <mapper resource="mybatis/IntegrationPtks.xml"/>
         <mapper resource="mybatis/Ptks/ptksBaseDepartment.xml"/>
         <mapper resource="mybatis/Ptks/terOgran.xml"/>
+        <mapper resource="mybatis/Ptks/ptksTerDepartmentPFR.xml"/>
+        <mapper resource="mybatis/Ptks/okato.xml"/>
+        <mapper resource="mybatis/Ptks/opf.xml"/>
+        <mapper resource="mybatis/Ptks/okved.xml"/>
+        <mapper resource="mybatis/Ptks/region.xml"/>
+        <mapper resource="mybatis/Ptks/admTerritory.xml"/>
+        <mapper resource="mybatis/Ptks/city.xml"/>
+        <mapper resource="mybatis/Ptks/town.xml"/>
+        <mapper resource="mybatis/Ptks/street.xml"/>
+        <mapper resource="mybatis/Ptks/streetDepartment.xml"/>
+        <mapper resource="mybatis/Ptks/streetHouses.xml"/>
+        <mapper resource="mybatis/Ptks/registrationKind.xml"/>
+        <mapper resource="mybatis/Ptks/registrationDepartment.xml"/>
+        <mapper resource="mybatis/Ptks/ifns.xml"/>
+        <mapper resource="mybatis/Ptks/opfr.xml"/>
     </mappers>
 </configuration>

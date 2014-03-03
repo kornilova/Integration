@@ -16,6 +16,7 @@ public class TerOrganModel extends ModelBase {
     private String code;
     private String name;
     private Long opfrId;
+    private String opfrCode;
     private String shortName;
     private String companyName;
     private String address;
@@ -26,6 +27,14 @@ public class TerOrganModel extends ModelBase {
     private Long kpp;
     private Long ogrn;
     private String comment;
+
+    public String getOpfrCode() {
+        return opfrCode;
+    }
+
+    public void setOpfrCode(String opfrCode) {
+        this.opfrCode = opfrCode;
+    }
 
     public String getCode() {
         return code;

@@ -5,6 +5,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 
 import java.util.ArrayList;
+import java.util.Map;
 
 
 /**
@@ -14,7 +15,7 @@ import java.util.ArrayList;
  * Time: 19:11
  * To change this template use File | Settings | File Templates.
  */
-public abstract class DAOBase<T, PK> implements IDAO<T, PK> {
+public abstract class DAOBase<T> implements IDAO<T> {
 
     private SqlSessionFactory session;
     private Class<T> type;
@@ -30,7 +31,7 @@ public abstract class DAOBase<T, PK> implements IDAO<T, PK> {
     }
 
     @Override
-    public T getById(String query, PK id) throws PersistenceException {
+    public T getById(String query, Long id) throws PersistenceException {
         SqlSession sqlSession = session.openSession();
         T obj = null;
         try {
@@ -47,6 +48,18 @@ public abstract class DAOBase<T, PK> implements IDAO<T, PK> {
         T obj = null;
         try {
             obj = (T) sqlSession.selectOne(query, code);
+        } finally {
+            sqlSession.close();
+        }
+        return obj;
+    }
+
+    @Override
+    public T getByMap(String query, Map params) throws PersistenceException {
+        SqlSession sqlSession = session.openSession();
+        T obj = null;
+        try {
+            obj = (T) sqlSession.selectOne(query, params);
         } finally {
             sqlSession.close();
         }
@@ -71,7 +84,8 @@ public abstract class DAOBase<T, PK> implements IDAO<T, PK> {
         try {
             sqlSession.insert(query, obj);
             sqlSession.commit();
-            return obj;
+
+             return obj;
         } catch (Exception ex) {
             throw new UnsupportedOperationException(ex);
         } finally {
@@ -93,7 +107,7 @@ public abstract class DAOBase<T, PK> implements IDAO<T, PK> {
     }
 
     @Override
-    public void delete(String query, PK id) throws PersistenceException {
+    public void delete(String query, Long id) throws PersistenceException {
         SqlSession sqlSession = session.openSession();
         try {
             sqlSession.delete(query, id);
@@ -104,4 +118,32 @@ public abstract class DAOBase<T, PK> implements IDAO<T, PK> {
             sqlSession.close();
         }
     }
+
+    @Override
+    public void delete(String query, String value) throws PersistenceException {
+        SqlSession sqlSession = session.openSession();
+        try {
+            sqlSession.delete(query, value);
+            sqlSession.commit();
+        } catch (Exception ex) {
+            throw new UnsupportedOperationException(ex);
+        } finally {
+            sqlSession.close();
+        }
+    }
+
+    @Override
+    public void delete(String query, T obj) throws PersistenceException {
+        SqlSession sqlSession = session.openSession();
+        try {
+            sqlSession.delete(query, obj);
+            sqlSession.commit();
+        } catch (Exception ex) {
+            throw new UnsupportedOperationException(ex);
+        } finally {
+            sqlSession.close();
+        }
+    }
+
+
 }

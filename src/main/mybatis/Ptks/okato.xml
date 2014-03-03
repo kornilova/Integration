@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="okato">
+
+    <select id="insert" parameterType="com.estylesoft.integration.Model.Ptks.OkatoModel"
+            statementType="CALLABLE">
+ {CALL P_ADD_OKATO(
+  #{code,javaType=String,jdbcType=BIGINT,mode=IN},
+  #{terDepartmentCode,javaType=String,jdbcType=INTEGER,mode=IN},
+  #{baseDepartmentId,javaType=Long,jdbcType=BIGINT,mode=IN}
+   )}
+</select>
+
+<!--    <insert id="insert" keyColumn="TER_ORGAN_ID" parameterType="com.estylesoft.integration.Model.Ptks.OkatoModel">
+        insert into STH_OKATO(OKATO_ID, OKATO_CODE)
+        values (
+        #{id},
+        #{code}
+        )
+    </insert>-->
+
+    <delete id="delete" parameterType="com.estylesoft.integration.Model.Ptks.OkatoModel">
+        delete from STH_OKATO
+        where OKATO_CODE = #{code}
+    </delete>
+
+    <select id="getByCode" parameterType="String" resultType="com.estylesoft.integration.Model.Ptks.OkatoModel">
+          SELECT OKATO_ID as id, OKATO_CODE as code FROM STH_OKATO WHERE OKATO_CODE = #{code}
+    </select>
+
+</mapper>

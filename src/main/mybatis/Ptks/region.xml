@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="region">
+
+    <insert id="insert" keyColumn="OKVED_ID" parameterType="com.estylesoft.integration.Model.Ptks.RegionModel">
+        <selectKey keyProperty="id" resultType="Long" order="BEFORE">
+            select GET_NEW_ID() from sysibm.SYSDUMMY1
+        </selectKey>
+        insert into STH_REGION(RGN_ID, RGN_NAME, RGN_CODE, RGN_KLADR_CODE, RGN_IS_CITY)
+        values (
+        #{id,javaType=Long,jdbcType=BIGINT},
+        #{name},
+        #{code},
+        #{kladrCode},
+        #{isCity})
+    </insert>
+
+    <delete id="delete" parameterType="java.lang.String">
+        delete from STH_REGION
+        where RGN_CODE = #{code}
+    </delete>
+
+    <select id="getByCode" parameterType="String" resultType="com.estylesoft.integration.Model.Ptks.RegionModel">
+          SELECT RGN_ID as id, RGN_CODE as code
+          FROM STH_REGION
+          WHERE RGN_CODE = #{code}
+    </select>
+
+</mapper>

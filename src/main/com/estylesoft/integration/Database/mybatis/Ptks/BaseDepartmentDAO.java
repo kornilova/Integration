@@ -11,7 +11,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
  * Time: 23:43
  * To change this template use File | Settings | File Templates.
  */
-public class BaseDepartmentDAO extends DAOBase<BaseDepartmentModel, Long>{
+public class BaseDepartmentDAO extends DAOBase<BaseDepartmentModel>{
 
     private final String namespace = "ptksBaseDepartment";
 
@@ -27,5 +27,10 @@ public class BaseDepartmentDAO extends DAOBase<BaseDepartmentModel, Long>{
     public void delete(BaseDepartmentModel obj)
     {
         super.delete(namespace + "." + "delete", obj.getId());
+    }
+
+    public BaseDepartmentModel getByCode(String code)
+    {
+        return super.getByCode(namespace + "." + "getByCode", code);
     }
 }

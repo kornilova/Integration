@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="streetHouses">
+
+    <insert id="insert" keyColumn="STRH_ID" parameterType="com.estylesoft.integration.Model.Ptks.StreetHousesModel">
+        <selectKey keyProperty="id" resultType="Long" order="BEFORE">
+            select GET_NEW_ID() from sysibm.SYSDUMMY1
+        </selectKey>
+        insert into STH_STREET_HOUSES(STRH_ID, STREET_TDP_ID, STRH_HOUSE)
+        values (
+        #{id,javaType=Long,jdbcType=BIGINT},
+        #{streetTerDepartmentId,javaType=Long,jdbcType=BIGINT},
+        #{houses}
+        )
+    </insert>
+
+    <delete id="delete" parameterType="java.lang.Long">
+        delete from STH_STREET_HOUSES
+        where STREET_TDP_ID = {#streetTerDepartmentId}
+    </delete>
+
+</mapper>

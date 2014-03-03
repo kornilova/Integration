@@ -4,6 +4,7 @@ import com.estylesoft.integration.CheckResult;
 import com.estylesoft.integration.Database.mybatis.Ptks.TerOrganDAO;
 import com.estylesoft.integration.IntegrationException;
 import com.estylesoft.integration.Model.Ptks.TerOrganModel;
+import org.apache.ibatis.session.SqlSessionFactory;
 
 /**
  * Created with IntelliJ IDEA.
@@ -16,9 +17,9 @@ public class TerOrganHelper {
 
     private TerOrganDAO terOrganDAO;
 
-    public TerOrganHelper(TerOrganDAO terOrganDAO)
+    public TerOrganHelper(SqlSessionFactory sqlSessionFactory)
     {
-        this.terOrganDAO=terOrganDAO;
+        this.terOrganDAO=new TerOrganDAO(TerOrganModel.class, sqlSessionFactory);
     }
 
     public CheckResult create(TerOrganModel obj
@@ -30,5 +31,13 @@ public class TerOrganHelper {
             res.setMessageTest("ERROR: STH_TERRITORIAL_ORGAN is not inserted.");
         }
         return res;
+    }
+
+    public void delete(TerOrganModel obj) throws IntegrationException {
+        terOrganDAO.delete(obj);
+    }
+
+    public TerOrganModel getByCode(String code) throws IntegrationException {
+       return terOrganDAO.getByCode(code);
     }
 }

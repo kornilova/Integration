@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="streetDepartment">
+
+    <insert id="insert" keyColumn="CITY_ID" parameterType="com.estylesoft.integration.Model.Ptks.StreetDepartmentModel">
+        <selectKey keyProperty="id" resultType="Long" order="BEFORE">
+            select GET_NEW_ID() from sysibm.SYSDUMMY1
+        </selectKey>
+        insert into STH_STREET_TDP(STREET_TDP_ID, STREET_ID, TDP_ID, STREET_TDP_H_FROM, STREET_TDP_H_TO, STREET_TDP_EVEN)
+        values (
+        #{id,javaType=Long,jdbcType=BIGINT},
+        #{streetId,javaType=Long,jdbcType=BIGINT},
+        #{terDepartmentPFRId,javaType=Long,jdbcType=BIGINT},
+        #{hFrom},
+        #{hTo},
+        #{hEven}
+        )
+    </insert>
+
+    <delete id="delete" parameterType="java.lang.Long">
+        delete from STH_STREET_TDP
+        where STREET_ID = #{streetId}
+    </delete>
+
+    <select id="getByStreetIdTerDepId" parameterType="Map" resultType="com.estylesoft.integration.Model.Ptks.StreetDepartmentModel">
+          SELECT STREET_TDP_ID as id
+          FROM STH_STREET_TDP
+          WHERE STREET_ID = #{streetId} AND TDP_ID = #{terDepartmentPFRId}
+    </select>
+
+</mapper>

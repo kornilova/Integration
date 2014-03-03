@@ -21,7 +21,7 @@
     <file path="/ExportDictionaryDataFromFBS.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1383227941066" ignored="false" />
     <file path="/DB2Connection.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1383137857180" ignored="false" />
     <file path="/CheckResult.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1383140653832" ignored="false" />
-    <file path="/fragment.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1391699003456" ignored="false" />
+    <file path="/fragment.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392189226998" ignored="false" />
     <file path="/Dummy.txt" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1390481511528" ignored="false" />
     <file path="/JdbcMultipleResultSets.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1383200564456" ignored="false" />
     <file path="/MigrationDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1383216634352" ignored="false" />
@@ -39,7 +39,7 @@
     <file path="/IntegrationTester.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1383223545268" ignored="false" />
     <file path="/fragment.js2" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1383224397450" ignored="false" />
     <file path="/MANIFEST.TXT" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1383224685975" ignored="false" />
-    <file path="/mybatis.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1391183636955" ignored="false" />
+    <file path="/mybatis.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392189370224" ignored="false" />
     <file path="/DictionaryPtksDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1383226770182" ignored="false" />
     <file path="/DictionaryFbsDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1390919644290" ignored="false" />
     <file path="$PROJECT_DIR$/../GenerateScripts/build.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1390482822995" ignored="false" />
@@ -59,7 +59,7 @@
     <file path="$PROJECT_DIR$/../GenerateScripts/src/HIMKI/CompareOracleMySQLDatabase.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1390482349966" ignored="false" />
     <file path="$PROJECT_DIR$/../GenerateScripts/src/FBS/CreateDatabaseScript.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1390483056517" ignored="false" />
     <file path="/Bo.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1391006225861" ignored="false" />
-    <file path="/BaseDepartmentModel.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1391176753254" ignored="false" />
+    <file path="/BaseDepartmentModel.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392188918810" ignored="false" />
     <file path="/TbModelBase.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1390920975457" ignored="false" />
     <file path="/ModelBase.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1391174732561" ignored="false" />
     <file path="/GenericPersistence.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1390940764150" ignored="false" />
@@ -68,20 +68,80 @@
     <file path="/PtksDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1390922384236" ignored="false" />
     <file path="/MyBatisFbsSqlSessionFactory.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1390925587180" ignored="false" />
     <file path="/BaseDepartmentDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1391185750594" ignored="false" />
-    <file path="/BaseDepartmentHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1391186115460" ignored="false" />
-    <file path="/CreateMigrationDataInPtks.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1391185931910" ignored="false" />
-    <file path="/DAOBase.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1390994678350" ignored="false" />
+    <file path="/BaseDepartmentHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392043163854" ignored="false" />
+    <file path="/CreateMigrationDataInPtks.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1393856483263" ignored="false" />
+    <file path="/DAOBase.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1393843139293" ignored="false" />
     <file path="/MyBatisSqlSession.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1390978731314" ignored="false" />
-    <file path="/IDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1390994717560" ignored="false" />
+    <file path="/IDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1393843128168" ignored="false" />
     <file path="/ptksBaseDepartment.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1391185735570" ignored="false" />
     <file path="/CheckReporter.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1391065421766" ignored="false" />
     <file path="/TestBase.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1391183986192" ignored="false" />
     <file path="/ExcelHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1391698886616" ignored="false" />
     <file path="/TerOrgan.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1391175629128" ignored="false" />
-    <file path="/TerOrganDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1391177001690" ignored="false" />
-    <file path="/terOgran.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1391183572556" ignored="false" />
-    <file path="/TerOrganModel.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1391184969073" ignored="false" />
-    <file path="/TerOrganHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1391183845337" ignored="false" />
+    <file path="/TerOrganDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392022439568" ignored="false" />
+    <file path="/terOgran.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392195230608" ignored="false" />
+    <file path="/TerOrganModel.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392189597465" ignored="false" />
+    <file path="/TerOrganHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392134627837" ignored="false" />
+    <file path="/TerDepartmentPFR.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392021074579" ignored="false" />
+    <file path="/TerDepartmentPFRDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1393843224045" ignored="false" />
+    <file path="/TerDepartmentPFRHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1393843464480" ignored="false" />
+    <file path="/ptksTerDepartmentPFR.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1393843686010" ignored="false" />
+    <file path="/TerDepartmentPFRModel.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392134092098" ignored="false" />
+    <file path="/OkatoDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392025177436" ignored="false" />
+    <file path="/OkatoHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1393249695638" ignored="false" />
+    <file path="/okato.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392205644806" ignored="false" />
+    <file path="/OkatoModel.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392205559552" ignored="false" />
+    <file path="/OpfModel.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392027223670" ignored="false" />
+    <file path="/OpfDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392027262471" ignored="false" />
+    <file path="/OpfHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392043246981" ignored="false" />
+    <file path="/opf.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1393248997928" ignored="false" />
+    <file path="/OkvedModel.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392027860119" ignored="false" />
+    <file path="/OkvedDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392031283868" ignored="false" />
+    <file path="/OkvedHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392043227900" ignored="false" />
+    <file path="/okved.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392034668371" ignored="false" />
+    <file path="/RegionModel.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392035146737" ignored="false" />
+    <file path="/RegionDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392035602962" ignored="false" />
+    <file path="/RegionHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392043266734" ignored="false" />
+    <file path="/region.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1393251208950" ignored="false" />
+    <file path="/AdmTerritoryModel.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1393251059895" ignored="false" />
+    <file path="/AdmTerritoryDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392037282968" ignored="false" />
+    <file path="/admTerritory.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392037920534" ignored="false" />
+    <file path="/AdmTerritoryHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392043133324" ignored="false" />
+    <file path="/CityModel.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1393841974004" ignored="false" />
+    <file path="/CityDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392041922711" ignored="false" />
+    <file path="/CityHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392043186939" ignored="false" />
+    <file path="/city.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392042143264" ignored="false" />
+    <file path="/TownModel.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1393843847612" ignored="false" />
+    <file path="/TownDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392042625146" ignored="false" />
+    <file path="/TownHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392043375633" ignored="false" />
+    <file path="/town.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392042765455" ignored="false" />
+    <file path="/StreetModel.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1393851800570" ignored="false" />
+    <file path="/StreetDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392044334729" ignored="false" />
+    <file path="/StreetHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392044414006" ignored="false" />
+    <file path="/street.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392045115096" ignored="false" />
+    <file path="/StreetDepartmentModel.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1393854199581" ignored="false" />
+    <file path="/StreetDepartmentDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1393855185065" ignored="false" />
+    <file path="/StreetDepartmentHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1393855700619" ignored="false" />
+    <file path="/streetDepartment.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1393855255590" ignored="false" />
+    <file path="/StreetHousesModel.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1393855454107" ignored="false" />
+    <file path="/StreetHousesDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1393856812677" ignored="false" />
+    <file path="/StreetHousesHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392048717452" ignored="false" />
+    <file path="/streetHouses.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392101154274" ignored="false" />
+    <file path="/RegistrationKindModel.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392103303499" ignored="false" />
+    <file path="/RegistrationKindDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392103348319" ignored="false" />
+    <file path="/RegistrationKindHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392103421075" ignored="false" />
+    <file path="/registrationKind.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392103515223" ignored="false" />
+    <file path="/RegistrationDepartmentHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392108635820" ignored="false" />
+    <file path="/registrationDepartment.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392108764902" ignored="false" />
+    <file path="/RegistrationDepartmentDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392111106072" ignored="false" />
+    <file path="/IfnsModel.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392111407387" ignored="false" />
+    <file path="/IfnsDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392111451582" ignored="false" />
+    <file path="/IfnsHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392111507010" ignored="false" />
+    <file path="/ifns.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392111622728" ignored="false" />
+    <file path="/FillMigrationDataInPtks.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392132616352" ignored="false" />
+    <file path="/opfr.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392189406395" ignored="false" />
+    <file path="/OpfrDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392189236311" ignored="false" />
+    <file path="/OpfrHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392189329782" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,24 +160,16 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+    <sortChildren value="false" />
+  </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Database/mybatis/DAOBase.java" line="71" class="com.estylesoft.integration.Database.mybatis.DAOBase" package="com.estylesoft.integration.Database.mybatis">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/DataLoader/ExcelHelper.java" line="133" class="com.estylesoft.integration.DataLoader.ExcelHelper" package="com.estylesoft.integration.DataLoader">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/TerDepartmentPFRHelper.java" line="31" class="com.estylesoft.integration.Exchange.TerDepartmentPFRHelper" package="com.estylesoft.integration.Exchange">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -166,7 +218,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -179,34 +230,25 @@
       <file leaf-file-name="CreateMigrationDataInPtks.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/com/estylesoft/integration/test/CreateMigrationDataInPtks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="23" selection-start="2678" selection-end="2678" vertical-scroll-proportion="0.0">
+            <state line="247" column="62" selection-start="14739" selection-end="14739" vertical-scroll-proportion="-14.24">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestBase.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/com/estylesoft/integration/test/TestBase.java">
+      <file leaf-file-name="GitHelp.txt" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/GitHelp.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="0" selection-start="1477" selection-end="1477" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MethodInvocationHelper.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/libs/testng-6.8.jar!/org/testng/internal/MethodInvocationHelper.class">
+      <file leaf-file-name="Invoker.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/libs/testng-6.8.jar!/org/testng/internal/Invoker.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="38" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseDepartmentHelper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/BaseDepartmentHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="0" selection-start="1188" selection-end="1188" vertical-scroll-proportion="0.0">
+            <state line="59" column="35" selection-start="5163" selection-end="5163" vertical-scroll-proportion="-6.0">
               <folding />
             </state>
           </provider>
@@ -215,54 +257,61 @@
       <file leaf-file-name="DAOBase.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Database/mybatis/DAOBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="0" selection-start="1962" selection-end="1962" vertical-scroll-proportion="0.0">
+            <state line="61" column="0" selection-start="1661" selection-end="1661" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SqlSession.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/libs/mybatis-3.0.6.jar!/org/apache/ibatis/session/SqlSession.class">
+      <file leaf-file-name="streetHouses.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/mybatis/Ptks/streetHouses.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="8" selection-start="1453" selection-end="1453" vertical-scroll-proportion="0.0">
+            <state line="18" column="53" selection-start="834" selection-end="834" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExcelHelper.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/DataLoader/ExcelHelper.java">
+      <file leaf-file-name="ExportDictionaryDataFromFBS.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/com/estylesoft/integration/test/ExportDictionaryDataFromFBS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="27" selection-start="3474" selection-end="3474" vertical-scroll-proportion="0.024752475">
-              <folding>
-                <element signature="e#4292#4308#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ptksBaseDepartment.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/mybatis/Ptks/ptksBaseDepartment.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="53" selection-start="786" selection-end="786" vertical-scroll-proportion="0.0">
+            <state line="22" column="13" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseDepartmentDAO.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Database/mybatis/Ptks/BaseDepartmentDAO.java">
+      <file leaf-file-name="StreetDepartmentDAO.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Database/mybatis/Ptks/StreetDepartmentDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="46" selection-start="853" selection-end="876" vertical-scroll-proportion="0.0">
+            <state line="36" column="70" selection-start="1170" selection-end="1191" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseDepartmentModel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Model/Ptks/BaseDepartmentModel.java">
+      <file leaf-file-name="streetDepartment.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/mybatis/Ptks/streetDepartment.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="14" selection-start="418" selection-end="422" vertical-scroll-proportion="0.0">
+            <state line="27" column="76" selection-start="1184" selection-end="1242" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StreetHousesDAO.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Database/mybatis/Ptks/StreetHousesDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="79" selection-start="936" selection-end="936" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StreetHousesModel.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Model/Ptks/StreetHousesModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="0" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -278,29 +327,29 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/Util/DataProviderParams.java" />
-        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Model/ModelBase.java" />
-        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Database/mybatis/DAOBase.java" />
-        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Model/Ptks/BaseDepartmentModel.java" />
-        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Model/Ptks/TerOrgan.java" />
-        <option value="$PROJECT_DIR$/src/main/mybatis/Ptks/terOgran.xml" />
-        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Database/mybatis/Ptks/TerOrganDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/TerOrganHelper.java" />
-        <option value="$PROJECT_DIR$/src/test/com/estylesoft/integration/test/TestBase.java" />
-        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Model/Ptks/TerOrganModel.java" />
-        <option value="$PROJECT_DIR$/src/main/mybatis/mybatis.xml" />
-        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Database/mybatis/Ptks/BaseDepartmentDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/mybatis/Ptks/ptksBaseDepartment.xml" />
+        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Database/mybatis/Ptks/TownDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/CityHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/TownHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Model/Ptks/TownModel.java" />
+        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Model/Ptks/StreetModel.java" />
+        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Database/mybatis/Ptks/StreetDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/StreetHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/mybatis/Ptks/street.xml" />
+        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Model/Ptks/StreetDepartmentModel.java" />
+        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Database/mybatis/Ptks/StreetDepartmentDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/mybatis/Ptks/streetDepartment.xml" />
+        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Model/Ptks/StreetHousesModel.java" />
+        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/StreetDepartmentHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/mybatis/Ptks/streetHouses.xml" />
+        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Database/mybatis/Ptks/StreetHousesDAO.java" />
         <option value="$PROJECT_DIR$/src/test/com/estylesoft/integration/test/CreateMigrationDataInPtks.java" />
-        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/BaseDepartmentHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/DataLoader/ExcelHelper.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1292" />
+    <option name="width" value="1296" />
     <option name="height" value="1000" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -351,7 +400,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -734,6 +782,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -743,7 +792,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="editing.templates" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/aspose-cells-jdk16-7.3.4.jar!/" />
@@ -759,6 +808,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.estylesoft.integration.Database.mybatis.Ptks" />
+      <recent name="com.estylesoft.integration.Exchange" />
+      <recent name="com.estylesoft.integration.Model.Ptks" />
       <recent name="com.estylesoft.integration.Database.mybatis" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -774,86 +826,8 @@
       <recent name="C:\IdeaProjects\Integration" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CreateMigrationDataInPtks.CreateBaseDepartment">
-    <configuration default="false" name="IntegrationTester.CheckImportDictionaryKBK" type="TestNG" factoryName="TestNG" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.estylesoft.integration.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Integration" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="com.estylesoft.integration.test" />
-      <option name="MAIN_CLASS_NAME" value="com.estylesoft.integration.test.IntegrationTester" />
-      <option name="METHOD_NAME" value="CheckImportDictionaryKBK" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="62395" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <ConfigurationWrapper RunnerId="Debug" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ExportDictionaryDataFromFBS.CheckImportDictionaryKBK" type="TestNG" factoryName="TestNG" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.estylesoft.integration.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Integration" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="com.estylesoft.integration.test" />
-      <option name="MAIN_CLASS_NAME" value="com.estylesoft.integration.test.ExportDictionaryDataFromFBS" />
-      <option name="METHOD_NAME" value="CheckImportDictionaryKBK" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="50057" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <ConfigurationWrapper RunnerId="Debug" />
-      <method />
-    </configuration>
-    <configuration default="false" name="CreateMigrationDataInPtks" type="TestNG" factoryName="TestNG" temporary="true">
+  <component name="RunManager" selected="TestNG.CreateMigrationDataInPtks.CreateIfns">
+    <configuration default="false" name="CreateMigrationDataInPtks.CreateKladrStreetDepartment" type="TestNG" factoryName="TestNG" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.estylesoft.integration.test.*" />
@@ -866,46 +840,7 @@
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="com.estylesoft.integration.test" />
       <option name="MAIN_CLASS_NAME" value="com.estylesoft.integration.test.CreateMigrationDataInPtks" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="49780" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <ConfigurationWrapper RunnerId="Debug" />
-      <method />
-    </configuration>
-    <configuration default="false" name="CreateMigrationDataInPtks.CreateTerOrgan" type="TestNG" factoryName="TestNG" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.estylesoft.integration.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Integration" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="com.estylesoft.integration.test" />
-      <option name="MAIN_CLASS_NAME" value="com.estylesoft.integration.test.CreateMigrationDataInPtks" />
-      <option name="METHOD_NAME" value="CreateTerOrgan" />
+      <option name="METHOD_NAME" value="CreateKladrStreetDepartment" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -924,14 +859,14 @@
       <properties />
       <listeners />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="63169" />
+        <option name="DEBUG_PORT" value="65529" />
         <option name="TRANSPORT" value="0" />
         <option name="LOCAL" value="true" />
       </RunnerSettings>
       <ConfigurationWrapper RunnerId="Debug" />
       <method />
     </configuration>
-    <configuration default="false" name="CreateMigrationDataInPtks.CreateBaseDepartment" type="TestNG" factoryName="TestNG" temporary="true">
+    <configuration default="false" name="CreateMigrationDataInPtks.CreateKladrStreetHouses" type="TestNG" factoryName="TestNG" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.estylesoft.integration.test.*" />
@@ -944,7 +879,7 @@
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="com.estylesoft.integration.test" />
       <option name="MAIN_CLASS_NAME" value="com.estylesoft.integration.test.CreateMigrationDataInPtks" />
-      <option name="METHOD_NAME" value="CreateBaseDepartment" />
+      <option name="METHOD_NAME" value="CreateKladrStreetHouses" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -963,11 +898,116 @@
       <properties />
       <listeners />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="63346" />
+        <option name="DEBUG_PORT" value="49585" />
         <option name="TRANSPORT" value="0" />
         <option name="LOCAL" value="true" />
       </RunnerSettings>
       <ConfigurationWrapper RunnerId="Debug" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CreateMigrationDataInPtks.CreateRegistrationKind" type="TestNG" factoryName="TestNG" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.estylesoft.integration.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Integration" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.estylesoft.integration.test" />
+      <option name="MAIN_CLASS_NAME" value="com.estylesoft.integration.test.CreateMigrationDataInPtks" />
+      <option name="METHOD_NAME" value="CreateRegistrationKind" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CreateMigrationDataInPtks.CreateRegistrationDepartment" type="TestNG" factoryName="TestNG" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.estylesoft.integration.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Integration" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.estylesoft.integration.test" />
+      <option name="MAIN_CLASS_NAME" value="com.estylesoft.integration.test.CreateMigrationDataInPtks" />
+      <option name="METHOD_NAME" value="CreateRegistrationDepartment" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CreateMigrationDataInPtks.CreateIfns" type="TestNG" factoryName="TestNG" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.estylesoft.integration.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Integration" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.estylesoft.integration.test" />
+      <option name="MAIN_CLASS_NAME" value="com.estylesoft.integration.test.CreateMigrationDataInPtks" />
+      <option name="METHOD_NAME" value="CreateIfns" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -1096,19 +1136,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="TestNG.IntegrationTester.CheckImportDictionaryKBK" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.ExportDictionaryDataFromFBS.CheckImportDictionaryKBK" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.CreateMigrationDataInPtks" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.CreateMigrationDataInPtks.CreateTerOrgan" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.CreateMigrationDataInPtks.CreateBaseDepartment" />
+      <item index="0" class="java.lang.String" itemvalue="TestNG.CreateMigrationDataInPtks.CreateKladrStreetDepartment" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.CreateMigrationDataInPtks.CreateKladrStreetHouses" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.CreateMigrationDataInPtks.CreateRegistrationKind" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.CreateMigrationDataInPtks.CreateRegistrationDepartment" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.CreateMigrationDataInPtks.CreateIfns" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.CreateMigrationDataInPtks.CreateBaseDepartment" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.CreateMigrationDataInPtks.CreateTerOrgan" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.CreateMigrationDataInPtks" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.ExportDictionaryDataFromFBS.CheckImportDictionaryKBK" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.IntegrationTester.CheckImportDictionaryKBK" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.CreateMigrationDataInPtks.CreateIfns" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.CreateMigrationDataInPtks.CreateRegistrationDepartment" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.CreateMigrationDataInPtks.CreateRegistrationKind" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.CreateMigrationDataInPtks.CreateKladrStreetHouses" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.CreateMigrationDataInPtks.CreateKladrStreetDepartment" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1164,31 +1204,31 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1292" height="1000" extended-state="0" />
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.70630205" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.065635" sideWeight="0.6456599" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20808561" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39357907" sideWeight="0.7820097" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13793103" sideWeight="0.22042139" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29369798" sideWeight="0.14748785" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13793103" sideWeight="0.773906" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13793103" sideWeight="0.75445706" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936978" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3" sideWeight="0.7919144" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29726517" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2682334" sideWeight="0.70630205" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29369798" sideWeight="0.84683955" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1843044" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1843044" sideWeight="0.48379254" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.030794166" sideWeight="0.7027348" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1263,6 +1303,52 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Database/mybatis/Ptks/TerDepartmentPFRDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="1114" selection-end="1264" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/mybatis/Ptks/ptksTerDepartmentPFR.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="0" selection-start="2023" selection-end="2317" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/TerDepartmentPFRHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="33" selection-start="1502" selection-end="1502" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#1633#1649#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Model/ModelBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="16" selection-start="931" selection-end="931" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Model/Ptks/StreetDepartmentModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="16" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/StreetDepartmentHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="59" selection-start="1756" selection-end="1756" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#1636#1650#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/com/estylesoft/integration/test/ExportDictionaryDataFromFBS.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="13" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0">
@@ -1270,114 +1356,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Model/Ptks/TerOrganModel.java">
+    <entry file="jar://$PROJECT_DIR$/libs/testng-6.8.jar!/org/testng/internal/Invoker.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="24" selection-start="2357" selection-end="2357" vertical-scroll-proportion="0.0">
+        <state line="59" column="35" selection-start="5163" selection-end="5163" vertical-scroll-proportion="-6.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/TerOrganHelper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Model/Ptks/StreetHousesModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="60" selection-start="917" selection-end="917" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Database/mybatis/Ptks/TerOrganDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/mybatis/Ptks/terOgran.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="23" selection-start="912" selection-end="912" vertical-scroll-proportion="0.0">
+        <state line="36" column="0" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/mybatis/mybatis.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Database/mybatis/Ptks/StreetHousesDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="26" selection-start="987" selection-end="987" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/mybatis-3.0.6.jar!/org/apache/ibatis/session/SqlSession.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="8" selection-start="1453" selection-end="1453" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Model/Ptks/BaseDepartmentModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="14" selection-start="418" selection-end="422" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/mybatis/Ptks/ptksBaseDepartment.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="53" selection-start="786" selection-end="786" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Database/mybatis/Ptks/BaseDepartmentDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="46" selection-start="853" selection-end="876" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/BaseDepartmentHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="1188" selection-end="1188" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/testng-6.8.jar!/org/testng/internal/MethodInvocationHelper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="38" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0">
+        <state line="28" column="79" selection-start="936" selection-end="936" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Database/mybatis/DAOBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="0" selection-start="1962" selection-end="1962" vertical-scroll-proportion="0.0">
+        <state line="61" column="0" selection-start="1661" selection-end="1661" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/com/estylesoft/integration/test/TestBase.java">
+    <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Database/mybatis/Ptks/StreetDepartmentDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="1477" selection-end="1477" vertical-scroll-proportion="0.0">
+        <state line="36" column="70" selection-start="1170" selection-end="1191" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/mybatis/Ptks/streetHouses.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="53" selection-start="834" selection-end="834" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/mybatis/Ptks/streetDepartment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="76" selection-start="1184" selection-end="1242" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/com/estylesoft/integration/test/CreateMigrationDataInPtks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="23" selection-start="2678" selection-end="2678" vertical-scroll-proportion="0.0">
+        <state line="247" column="62" selection-start="14739" selection-end="14739" vertical-scroll-proportion="-14.24">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/DataLoader/ExcelHelper.java">
+    <entry file="file://$PROJECT_DIR$/GitHelp.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="27" selection-start="3474" selection-end="3474" vertical-scroll-proportion="0.024752475">
-          <folding>
-            <element signature="e#4292#4308#0" expanded="true" />
-          </folding>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>

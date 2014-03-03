@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ifns">
+
+    <insert id="insert" keyColumn="REGD_ID" parameterType="com.estylesoft.integration.Model.Ptks.RegistrationDepartmentModel">
+        insert into STH_TERRITORY_DPT_FNS(FNSD_ID, FNSD_CODE, FNSD_NAME, FNSD_INN, FNSD_KPP)
+        values (
+        #{id},
+        #{code},
+        #{name},
+        #{inn},
+        #{kpp})
+    </insert>
+
+    <delete id="delete" parameterType="java.lang.Long">
+        delete from STH_TERRITORY_DPT_FNS
+        where FNSD_ID = #{id}
+    </delete>
+
+</mapper>

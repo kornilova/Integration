@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="admTerritory">
+
+<!--    <select id="insert" parameterType="com.estylesoft.integration.Model.Ptks.TerDepartmentPFRModel"
+            statementType="CALLABLE">
+ {CALL P_ADD_TOWN_WITH_RDV(
+  #{regionId,javaType=Long,jdbcType=BIGINT,mode=IN},
+  #{baseDepartmentId,javaType=Long,jdbcType=BIGINT,mode=IN},
+  #{name,javaType=String,jdbcType=VARCHAR,mode=IN},
+  #{code,javaType=String,jdbcType=INTEGER,mode=IN},
+  #{terOrganId,javaType=Long,jdbcType=BIGINT,mode=IN},
+  #{id,javaType=Long,jdbcType=BIGINT,mode=OUT}
+   )}
+</select>-->
+
+    <insert id="insert" keyColumn="TER_ID" parameterType="com.estylesoft.integration.Model.Ptks.AdmTerritoryModel">
+        <selectKey keyProperty="id" resultType="Long" order="BEFORE">
+            select GET_NEW_ID() from sysibm.SYSDUMMY1
+        </selectKey>
+        insert into STH_TERRITORY(TER_ID, RGN_ID, TDP_ID, TER_NAME, TER_KLADR_CODE, RDV_ID)
+        values (
+        #{id,javaType=Long,jdbcType=BIGINT},
+        #{regionId,javaType=Long,jdbcType=BIGINT},
+        #{terDepartmentPFRId,javaType=Long,jdbcType=BIGINT},
+        #{name},
+        #{code},
+        #{baseDepartmentId,javaType=Long,jdbcType=BIGINT}
+        )
+    </insert>
+
+    <delete id="delete" parameterType="java.lang.Long">
+        delete from STH_TERRITORY
+        where TER_KLADR_CODE = #{code}
+    </delete>
+
+    <select id="getByCode" parameterType="String" resultType="com.estylesoft.integration.Model.Ptks.AdmTerritoryModel">
+          SELECT TER_ID as id, TER_KLADR_CODE as code FROM STH_TERRITORY WHERE TER_KLADR_CODE = #{code}
+    </select>
+
+</mapper>

@@ -16,6 +16,15 @@ public class BaseDepartmentModel extends ModelBase {
     private String code;
     private String name;
     private Long opfrId;
+    private String opfrCode;
+
+    public String getOpfrCode() {
+        return opfrCode;
+    }
+
+    public void setOpfrCode(String opfrCode) {
+        this.opfrCode = opfrCode;
+    }
 
     public String getCode() {
         return code;

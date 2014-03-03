@@ -11,7 +11,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
  * Time: 18:02
  * To change this template use File | Settings | File Templates.
  */
-public class TerOrganDAO extends DAOBase<TerOrganModel, Long> {
+public class TerOrganDAO extends DAOBase<TerOrganModel> {
 
     private final String namespace = "terOrgan";
 
@@ -21,5 +21,15 @@ public class TerOrganDAO extends DAOBase<TerOrganModel, Long> {
 
     public Long insert(TerOrganModel obj) {
         return super.create(namespace + "." + "insert", obj).getId();
+    }
+
+    public void delete(TerOrganModel obj)
+    {
+        super.delete(namespace + "." + "delete", obj);
+    }
+
+    public TerOrganModel getByCode(String code)
+    {
+        return super.getByCode(namespace + "." + "getByCode", code);
     }
 }

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="opf">
+
+    <select id="insert" parameterType="com.estylesoft.integration.Model.Ptks.OpfModel"
+            statementType="CALLABLE">
+ {CALL P_ADD_OPF(
+  #{code,javaType=String,jdbcType=BIGINT,mode=IN},
+  #{name,javaType=String,jdbcType=INTEGER,mode=IN}
+   )}
+</select>
+
+<!--    <insert id="insert" keyColumn="OPF_ID" parameterType="com.estylesoft.integration.Model.Ptks.OpfModel">
+        insert into STH_OPF(OPF_ID, OPF_CODE, OPF_NAME)
+        values (
+        #{id},
+        #{code},
+        #{name})
+    </insert>-->
+
+    <delete id="delete" parameterType="java.lang.String">
+        delete from STH_OPF
+        where OPF_CODE = #{code}
+    </delete>
+
+    <select id="getByCode" parameterType="String" resultType="com.estylesoft.integration.Model.Ptks.OpfModel">
+          SELECT OPF_ID as id, OPF_CODE as code FROM STH_OPF WHERE OPF_CODE = #{code}
+    </select>
+
+</mapper>

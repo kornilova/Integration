@@ -17,9 +17,9 @@ public class BaseDepartmentHelper {
 
     private BaseDepartmentDAO boDAO;
 
-    public BaseDepartmentHelper(BaseDepartmentDAO boDAO)
+    public BaseDepartmentHelper(SqlSessionFactory sqlSessionFactory)
     {
-        this.boDAO=boDAO;
+        this.boDAO=new BaseDepartmentDAO(BaseDepartmentModel.class, sqlSessionFactory);
     }
 
     public CheckResult create(BaseDepartmentModel obj) throws IntegrationException {
@@ -35,5 +35,9 @@ public class BaseDepartmentHelper {
 
     public void delete(BaseDepartmentModel obj) throws IntegrationException {
         boDAO.delete(obj);
+    }
+
+    public BaseDepartmentModel getByCode(String code) throws IntegrationException {
+        return boDAO.getByCode(code);
     }
 }

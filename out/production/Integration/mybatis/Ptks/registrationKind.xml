@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="registrationKind">
+
+    <insert id="insert" keyColumn="RGK_ID" parameterType="com.estylesoft.integration.Model.Ptks.RegistrationKindModel">
+        insert into STH_REGISTER_KIND(RGK_ID, RGK_CODE, RGK_NAME, RGK_PERSON)
+        values (
+        #{id},
+        #{code},
+        #{name},
+        #{isPerson})
+    </insert>
+
+    <delete id="delete" parameterType="java.lang.String">
+        delete from STH_REGISTER_KIND
+        where RGK_CODE = #{code}
+    </delete>
+
+</mapper>

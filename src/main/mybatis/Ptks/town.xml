@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="town">
+
+    <insert id="insert" keyColumn="TOWN_ID" parameterType="com.estylesoft.integration.Model.Ptks.TownModel">
+        <selectKey keyProperty="id" resultType="Long" order="BEFORE">
+            select GET_NEW_ID() from sysibm.SYSDUMMY1
+        </selectKey>
+        insert into STH_TOWN(TOWN_ID, CITY_ID, TER_ID, RGN_ID, TDP_ID, TOWN_NAME, TOWN_KLADR_CODE, RDV_ID)
+        values (
+        #{id,javaType=Long,jdbcType=BIGINT},
+        #{cityId,javaType=Long,jdbcType=BIGINT},
+        #{terDepartmentPFRId,javaType=Long,jdbcType=BIGINT},
+        #{regionId,javaType=Long,jdbcType=BIGINT},
+        #{terDepartmentPFRId,javaType=Long,jdbcType=BIGINT},
+        #{name},
+        #{code},
+        #{baseDepartmentId,javaType=Long,jdbcType=BIGINT}
+        )
+    </insert>
+
+    <delete id="delete" parameterType="java.lang.Long">
+        delete from STH_TOWN
+        where TOWN_KLADR_CODE = #{code}
+    </delete>
+
+    <select id="getByCode" parameterType="String" resultType="com.estylesoft.integration.Model.Ptks.TownModel">
+          SELECT TOWN_ID as id, TOWN_KLADR_CODE as code FROM STH_TOWN WHERE TOWN_KLADR_CODE = #{code}
+    </select>
+
+</mapper>

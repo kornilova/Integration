@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="okved">
+
+    <insert id="insert" keyColumn="OKVED_ID" parameterType="com.estylesoft.integration.Model.Ptks.OkvedModel">
+        <selectKey keyProperty="id" resultType="Long" order="BEFORE">
+            select GET_NEW_ID() from sysibm.SYSDUMMY1
+        </selectKey>
+        insert into STH_OKVED(OKVED_ID, OKVED_CODE, OKVED_NAME)
+        values (
+        #{id,javaType=Long,jdbcType=BIGINT},
+        #{code},
+        #{name})
+    </insert>
+
+    <delete id="delete" parameterType="java.lang.String">
+        delete from STH_OKVED
+        where OKVED_CODE = #{code}
+    </delete>
+
+</mapper>
