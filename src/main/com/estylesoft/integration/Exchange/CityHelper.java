@@ -8,6 +8,9 @@ import com.estylesoft.integration.Model.Ptks.AdmTerritoryModel;
 import com.estylesoft.integration.Model.Ptks.CityModel;
 import org.apache.ibatis.session.SqlSessionFactory;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Nataliya.Gordeeva
@@ -37,6 +40,21 @@ public class CityHelper {
 
     public void delete(CityModel obj) throws IntegrationException {
         cityDAO.delete(obj);
+    }
+
+
+    public CityModel getByCodeAdmTerrIdRegionIdTerDepIdBaseDepId(String code,
+                                                                Long admTerritoryId,
+                                                                Long regionId,
+                                                                Long terDepartmentPFRId,
+                                                                Long baseDepartmentId) throws IntegrationException {
+        Map<String, Object> params = new HashMap<String, Object>(5);
+        params.put("code", code);
+        params.put("admTerritoryId", admTerritoryId);
+        params.put("regionId", regionId);
+        params.put("terDepartmentPFR.id", terDepartmentPFRId);
+        params.put("baseDepartmentId", baseDepartmentId);
+        return code!=null?cityDAO.getByCodeAdmTerrIdRegionIdTerDepIdBaseDepId(params):null;
     }
 
     public CityModel getByCode(String code) throws IntegrationException {

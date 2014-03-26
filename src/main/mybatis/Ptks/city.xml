@@ -9,12 +9,12 @@
         insert into STH_CITY(CITY_ID, TER_ID, RGN_ID, TDP_ID, CITY_NAME, CITY_KLADR_CODE, RDV_ID)
         values (
         #{id,javaType=Long,jdbcType=BIGINT},
-        #{admTerritoryId,javaType=Long,jdbcType=BIGINT},
-        #{regionId,javaType=Long,jdbcType=BIGINT},
-        #{terDepartmentPFRId,javaType=Long,jdbcType=BIGINT},
+        #{admTerritory.id,javaType=Long,jdbcType=BIGINT},
+        #{region.id,javaType=Long,jdbcType=BIGINT},
+        #{terDepartmentPFR.id,javaType=Long,jdbcType=BIGINT},
         #{name},
         #{code},
-        #{baseDepartmentId,javaType=Long,jdbcType=BIGINT}
+        #{baseDepartment.id,javaType=Long,jdbcType=BIGINT}
         )
     </insert>
 
@@ -23,8 +23,31 @@
         where CITY_KLADR_CODE = #{code}
     </delete>
 
+    <select id="getByCodeAdmTerrIdRegionIdTerDepIdBaseDepId" parameterType="Map" resultType="com.estylesoft.integration.Model.Ptks.CityModel">
+          SELECT CITY_ID as id, CITY_KLADR_CODE as code, CITY_NAME as name
+          FROM STH_CITY
+          WHERE CITY_KLADR_CODE
+          <if test="code != null">=#{code}</if>
+          <if test="code == null"> IS NULL</if>
+
+          <if test="admTerritoryId != null">
+            and  TER_ID = #{admTerritoryId}
+          </if>
+          <if test="regionId">
+            and  RGN_ID = #{regionId}
+          </if>
+          <if test="terDepartmentPFRId != null">
+            and  TDP_ID = #{terDepartmentPFRId}
+          </if>
+          <if test="baseDepartmentId != null">
+            and  RDV_ID = #{baseDepartmentId}
+          </if>
+    </select>
+
     <select id="getByCode" parameterType="String" resultType="com.estylesoft.integration.Model.Ptks.CityModel">
-          SELECT CITY_ID as id, CITY_KLADR_CODE as code FROM STH_CITY WHERE CITY_KLADR_CODE = #{code}
+          SELECT CITY_ID as id, CITY_KLADR_CODE as code, CITY_NAME as name
+          FROM STH_CITY
+          WHERE CITY_KLADR_CODE = #{code}
     </select>
 
 </mapper>

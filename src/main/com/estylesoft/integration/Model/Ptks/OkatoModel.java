@@ -12,25 +12,54 @@ import com.estylesoft.integration.Model.ModelBase;
 public class OkatoModel extends ModelBase {
 
     private String code;
-    private String terDepartmentCode;
+    private String terDepartmentPFRCode;
+    private TerDepartmentPFRModel terDepartmentPFR;
     private String baseDepartmentCode;
-    private Long baseDepartmentId;
+    private BaseDepartmentModel baseDepartment;
 
-    public Long getBaseDepartmentId() {
-        return baseDepartmentId;
+    public BaseDepartmentModel getBaseDepartment() {
+        return baseDepartment;
     }
 
-    public void setBaseDepartmentId(Long baseDepartmentId) {
-        this.baseDepartmentId = baseDepartmentId;
+    public void setBaseDepartment(BaseDepartmentModel baseDepartment) {
+        this.baseDepartment = baseDepartment;
     }
 
-    public String getTerDepartmentCode() {
-        return terDepartmentCode;
+    private String opfrCode;
+    private String terOrganCode;
+
+    public String getTerOrganCode() {
+        return terOrganCode;
     }
 
-    public void setTerDepartmentCode(String terDepartmentCode) {
-        this.terDepartmentCode = terDepartmentCode;
+    public void setTerOrganCode(String terOrganCode) {
+        this.terOrganCode = terOrganCode;
     }
+
+    public String getTerDepartmentPFRCode() {
+        return terDepartmentPFRCode;
+    }
+
+    public void setTerDepartmentPFRCode(String terDepartmentPFRCode) {
+        this.terDepartmentPFRCode = terDepartmentPFRCode;
+    }
+
+     public TerDepartmentPFRModel getTerDepartmentPFR() {
+        return terDepartmentPFR;
+    }
+
+    public void setTerDepartmentPFR(TerDepartmentPFRModel terDepartmentPFR) {
+        this.terDepartmentPFR = terDepartmentPFR;
+    }
+
+    public String getOpfrCode() {
+        return opfrCode;
+    }
+
+    public void setOpfrCode(String opfrCode) {
+        this.opfrCode = opfrCode;
+    }
+
 
     public String getBaseDepartmentCode() {
         return baseDepartmentCode;

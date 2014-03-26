@@ -5,6 +5,8 @@ import com.estylesoft.integration.Model.Ptks.AdmTerritoryModel;
 import com.estylesoft.integration.Model.Ptks.RegistrationKindModel;
 import org.apache.ibatis.session.SqlSessionFactory;
 
+import java.util.Map;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Nataliya.Gordeeva
@@ -20,13 +22,18 @@ public class RegistrationKindDAO extends DAOBase<RegistrationKindModel> {
         super(type,containerSessionFactory);
     }
 
-    public Long insert(RegistrationKindModel obj)
+    public void insert(RegistrationKindModel obj)
     {
-        return super.create(namespace + "." + "insert", obj).getId();
+        super.create(namespace + "." + "insert", obj);
     }
 
     public void delete(RegistrationKindModel obj)
     {
         super.delete(namespace + "." + "delete", obj.getCode());
+    }
+
+    public RegistrationKindModel getByCode(Map params)
+    {
+        return super.getByMap(namespace + "." + "getByCode", params);
     }
 }

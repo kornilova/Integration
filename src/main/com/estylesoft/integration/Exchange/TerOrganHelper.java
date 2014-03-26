@@ -6,6 +6,9 @@ import com.estylesoft.integration.IntegrationException;
 import com.estylesoft.integration.Model.Ptks.TerOrganModel;
 import org.apache.ibatis.session.SqlSessionFactory;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Nataliya.Gordeeva
@@ -37,7 +40,10 @@ public class TerOrganHelper {
         terOrganDAO.delete(obj);
     }
 
-    public TerOrganModel getByCode(String code) throws IntegrationException {
-       return terOrganDAO.getByCode(code);
+    public TerOrganModel getByCodeOpfr(String code, Long opfrId) throws IntegrationException {
+        Map<String, Object> params = new HashMap<String, Object>(2);
+        params.put("code", code);
+        params.put("opfrId", opfrId);
+        return terOrganDAO.getByCodeOpfr(params);
     }
 }

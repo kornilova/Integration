@@ -8,6 +8,9 @@ import com.estylesoft.integration.Model.Ptks.AdmTerritoryModel;
 import com.estylesoft.integration.Model.Ptks.StreetModel;
 import org.apache.ibatis.session.SqlSessionFactory;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Nataliya.Gordeeva
@@ -39,7 +42,20 @@ public class StreetHelper {
         streetDAO.delete(obj);
     }
 
-    public StreetModel getByCode(String code) throws IntegrationException {
-        return streetDAO.getByCode(code);
+    public StreetModel getByCodeCityIdTownIdAdmTerIdRegionIdBaseDepId(String code,
+                                                                      Long cityId,
+                                                                      Long townId,
+                                                                      Long admTerritoryId,
+                                                                      Long regionId,
+                                                                      Long baseDepartmentId) throws IntegrationException {
+        Map<String, Object> params = new HashMap<String, Object>(4);
+        params.put("code", code);
+        params.put("cityId", cityId);
+        params.put("admTerritoryId", admTerritoryId);
+        params.put("regionId", regionId);
+        params.put("townId", townId);
+        params.put("baseDepartmentId", baseDepartmentId);
+
+        return code!=null? streetDAO.getByCodeCityIdTownIdAdmTerIdRegionIdBaseDepId(params):null;
     }
 }

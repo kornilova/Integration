@@ -8,10 +8,10 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 import java.lang.reflect.Field;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -97,6 +97,10 @@ public class ModelBase {
                         } else if (field.getType().equals(Long.class) || field.getType().equals(long.class)) {
                             Long result = Long.parseLong(fieldValue);
                             field.set(this, result);
+                        } else if (field.getType().equals(Date.class)) {
+                            DateFormat df = new SimpleDateFormat("dd.MM.yyyy");
+                            Date result =  df.parse(fieldValue);
+                            field.set(this, result);
 
                         } else if (field.getType().equals(Boolean.class) || field.getType().equals(boolean.class)) {
                             if (fieldValue.equals("1") || fieldValue.equals("true")) {
@@ -113,6 +117,8 @@ public class ModelBase {
                 } catch (NumberFormatException e) {
                     e.printStackTrace();
                     continue;
+                } catch (ParseException e) {
+                    e.printStackTrace();
                 }
 
             }

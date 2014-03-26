@@ -38,4 +38,8 @@ public class IfnsHelper {
     public void delete(IfnsModel obj) throws IntegrationException {
         ifnsDAO.delete(obj);
     }
+
+    public IfnsModel getByCode(String code) throws IntegrationException {
+        return ifnsDAO.getByCode(code);
+    }
 }

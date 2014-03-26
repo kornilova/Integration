@@ -29,4 +29,9 @@ public class OkvedDAO extends DAOBase<OkvedModel> {
     {
         super.delete(namespace + "." + "delete", obj.getCode());
     }
+
+    public OkvedModel getByCode(String code)
+    {
+        return super.getByCode(namespace + "." + "getByCode", code);
+    }
 }

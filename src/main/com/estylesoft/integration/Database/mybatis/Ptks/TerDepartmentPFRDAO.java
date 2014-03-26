@@ -36,8 +36,8 @@ public class TerDepartmentPFRDAO extends DAOBase<TerDepartmentPFRModel>  {
       return super.getByCode(namespace + "." + "getByCode", code);
     }
 
-    public TerDepartmentPFRModel getByBaseDepCode(Map params)
+    public TerDepartmentPFRModel getByCodeBaseDepTerOrgan(Map params)
     {
-        return super.getByMap(namespace + "." + "getByBaseDepCode", params);
+        return super.getByMap(namespace + "." + "getByCodeBaseDepTerOrgan", params);
     }
 }

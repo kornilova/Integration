@@ -5,11 +5,21 @@
     <insert id="insert" keyColumn="RDV_ID" parameterType="com.estylesoft.integration.Model.Ptks.BaseDepartmentModel">
         insert into STH_REG_DIV_PFR (
         RDV_ID, MRDV_ID, RDV_NAME, RDV_CODE) values (
-        #{id}, (SELECT MRDV_ID FROM STH_MAIN_REG_DIV_PFR WHERE MRDV_CURRENT=1 FETCH FIRST 1 ROWS ONLY),
+        #{id},
+        #{opfr.id},
         #{name},
         #{code}
         )
     </insert>
+
+  <!--  <insert id="insert" keyColumn="RDV_ID" parameterType="com.estylesoft.integration.Model.Ptks.BaseDepartmentModel">
+        insert into STH_REG_DIV_PFR (
+        RDV_ID, MRDV_ID, RDV_NAME, RDV_CODE) values (
+        #{id}, (SELECT MRDV_ID FROM STH_MAIN_REG_DIV_PFR WHERE MRDV_CURRENT=1 FETCH FIRST 1 ROWS ONLY),
+        #{name},
+        #{code}
+        )
+    </insert>-->
 
     <delete id="delete" parameterType="java.lang.Long">
         delete from STH_REG_DIV_PFR
@@ -18,7 +28,9 @@
     </delete>
 
     <select id="getByCode" parameterType="String" resultType="com.estylesoft.integration.Model.Ptks.BaseDepartmentModel">
-          SELECT RDV_ID as id, RDV_CODE as code FROM STH_REG_DIV_PFR WHERE RDV_CODE = #{code}
+          SELECT RDV_ID as id, RDV_CODE as code
+          FROM STH_REG_DIV_PFR
+          WHERE RDV_CODE = #{code}
     </select>
 
 </mapper>

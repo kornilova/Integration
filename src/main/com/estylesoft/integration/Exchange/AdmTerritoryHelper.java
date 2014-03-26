@@ -8,6 +8,9 @@ import com.estylesoft.integration.Model.Ptks.AdmTerritoryModel;
 import com.estylesoft.integration.Model.Ptks.RegionModel;
 import org.apache.ibatis.session.SqlSessionFactory;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Nataliya.Gordeeva
@@ -39,7 +42,15 @@ public class AdmTerritoryHelper {
         admTerritoryDAO.delete(obj);
     }
 
-    public AdmTerritoryModel getByCode(String code) throws IntegrationException {
-        return admTerritoryDAO.getByCode(code);
+    public AdmTerritoryModel getByCodeRegionIdTerDepIdBaseDepId(String code,
+                                                                Long regionId,
+                                                                Long terDepartmentPFRId,
+                                                                Long baseDepartmentId) throws IntegrationException {
+        Map<String, Object> params = new HashMap<String, Object>(4);
+        params.put("code", code);
+        params.put("regionId", regionId);
+        params.put("terDepartmentPFRId", terDepartmentPFRId);
+        params.put("baseDepartmentId", baseDepartmentId);
+        return code!=null?admTerritoryDAO.getByCodeRegionIdTerDepIdBaseDepId(params):null;
     }
 }

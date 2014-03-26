@@ -44,10 +44,13 @@ public class TerDepartmentPFRHelper
         return terDepDAO.getByCode(code);
     }
 
-    public TerDepartmentPFRModel getByBaseDepCode(String code, Long baseDepartmentId) throws IntegrationException {
-        Map<String, Object> params = new HashMap<String, Object>(2);
+    public TerDepartmentPFRModel getByCodeBaseDepTerOrgan(String code,
+                                                          Long baseDepartmentId,
+                                                          Long terOrganId) throws IntegrationException {
+        Map<String, Object> params = new HashMap<String, Object>(3);
         params.put("code", code);
         params.put("baseDepartmentId", baseDepartmentId);
-        return terDepDAO.getByBaseDepCode(params);
+        params.put("terOrganId", terOrganId);
+        return terDepDAO.getByCodeBaseDepTerOrgan(params);
     }
 }

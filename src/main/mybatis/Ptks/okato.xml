@@ -6,8 +6,8 @@
             statementType="CALLABLE">
  {CALL P_ADD_OKATO(
   #{code,javaType=String,jdbcType=BIGINT,mode=IN},
-  #{terDepartmentCode,javaType=String,jdbcType=INTEGER,mode=IN},
-  #{baseDepartmentId,javaType=Long,jdbcType=BIGINT,mode=IN}
+  #{terDepartmentPFR.code,javaType=String,jdbcType=INTEGER,mode=IN},
+  #{baseDepartment.id,javaType=Long,jdbcType=BIGINT,mode=IN}
    )}
 </select>
 
@@ -20,9 +20,11 @@
     </insert>-->
 
     <delete id="delete" parameterType="com.estylesoft.integration.Model.Ptks.OkatoModel">
-        delete from STH_OKATO
-        where OKATO_CODE = #{code}
+        delete from STH_OKATO_TDP where OKATO_ID in (select OKATO_ID from STH_OKATO where OKATO_CODE = #{code});
+        delete from STH_OKATO where OKATO_CODE = #{code};
     </delete>
+
+
 
     <select id="getByCode" parameterType="String" resultType="com.estylesoft.integration.Model.Ptks.OkatoModel">
           SELECT OKATO_ID as id, OKATO_CODE as code FROM STH_OKATO WHERE OKATO_CODE = #{code}

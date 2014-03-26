@@ -8,6 +8,9 @@ import com.estylesoft.integration.Model.Ptks.AdmTerritoryModel;
 import com.estylesoft.integration.Model.Ptks.RegistrationKindModel;
 import org.apache.ibatis.session.SqlSessionFactory;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Nataliya.Gordeeva
@@ -27,8 +30,8 @@ public class RegistrationKindHelper {
     public CheckResult create(RegistrationKindModel obj) throws IntegrationException {
         CheckResult res = new CheckResult();
         res.setIsSuccess(true);
-        obj.setId(registrationKindDAO.insert(obj));
-        if (obj.getId()==null) {
+        registrationKindDAO.insert(obj);
+        if (this.getByCode(obj.getCode(), obj.getPerson())==null) {
             res.setIsSuccess(false);
             res.setMessageTest("ERROR: STH_REGISTER_KIND is not inserted.");
         }
@@ -37,5 +40,13 @@ public class RegistrationKindHelper {
 
     public void delete(RegistrationKindModel obj) throws IntegrationException {
         registrationKindDAO.delete(obj);
+    }
+
+
+    public RegistrationKindModel getByCode(String code, Integer isPerson) throws IntegrationException {
+        Map<String, Object> params = new HashMap<String, Object>(1);
+        params.put("code", code);
+        params.put("isPerson", isPerson);
+        return code!=null?registrationKindDAO.getByCode(params):null;
     }
 }

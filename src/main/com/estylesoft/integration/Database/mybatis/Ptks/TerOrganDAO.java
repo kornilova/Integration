@@ -4,6 +4,8 @@ import com.estylesoft.integration.Database.mybatis.DAOBase;
 import com.estylesoft.integration.Model.Ptks.TerOrganModel;
 import org.apache.ibatis.session.SqlSessionFactory;
 
+import java.util.Map;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Nataliya.Gordeeva
@@ -28,8 +30,8 @@ public class TerOrganDAO extends DAOBase<TerOrganModel> {
         super.delete(namespace + "." + "delete", obj);
     }
 
-    public TerOrganModel getByCode(String code)
+    public TerOrganModel getByCodeOpfr(Map params)
     {
-        return super.getByCode(namespace + "." + "getByCode", code);
+        return super.getByMap(namespace + "." + "getByCodeOpfr", params);
     }
 }

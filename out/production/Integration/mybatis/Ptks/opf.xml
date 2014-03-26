@@ -24,7 +24,9 @@
     </delete>
 
     <select id="getByCode" parameterType="String" resultType="com.estylesoft.integration.Model.Ptks.OpfModel">
-          SELECT OPF_ID as id, OPF_CODE as code FROM STH_OPF WHERE OPF_CODE = #{code}
+          SELECT OPF_ID as id, OPF_CODE as code
+          FROM STH_OPF
+          WHERE OPF_CODE = #{code}
     </select>
 
 </mapper>

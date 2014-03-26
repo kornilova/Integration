@@ -14,8 +14,8 @@ public class IfnsModel extends ModelBase {
     private String code;
     private String name;
 
-    private String inn;
-    private String kpp;
+    private Integer  inn;
+    private Integer kpp;
 
     public String getCode() {
         return code;
@@ -25,11 +25,11 @@ public class IfnsModel extends ModelBase {
         this.code = code;
     }
 
-    public String getInn() {
+    public Integer getInn() {
         return inn;
     }
 
-    public void setInn(String inn) {
+    public void setInn(Integer inn) {
         this.inn = inn;
     }
 
@@ -41,11 +41,11 @@ public class IfnsModel extends ModelBase {
         this.name = name;
     }
 
-    public String getKpp() {
+    public Integer getKpp() {
         return kpp;
     }
 
-    public void setKpp(String kpp) {
+    public void setKpp(Integer kpp) {
         this.kpp = kpp;
     }
 }

@@ -29,4 +29,9 @@ public class IfnsDAO extends DAOBase<IfnsModel> {
     {
         super.delete(namespace + "." + "delete", obj.getId());
     }
+
+    public IfnsModel getByCode(String code)
+    {
+        return super.getByCode(namespace + "." + "getByCode", code);
+    }
 }

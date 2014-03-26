@@ -15,8 +15,17 @@ public class BaseDepartmentModel extends ModelBase {
 
     private String code;
     private String name;
-    private Long opfrId;
     private String opfrCode;
+
+    private OpfrModel opfr;
+
+    public OpfrModel getOpfr() {
+        return opfr;
+    }
+
+    public void setOpfr(OpfrModel opfr) {
+        this.opfr = opfr;
+    }
 
     public String getOpfrCode() {
         return opfrCode;
@@ -42,11 +51,4 @@ public class BaseDepartmentModel extends ModelBase {
         this.name = name;
     }
 
-    public Long getOpfrId() {
-        return opfrId;
-    }
-
-    public void setOpfrId(Long opfrId) {
-        this.opfrId = opfrId;
-    }
 }

@@ -5,6 +5,8 @@ import com.estylesoft.integration.Model.Ptks.AdmTerritoryModel;
 import com.estylesoft.integration.Model.Ptks.CityModel;
 import org.apache.ibatis.session.SqlSessionFactory;
 
+import java.util.Map;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Nataliya.Gordeeva
@@ -28,6 +30,11 @@ public class CityDAO extends DAOBase<CityModel> {
     public void delete(CityModel obj)
     {
         super.delete(namespace + "." + "delete", obj.getCode());
+    }
+
+    public CityModel getByCodeAdmTerrIdRegionIdTerDepIdBaseDepId(Map params)
+    {
+        return super.getByMap(namespace + "." + "getByCodeAdmTerrIdRegionIdTerDepIdBaseDepId", params);
     }
 
     public CityModel getByCode(String code)

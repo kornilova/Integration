@@ -14,64 +14,44 @@ public class StreetModel extends ModelBase {
     private String code;
     private String name;
 
-    private String baseDepartmentCode;
     private String townCode;
+    private TownModel town;
+
     private String cityCode;
+    private CityModel city;
+
+    private String opfrCode;
+    private OpfrModel opfr;
+
+    private String baseDepartmentCode;
+    private BaseDepartmentModel baseDepartment;
+
+    private String terDepartmentPFRCode;
+    private TerDepartmentPFRModel terDepartmentPFR;
+
     private String regionCode;
+    private RegionModel region;
+
+    private String terOrganCode;
+    private TerOrganModel terOrgan;
+
     private String admTerritoryCode;
+    private AdmTerritoryModel admTerritory;
 
-    private Long baseDepartmentId;
-    private Long townId;
-    private Long cityId;
-    private Long regionId;
-    private Long admTerritoryId;
-
-    public Long getBaseDepartmentId() {
-        return baseDepartmentId;
+    public String getCode() {
+        return code;
     }
 
-    public void setBaseDepartmentId(Long baseDepartmentId) {
-        this.baseDepartmentId = baseDepartmentId;
+    public void setCode(String code) {
+        this.code = code;
     }
 
-    public Long getAdmTerritoryId() {
-        return admTerritoryId;
+    public String getName() {
+        return name;
     }
 
-    public void setAdmTerritoryId(Long admTerritoryId) {
-        this.admTerritoryId = admTerritoryId;
-    }
-
-    public Long getRegionId() {
-        return regionId;
-    }
-
-    public void setRegionId(Long regionId) {
-        this.regionId = regionId;
-    }
-
-    public Long getCityId() {
-        return cityId;
-    }
-
-    public void setCityId(Long cityId) {
-        this.cityId = cityId;
-    }
-
-    public Long getTownId() {
-        return townId;
-    }
-
-    public void setTownId(Long townId) {
-        this.townId = townId;
-    }
-
-    public String getCityCode() {
-        return cityCode;
-    }
-
-    public void setCityCode(String cityCode) {
-        this.cityCode = cityCode;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getTownCode() {
@@ -82,12 +62,44 @@ public class StreetModel extends ModelBase {
         this.townCode = townCode;
     }
 
-    public String getAdmTerritoryCode() {
-        return admTerritoryCode;
+    public TownModel getTown() {
+        return town;
     }
 
-    public void setAdmTerritoryCode(String admTerritoryCode) {
-        this.admTerritoryCode = admTerritoryCode;
+    public void setTown(TownModel town) {
+        this.town = town!=null? town:new TownModel();
+    }
+
+    public String getCityCode() {
+        return cityCode;
+    }
+
+    public void setCityCode(String cityCode) {
+        this.cityCode = cityCode;
+    }
+
+    public CityModel getCity() {
+        return city;
+    }
+
+    public void setCity(CityModel city) {
+        this.city = city!=null? city:new CityModel();
+    }
+
+    public String getOpfrCode() {
+        return opfrCode;
+    }
+
+    public void setOpfrCode(String opfrCode) {
+        this.opfrCode = opfrCode;
+    }
+
+    public OpfrModel getOpfr() {
+        return opfr;
+    }
+
+    public void setOpfr(OpfrModel opfr) {
+        this.opfr = opfr;
     }
 
     public String getBaseDepartmentCode() {
@@ -98,6 +110,30 @@ public class StreetModel extends ModelBase {
         this.baseDepartmentCode = baseDepartmentCode;
     }
 
+    public BaseDepartmentModel getBaseDepartment() {
+        return baseDepartment;
+    }
+
+    public void setBaseDepartment(BaseDepartmentModel baseDepartment) {
+        this.baseDepartment = baseDepartment;
+    }
+
+    public String getTerDepartmentPFRCode() {
+        return terDepartmentPFRCode;
+    }
+
+    public void setTerDepartmentPFRCode(String terDepartmentPFRCode) {
+        this.terDepartmentPFRCode = terDepartmentPFRCode;
+    }
+
+    public TerDepartmentPFRModel getTerDepartmentPFR() {
+        return terDepartmentPFR;
+    }
+
+    public void setTerDepartmentPFR(TerDepartmentPFRModel terDepartmentPFR) {
+        this.terDepartmentPFR = terDepartmentPFR;
+    }
+
     public String getRegionCode() {
         return regionCode;
     }
@@ -106,20 +142,43 @@ public class StreetModel extends ModelBase {
         this.regionCode = regionCode;
     }
 
-
-    public String getName() {
-        return name;
+    public RegionModel getRegion() {
+        return region;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setRegion(RegionModel region) {
+        this.region = region!=null? region: new RegionModel();
     }
 
-    public String getCode() {
-        return code;
+    public String getTerOrganCode() {
+        return terOrganCode;
     }
 
-    public void setCode(String code) {
-        this.code = code;
+    public void setTerOrganCode(String terOrganCode) {
+        this.terOrganCode = terOrganCode;
+    }
+
+    public TerOrganModel getTerOrgan() {
+        return terOrgan;
+    }
+
+    public void setTerOrgan(TerOrganModel terOrgan) {
+        this.terOrgan = terOrgan;
+    }
+
+    public String getAdmTerritoryCode() {
+        return admTerritoryCode;
+    }
+
+    public void setAdmTerritoryCode(String admTerritoryCode) {
+        this.admTerritoryCode = admTerritoryCode;
+    }
+
+    public AdmTerritoryModel getAdmTerritory() {
+        return admTerritory;
+    }
+
+    public void setAdmTerritory(AdmTerritoryModel admTerritory) {
+        this.admTerritory = admTerritory!=null? admTerritory: new AdmTerritoryModel();
     }
 }

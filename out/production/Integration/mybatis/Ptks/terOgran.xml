@@ -5,7 +5,7 @@
     <select id="insert" parameterType="com.estylesoft.integration.Model.Ptks.TerOrganModel"
             statementType="CALLABLE">
  {CALL P_ADD_TER_ORG_PFR(
-  #{opfrId,javaType=Long,jdbcType=BIGINT,mode=IN},
+  #{opfr.id,javaType=Long,jdbcType=BIGINT,mode=IN},
   #{code,javaType=String,jdbcType=INTEGER,mode=IN},
   #{name,javaType=String,jdbcType=VARCHAR,mode=IN},
   #{shortName,javaType=String,jdbcType=VARCHAR,mode=IN},
@@ -56,12 +56,15 @@
 
     <delete id="delete" parameterType="com.estylesoft.integration.Model.Ptks.TerOrganModel">
         delete from STH_TERRITORIAL_ORGAN
-        where MRDV_ID = #{opfrId}
+        where MRDV_ID = #{opfr.id}
         and  TER_ORGAN_CODE=#{code}
     </delete>
 
-    <select id="getByCode" parameterType="String" resultType="com.estylesoft.integration.Model.Ptks.TerOrganModel">
-          SELECT TER_ORGAN_ID as id, TER_ORGAN_CODE as code FROM STH_TERRITORIAL_ORGAN WHERE TER_ORGAN_CODE = #{code}
+    <select id="getByCodeOpfr" parameterType="Map" resultType="com.estylesoft.integration.Model.Ptks.TerOrganModel">
+          SELECT TER_ORGAN_ID as id, TER_ORGAN_CODE as code
+          FROM STH_TERRITORIAL_ORGAN
+          WHERE TER_ORGAN_CODE = #{code}
+          and MRDV_ID = #{opfrId}
     </select>
 
 </mapper>

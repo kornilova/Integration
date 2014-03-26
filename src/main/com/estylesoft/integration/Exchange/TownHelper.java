@@ -8,6 +8,9 @@ import com.estylesoft.integration.Model.Ptks.CityModel;
 import com.estylesoft.integration.Model.Ptks.TownModel;
 import org.apache.ibatis.session.SqlSessionFactory;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Nataliya.Gordeeva
@@ -39,7 +42,20 @@ public class TownHelper {
         townDAO.delete(obj);
     }
 
-    public TownModel getByCode(String code) throws IntegrationException {
-        return townDAO.getByCode(code);
+    public TownModel getByCodeCityIdAdmTerritoryIdRegionIdTerDepIdBaseDepId(String code,
+                                                                            Long cityId,
+                                                                            Long admTerritoryId,
+                                                                            Long regionId,
+                                                                            Long terDepartmentPFRId,
+                                                                            Long baseDepartmentId) throws IntegrationException {
+        Map<String, Object> params = new HashMap<String, Object>(4);
+        params.put("code", code);
+        params.put("cityId", cityId);
+        params.put("admTerritoryId", admTerritoryId);
+        params.put("regionId", regionId);
+        params.put("terDepartmentPFRId", terDepartmentPFRId);
+        params.put("baseDepartmentId", baseDepartmentId);
+
+        return code!=null? townDAO.getByCodeCityIdAdmTerritoryIdRegionIdTerDepIdBaseDepId(params):null;
     }
 }

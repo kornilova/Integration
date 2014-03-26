@@ -9,13 +9,13 @@
         insert into STH_STREET(STREET_ID, CITY_ID, TOWN_ID, TER_ID, RGN_ID, STREET_NAME, STREET_KLADR_CODE, RDV_ID)
         values (
         #{id,javaType=Long,jdbcType=BIGINT},
-        #{cityId,javaType=Long,jdbcType=BIGINT},
-        #{townId,javaType=Long,jdbcType=BIGINT},
-        #{admTerritoryId,javaType=Long,jdbcType=BIGINT},
-        #{regionId,javaType=Long,jdbcType=BIGINT},
+        #{city.id,javaType=Long,jdbcType=BIGINT},
+        #{town.id,javaType=Long,jdbcType=BIGINT},
+        #{admTerritory.id,javaType=Long,jdbcType=BIGINT},
+        #{region.id,javaType=Long,jdbcType=BIGINT},
         #{name},
         #{code},
-        #{baseDepartmentId,javaType=Long,jdbcType=BIGINT}
+        #{baseDepartment.id,javaType=Long,jdbcType=BIGINT}
         )
     </insert>
 
@@ -24,8 +24,25 @@
         where STREET_KLADR_CODE = #{code}
     </delete>
 
-    <select id="getByCode" parameterType="String" resultType="com.estylesoft.integration.Model.Ptks.StreetModel">
-          SELECT STREET_ID as id, STREET_KLADR_CODE as code FROM STH_STREET WHERE STREET_KLADR_CODE = #{code}
+    <select id="getByCodeCityIdTownIdAdmTerIdRegionIdBaseDepId" parameterType="Map" resultType="com.estylesoft.integration.Model.Ptks.StreetModel">
+          SELECT STREET_ID as id, STREET_KLADR_CODE as code, STREET_NAME as name
+          FROM STH_STREET
+          WHERE STREET_KLADR_CODE = #{code}
+          <if test="townId != null">
+            and TOWN_ID = #{townId}
+          </if>
+          <if test="cityId != null">
+            and  CITY_ID = #{cityId}
+          </if>
+          <if test="admTerritoryId != null">
+            and  TER_ID = #{admTerritoryId}
+          </if>
+          <if test="regionId != null">
+            and RGN_ID = #{regionId}
+          </if>
+          <if test="baseDepartmentId != null">
+            and RDV_ID = #{baseDepartmentId}
+          </if>
     </select>
 
 </mapper>

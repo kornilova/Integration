@@ -14,35 +14,75 @@ public class AdmTerritoryModel extends ModelBase {
     private String code;
     private String name;
 
+    private String opfrCode;
+    private OpfrModel opfr;
+
     private String baseDepartmentCode;
-    private Long baseDepartmentId;
+    private BaseDepartmentModel baseDepartment;
+
     private String terDepartmentPFRCode;
-    private Long terDepartmentPFRId;
+    private TerDepartmentPFRModel terDepartmentPFR;
+
     private String regionCode;
-    private Long regionId;
+    private RegionModel region;
 
-    public Long getBaseDepartmentId() {
-        return baseDepartmentId;
+    private String terOrganCode;
+    private TerOrganModel terOrgan;
+
+    public String getTerOrganCode() {
+        return terOrganCode;
     }
 
-    public void setBaseDepartmentId(Long baseDepartmentId) {
-        this.baseDepartmentId = baseDepartmentId;
+    public void setTerOrganCode(String terOrganCode) {
+        this.terOrganCode = terOrganCode;
     }
 
-    public Long getTerDepartmentPFRId() {
-        return terDepartmentPFRId;
+    public TerOrganModel getTerOrgan() {
+        return terOrgan;
     }
 
-    public void setTerDepartmentPFRId(Long terDepartmentPFRId) {
-        this.terDepartmentPFRId = terDepartmentPFRId;
+    public void setTerOrgan(TerOrganModel terOrgan) {
+        this.terOrgan = terOrgan;
     }
 
-    public Long getRegionId() {
-        return regionId;
+    public String getOpfrCode() {
+        return opfrCode;
     }
 
-    public void setRegionId(Long regionId) {
-        this.regionId = regionId;
+    public void setOpfrCode(String opfrCode) {
+        this.opfrCode = opfrCode;
+    }
+
+    public OpfrModel getOpfr() {
+        return opfr;
+    }
+
+    public void setOpfr(OpfrModel opfr) {
+        this.opfr = opfr;
+    }
+
+    public BaseDepartmentModel getBaseDepartment() {
+        return baseDepartment;
+    }
+
+    public void setBaseDepartment(BaseDepartmentModel baseDepartment) {
+        this.baseDepartment = baseDepartment;
+    }
+
+    public RegionModel getRegion() {
+        return region;
+    }
+
+    public void setRegion(RegionModel region) {
+        this.region = region;
+    }
+
+    public TerDepartmentPFRModel getTerDepartmentPFR() {
+        return terDepartmentPFR;
+    }
+
+    public void setTerDepartmentPFR(TerDepartmentPFRModel terDepartmentPFR) {
+        this.terDepartmentPFR = terDepartmentPFR;
     }
 
     public String getBaseDepartmentCode() {

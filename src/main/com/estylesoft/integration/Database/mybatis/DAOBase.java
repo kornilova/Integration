@@ -21,9 +21,12 @@ public abstract class DAOBase<T> implements IDAO<T> {
     private Class<T> type;
 
     public DAOBase(Class<T> type, SqlSessionFactory session) {
+        org.apache.ibatis.logging.LogFactory.useLog4JLogging();
         this.type = type;
         this.session = session;
         if (session == null) throw new NullPointerException();
+
+
     }
 
     protected SqlSessionFactory getSessionFactory() {
@@ -84,8 +87,7 @@ public abstract class DAOBase<T> implements IDAO<T> {
         try {
             sqlSession.insert(query, obj);
             sqlSession.commit();
-
-             return obj;
+            return obj;
         } catch (Exception ex) {
             throw new UnsupportedOperationException(ex);
         } finally {

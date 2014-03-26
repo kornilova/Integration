@@ -38,4 +38,8 @@ public class RegistrationDepartmentHelper {
     public void delete(RegistrationDepartmentModel obj) throws IntegrationException {
         registrationDepartmentDAO.delete(obj);
     }
+
+    public RegistrationDepartmentModel getByCode(String code) throws IntegrationException {
+        return registrationDepartmentDAO.getByCode(code);
+    }
 }

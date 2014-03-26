@@ -5,6 +5,8 @@ import com.estylesoft.integration.Model.Ptks.OkatoModel;
 import com.estylesoft.integration.Model.Ptks.RegionModel;
 import org.apache.ibatis.session.SqlSessionFactory;
 
+import java.util.Map;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Nataliya.Gordeeva
@@ -30,8 +32,8 @@ public class RegionDAO extends DAOBase<RegionModel> {
         super.delete(namespace + "." + "delete", obj.getCode());
     }
 
-    public RegionModel getByCode(String code)
+    public RegionModel getByCode(Map params)
     {
-        return super.getByCode(namespace + "." + "getByCode", code);
+        return super.getByMap(namespace + "." + "getByCode", params);
     }
 }

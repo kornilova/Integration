@@ -26,6 +26,6 @@ public class StreetHousesDAO extends DAOBase<StreetHousesModel> {
 
     public void delete(StreetHousesModel obj)
     {
-        super.delete(namespace + "." + "delete", obj.getStreetTerDepartmentId());
+        super.delete(namespace + "." + "delete", obj.getStreetDepartment().getId());
     }
 }

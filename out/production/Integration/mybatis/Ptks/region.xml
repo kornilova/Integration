@@ -20,10 +20,12 @@
         where RGN_CODE = #{code}
     </delete>
 
-    <select id="getByCode" parameterType="String" resultType="com.estylesoft.integration.Model.Ptks.RegionModel">
-          SELECT RGN_ID as id, RGN_CODE as code
+    <select id="getByCode" parameterType="Map" resultType="com.estylesoft.integration.Model.Ptks.RegionModel">
+          SELECT RGN_ID as id, RGN_KLADR_CODE as code, RGN_NAME as name
           FROM STH_REGION
-          WHERE RGN_CODE = #{code}
+          WHERE RGN_KLADR_CODE
+          <if test="code != null">=#{code}</if>
+          <if test="code == null"> IS NULL </if>
     </select>
 
 </mapper>

@@ -2,7 +2,15 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="okved">
 
-    <insert id="insert" keyColumn="OKVED_ID" parameterType="com.estylesoft.integration.Model.Ptks.OkvedModel">
+    <select id="insert" parameterType="com.estylesoft.integration.Model.Ptks.OkvedModel"
+            statementType="CALLABLE">
+ {CALL P_ADD_OKVED(
+  #{code,javaType=String,jdbcType=VARCHAR,mode=IN},
+  #{name,javaType=String,jdbcType=VARCHAR,mode=IN}
+   )}
+</select>
+
+<!--    <insert id="insert" keyColumn="OKVED_ID" parameterType="com.estylesoft.integration.Model.Ptks.OkvedModel">
         <selectKey keyProperty="id" resultType="Long" order="BEFORE">
             select GET_NEW_ID() from sysibm.SYSDUMMY1
         </selectKey>
@@ -11,11 +19,15 @@
         #{id,javaType=Long,jdbcType=BIGINT},
         #{code},
         #{name})
-    </insert>
+    </insert>-->
 
     <delete id="delete" parameterType="java.lang.String">
         delete from STH_OKVED
         where OKVED_CODE = #{code}
     </delete>
+
+    <select id="getByCode" parameterType="String" resultType="com.estylesoft.integration.Model.Ptks.OkvedModel">
+          SELECT OKVED_ID as id, OKVED_CODE as code FROM STH_OKVED WHERE OKVED_CODE = #{code}
+    </select>
 
 </mapper>

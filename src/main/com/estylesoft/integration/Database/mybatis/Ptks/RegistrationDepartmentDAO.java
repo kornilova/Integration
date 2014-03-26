@@ -27,6 +27,11 @@ public class RegistrationDepartmentDAO extends DAOBase<RegistrationDepartmentMod
 
     public void delete(RegistrationDepartmentModel obj)
     {
-        super.delete(namespace + "." + "delete", obj.getId());
+        super.delete(namespace + "." + "delete", obj.getCode());
+    }
+
+    public RegistrationDepartmentModel getByCode(String code)
+    {
+        return super.getByCode(namespace + "." + "getByCode", code);
     }
 }

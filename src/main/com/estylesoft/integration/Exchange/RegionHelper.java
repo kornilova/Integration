@@ -8,6 +8,9 @@ import com.estylesoft.integration.Model.Ptks.OkatoModel;
 import com.estylesoft.integration.Model.Ptks.RegionModel;
 import org.apache.ibatis.session.SqlSessionFactory;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Nataliya.Gordeeva
@@ -41,6 +44,8 @@ public class RegionHelper {
 
 
     public RegionModel getByCode(String code) throws IntegrationException {
-        return regionDAO.getByCode(code);
+        Map<String, Object> params = new HashMap<String, Object>(1);
+        params.put("code", code);
+        return code!=null?regionDAO.getByCode(params):null;
     }
 }

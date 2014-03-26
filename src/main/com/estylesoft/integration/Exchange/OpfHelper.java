@@ -39,4 +39,8 @@ public class OpfHelper {
     public void delete(OpfModel obj) throws IntegrationException {
         opfDAO.delete(obj);
     }
+
+    public OpfModel getByCode(String code) throws IntegrationException {
+        return opfDAO.getByCode(code);
+    }
 }

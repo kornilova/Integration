@@ -9,8 +9,8 @@
         insert into STH_STREET_TDP(STREET_TDP_ID, STREET_ID, TDP_ID, STREET_TDP_H_FROM, STREET_TDP_H_TO, STREET_TDP_EVEN)
         values (
         #{id,javaType=Long,jdbcType=BIGINT},
-        #{streetId,javaType=Long,jdbcType=BIGINT},
-        #{terDepartmentPFRId,javaType=Long,jdbcType=BIGINT},
+        #{street.id,javaType=Long,jdbcType=BIGINT},
+        #{terDepartmentPFR.id,javaType=Long,jdbcType=BIGINT},
         #{hFrom},
         #{hTo},
         #{hEven}
@@ -19,11 +19,11 @@
 
     <delete id="delete" parameterType="java.lang.Long">
         delete from STH_STREET_TDP
-        where STREET_ID = #{streetId}
+        where STREET_ID = #{street.id}
     </delete>
 
     <select id="getByStreetIdTerDepId" parameterType="Map" resultType="com.estylesoft.integration.Model.Ptks.StreetDepartmentModel">
-          SELECT STREET_TDP_ID as id
+          SELECT STREET_TDP_ID as id,  STREET_ID as streetId, TDP_ID as terDepartmentPFRId
           FROM STH_STREET_TDP
           WHERE STREET_ID = #{streetId} AND TDP_ID = #{terDepartmentPFRId}
     </select>

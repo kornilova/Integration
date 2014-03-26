@@ -9,13 +9,13 @@
         insert into STH_TOWN(TOWN_ID, CITY_ID, TER_ID, RGN_ID, TDP_ID, TOWN_NAME, TOWN_KLADR_CODE, RDV_ID)
         values (
         #{id,javaType=Long,jdbcType=BIGINT},
-        #{cityId,javaType=Long,jdbcType=BIGINT},
-        #{terDepartmentPFRId,javaType=Long,jdbcType=BIGINT},
-        #{regionId,javaType=Long,jdbcType=BIGINT},
-        #{terDepartmentPFRId,javaType=Long,jdbcType=BIGINT},
+        #{city.id,javaType=Long,jdbcType=BIGINT},
+        #{admTerritory.id,javaType=Long,jdbcType=BIGINT},
+        #{region.id,javaType=Long,jdbcType=BIGINT},
+        #{terDepartmentPFR.id,javaType=Long,jdbcType=BIGINT},
         #{name},
         #{code},
-        #{baseDepartmentId,javaType=Long,jdbcType=BIGINT}
+        #{baseDepartment.id,javaType=Long,jdbcType=BIGINT}
         )
     </insert>
 
@@ -24,8 +24,27 @@
         where TOWN_KLADR_CODE = #{code}
     </delete>
 
-    <select id="getByCode" parameterType="String" resultType="com.estylesoft.integration.Model.Ptks.TownModel">
-          SELECT TOWN_ID as id, TOWN_KLADR_CODE as code FROM STH_TOWN WHERE TOWN_KLADR_CODE = #{code}
-    </select>
+    <select id="getByCodeCityIdAdmTerritoryIdRegionIdTerDepIdBaseDepId" parameterType="Map" resultType="com.estylesoft.integration.Model.Ptks.TownModel">
+          SELECT TOWN_ID as id, TOWN_KLADR_CODE as code, TOWN_NAME as name
+          FROM STH_TOWN
+          WHERE TOWN_KLADR_CODE
+          <if test="code != null">=#{code}</if>
+          <if test="code == null"> IS NULL</if>
 
+          <if test="city != null and city.id != null">
+              and CITY_ID = #{cityId}
+          </if>
+          <if test="admTerritory != null and admTerritory.id != null">
+            and TER_ID = #{admTerritoryId}
+          </if>
+          <if test="region != null and region.id != null">
+            and RGN_ID = #{regionId}
+          </if>
+          <if test="terDepartmentPFR != null and terDepartmentPFR.id != null">
+            and TDP_ID = #{terDepartmentPFRId}
+          </if>
+          <if test="baseDepartment != null and baseDepartment.id != null">
+            and RDV_ID = #{baseDepartmentId}
+          </if>
+    </select>
 </mapper>

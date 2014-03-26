@@ -5,6 +5,8 @@ import com.estylesoft.integration.Model.Ptks.AdmTerritoryModel;
 import com.estylesoft.integration.Model.Ptks.StreetModel;
 import org.apache.ibatis.session.SqlSessionFactory;
 
+import java.util.Map;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Nataliya.Gordeeva
@@ -30,8 +32,8 @@ public class StreetDAO extends DAOBase<StreetModel> {
         super.delete(namespace + "." + "delete", obj.getCode());
     }
 
-    public StreetModel getByCode(String code)
+    public StreetModel getByCodeCityIdTownIdAdmTerIdRegionIdBaseDepId(Map params)
     {
-        return super.getByCode(namespace + "." + "getByCode", code);
+        return super.getByMap(namespace + "." + "getByCodeCityIdTownIdAdmTerIdRegionIdBaseDepId", params);
     }
 }

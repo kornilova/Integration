@@ -9,14 +9,14 @@
         insert into STH_STREET_HOUSES(STRH_ID, STREET_TDP_ID, STRH_HOUSE)
         values (
         #{id,javaType=Long,jdbcType=BIGINT},
-        #{streetTerDepartmentId,javaType=Long,jdbcType=BIGINT},
+        #{streetDepartment.id,javaType=Long,jdbcType=BIGINT},
         #{houses}
         )
     </insert>
 
     <delete id="delete" parameterType="java.lang.Long">
         delete from STH_STREET_HOUSES
-        where STREET_TDP_ID = {#streetTerDepartmentId}
+        where STREET_TDP_ID = {#streetDepartmentId}
     </delete>
 
 </mapper>

@@ -5,6 +5,8 @@ import com.estylesoft.integration.Model.Ptks.CityModel;
 import com.estylesoft.integration.Model.Ptks.TownModel;
 import org.apache.ibatis.session.SqlSessionFactory;
 
+import java.util.Map;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Nataliya.Gordeeva
@@ -30,8 +32,8 @@ public class TownDAO extends DAOBase<TownModel> {
         super.delete(namespace + "." + "delete", obj.getCode());
     }
 
-    public TownModel getByCode(String code)
+    public TownModel getByCodeCityIdAdmTerritoryIdRegionIdTerDepIdBaseDepId(Map params)
     {
-        return super.getByCode(namespace + "." + "getByCode", code);
+        return super.getByMap(namespace + "." + "getByCodeCityIdAdmTerritoryIdRegionIdTerDepIdBaseDepId", params);
     }
 }

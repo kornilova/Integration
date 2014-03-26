@@ -4,6 +4,8 @@ import com.estylesoft.integration.Database.mybatis.DAOBase;
 import com.estylesoft.integration.Model.Ptks.AdmTerritoryModel;
 import org.apache.ibatis.session.SqlSessionFactory;
 
+import java.util.Map;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Nataliya.Gordeeva
@@ -29,8 +31,8 @@ public class AdmTerritoryDAO extends DAOBase<AdmTerritoryModel> {
         super.delete(namespace + "." + "delete", obj.getCode());
     }
 
-    public AdmTerritoryModel getByCode(String code)
+    public AdmTerritoryModel getByCodeRegionIdTerDepIdBaseDepId(Map params)
     {
-        return super.getByCode(namespace + "." + "getByCode", code);
+        return super.getByMap(namespace + "." + "getByCodeRegionIdTerDepIdBaseDepId", params);
     }
 }

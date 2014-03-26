@@ -3,8 +3,12 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-
     <properties resource="${resource}"/>
+<!--
+    <settings>
+        <setting name="org.apache.ibatis.logging.LogFactory.useLog4JLogging()" value="LOG4J"/>
+    </settings>-->
+
 	<!--<properties resource="mybatis/databaseFbs.properties"/>-->
     <environments default="testing">
         <environment id="testing">
@@ -37,5 +41,8 @@
         <mapper resource="mybatis/Ptks/registrationDepartment.xml"/>
         <mapper resource="mybatis/Ptks/ifns.xml"/>
         <mapper resource="mybatis/Ptks/opfr.xml"/>
+        <mapper resource="mybatis/Ptks/insurer.xml"/>
     </mappers>
 </configuration>
+
+

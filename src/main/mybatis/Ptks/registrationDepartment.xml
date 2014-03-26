@@ -2,17 +2,24 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="registrationDepartment">
 
-    <insert id="insert" keyColumn="REGD_ID" parameterType="com.estylesoft.integration.Model.Ptks.RegistrationDepartmentModel">
-        insert into STH_TERRITORY_DPT_REG(REGD_ID, REGD_NAME, REGD_CODE)
-        values (
-        #{id},
-        #{name},
-        #{code})
-    </insert>
+    <select id="insert" parameterType="com.estylesoft.integration.Model.Ptks.RegistrationDepartmentModel"
+            statementType="CALLABLE">
+   {CALL P_ADD_TER_DPT_REG(
+  #{code,javaType=String,jdbcType=VARCHAR,mode=IN},
+  #{name,javaType=String,jdbcType=VARCHAR,mode=IN},
+  #{id,javaType=Long,jdbcType=BIGINT,mode=OUT}
+   )}
+</select>
 
-    <delete id="delete" parameterType="java.lang.Long">
+    <delete id="delete" parameterType="java.lang.String">
         delete from STH_TERRITORY_DPT_REG
-        where REGD_ID = #{id}
+        where REGD_CODE = #{code}
     </delete>
+
+    <select id="getByCode" parameterType="String" resultType="com.estylesoft.integration.Model.Ptks.RegistrationDepartmentModel">
+          SELECT REGD_ID as id, REGD_CODE as code, REGD_NAME as name
+          FROM STH_TERRITORY_DPT_REG
+          WHERE REGD_CODE = #{code}
+    </select>
 
 </mapper>

@@ -14,46 +14,86 @@ public class CityModel extends ModelBase {
     private String code;
     private String name;
 
+    private String opfrCode;
+    private OpfrModel opfr;
+
     private String baseDepartmentCode;
+    private BaseDepartmentModel baseDepartment;
+
     private String terDepartmentPFRCode;
+    private TerDepartmentPFRModel terDepartmentPFR;
+
     private String regionCode;
+    private RegionModel region;
+
+    private String terOrganCode;
+    private TerOrganModel terOrgan;
+
     private String admTerritoryCode;
+    private AdmTerritoryModel admTerritory;
 
-    private Long baseDepartmentId;
-    private Long terDepartmentPFRId;
-    private Long regionId;
-    private Long admTerritoryId;
-
-    public Long getBaseDepartmentId() {
-        return baseDepartmentId;
+    public AdmTerritoryModel getAdmTerritory() {
+        return admTerritory;
     }
 
-    public void setBaseDepartmentId(Long baseDepartmentId) {
-        this.baseDepartmentId = baseDepartmentId;
+    public void setAdmTerritory(AdmTerritoryModel admTerritory) {
+        this.admTerritory = admTerritory;
     }
 
-    public Long getTerDepartmentPFRId() {
-        return terDepartmentPFRId;
+    public String getOpfrCode() {
+        return opfrCode;
     }
 
-    public void setTerDepartmentPFRId(Long terDepartmentPFRId) {
-        this.terDepartmentPFRId = terDepartmentPFRId;
+    public void setOpfrCode(String opfrCode) {
+        this.opfrCode = opfrCode;
     }
 
-    public Long getRegionId() {
-        return regionId;
+    public OpfrModel getOpfr() {
+        return opfr;
     }
 
-    public void setRegionId(Long regionId) {
-        this.regionId = regionId;
+    public void setOpfr(OpfrModel opfr) {
+        this.opfr = opfr;
     }
 
-    public Long getAdmTerritoryId() {
-        return admTerritoryId;
+    public BaseDepartmentModel getBaseDepartment() {
+        return baseDepartment;
     }
 
-    public void setAdmTerritoryId(Long admTerritoryId) {
-        this.admTerritoryId = admTerritoryId;
+    public void setBaseDepartment(BaseDepartmentModel baseDepartment) {
+        this.baseDepartment = baseDepartment;
+    }
+
+    public TerDepartmentPFRModel getTerDepartmentPFR() {
+        return terDepartmentPFR;
+    }
+
+    public void setTerDepartmentPFR(TerDepartmentPFRModel terDepartmentPFR) {
+        this.terDepartmentPFR = terDepartmentPFR;
+    }
+
+    public RegionModel getRegion() {
+        return region;
+    }
+
+    public void setRegion(RegionModel region) {
+        this.region = region;
+    }
+
+    public String getTerOrganCode() {
+        return terOrganCode;
+    }
+
+    public void setTerOrganCode(String terOrganCode) {
+        this.terOrganCode = terOrganCode;
+    }
+
+    public TerOrganModel getTerOrgan() {
+        return terOrgan;
+    }
+
+    public void setTerOrgan(TerOrganModel terOrgan) {
+        this.terOrgan = terOrgan;
     }
 
     public String getAdmTerritoryCode() {

@@ -27,8 +27,9 @@ public class OkvedHelper {
     public CheckResult create(OkvedModel obj) throws IntegrationException {
         CheckResult res = new CheckResult();
         res.setIsSuccess(true);
-        obj.setId(okvedDAO.insert(obj));
-        if (obj.getCode()==null) {
+        okvedDAO.insert(obj);
+        obj.setId(okvedDAO.getByCode(obj.getCode()).getId());
+        if (obj.getId()==null) {
                     res.setIsSuccess(false);
                     res.setMessageTest("ERROR: STH_OKVED is not inserted.");
                 }
@@ -37,5 +38,9 @@ public class OkvedHelper {
 
     public void delete(OkvedModel obj) throws IntegrationException {
         okvedDAO.delete(obj);
+    }
+
+    public OkvedModel getByCode(String code) throws IntegrationException {
+        return okvedDAO.getByCode(code);
     }
 }
