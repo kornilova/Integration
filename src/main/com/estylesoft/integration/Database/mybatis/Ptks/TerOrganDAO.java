@@ -25,13 +25,18 @@ public class TerOrganDAO extends DAOBase<TerOrganModel> {
         return super.create(namespace + "." + "insert", obj).getId();
     }
 
-    public void delete(TerOrganModel obj)
+    public void delete(Long id)
     {
-        super.delete(namespace + "." + "delete", obj);
+        super.delete(namespace + "." + "delete", id);
     }
 
     public TerOrganModel getByCodeOpfr(Map params)
     {
         return super.getByMap(namespace + "." + "getByCodeOpfr", params);
+    }
+
+    public TerOrganModel getById(Long id)
+    {
+        return super.getById(namespace + "." + "getById", id);
     }
 }

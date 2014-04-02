@@ -15,25 +15,25 @@ public class TownModel extends ModelBase {
     private String name;
 
     private String opfrCode;
-    private OpfrModel opfr;
+    private Long opfrId;
 
     private String baseDepartmentCode;
-    private BaseDepartmentModel baseDepartment;
+    private Long baseDepartmentId;
 
     private String terDepartmentPFRCode;
-    private TerDepartmentPFRModel terDepartmentPFR;
+    private Long terDepartmentPFRId;
 
     private String regionCode;
-    private RegionModel region;
+    private Long regionId;
 
     private String terOrganCode;
-    private TerOrganModel terOrgan;
+    private Long terOrganId;
 
     private String admTerritoryCode;
-    private AdmTerritoryModel admTerritory;
+    private Long admTerritoryId;
 
     private String cityCode;
-    private CityModel city;
+    private Long cityId;
 
     public String getCode() {
         return code;
@@ -59,12 +59,12 @@ public class TownModel extends ModelBase {
         this.opfrCode = opfrCode;
     }
 
-    public OpfrModel getOpfr() {
-        return opfr;
+    public Long getOpfrId() {
+        return opfrId;
     }
 
-    public void setOpfr(OpfrModel opfr) {
-        this.opfr = opfr;
+    public void setOpfrId(Long opfrId) {
+        this.opfrId = opfrId;
     }
 
     public String getBaseDepartmentCode() {
@@ -75,12 +75,12 @@ public class TownModel extends ModelBase {
         this.baseDepartmentCode = baseDepartmentCode;
     }
 
-    public BaseDepartmentModel getBaseDepartment() {
-        return baseDepartment;
+    public Long getBaseDepartmentId() {
+        return baseDepartmentId;
     }
 
-    public void setBaseDepartment(BaseDepartmentModel baseDepartment) {
-        this.baseDepartment = baseDepartment;
+    public void setBaseDepartmentId(Long baseDepartmentId) {
+        this.baseDepartmentId = baseDepartmentId;
     }
 
     public String getTerDepartmentPFRCode() {
@@ -91,12 +91,12 @@ public class TownModel extends ModelBase {
         this.terDepartmentPFRCode = terDepartmentPFRCode;
     }
 
-    public TerDepartmentPFRModel getTerDepartmentPFR() {
-        return terDepartmentPFR;
+    public Long getTerDepartmentPFRId() {
+        return terDepartmentPFRId;
     }
 
-    public void setTerDepartmentPFR(TerDepartmentPFRModel terDepartmentPFR) {
-        this.terDepartmentPFR = terDepartmentPFR;
+    public void setTerDepartmentPFRId(Long terDepartmentPFRId) {
+        this.terDepartmentPFRId = terDepartmentPFRId;
     }
 
     public String getRegionCode() {
@@ -107,12 +107,12 @@ public class TownModel extends ModelBase {
         this.regionCode = regionCode;
     }
 
-    public RegionModel getRegion() {
-        return region;
+    public Long getRegionId() {
+        return regionId;
     }
 
-    public void setRegion(RegionModel region) {
-        this.region = region==null?new RegionModel():region;
+    public void setRegionId(Long regionId) {
+        this.regionId = regionId;
     }
 
     public String getTerOrganCode() {
@@ -123,12 +123,12 @@ public class TownModel extends ModelBase {
         this.terOrganCode = terOrganCode;
     }
 
-    public TerOrganModel getTerOrgan() {
-        return terOrgan;
+    public Long getTerOrganId() {
+        return terOrganId;
     }
 
-    public void setTerOrgan(TerOrganModel terOrgan) {
-        this.terOrgan = terOrgan;
+    public void setTerOrganId(Long terOrganId) {
+        this.terOrganId = terOrganId;
     }
 
     public String getAdmTerritoryCode() {
@@ -139,12 +139,12 @@ public class TownModel extends ModelBase {
         this.admTerritoryCode = admTerritoryCode;
     }
 
-    public AdmTerritoryModel getAdmTerritory() {
-        return admTerritory;
+    public Long getAdmTerritoryId() {
+        return admTerritoryId;
     }
 
-    public void setAdmTerritory(AdmTerritoryModel admTerritory) {
-        this.admTerritory = admTerritory==null?new AdmTerritoryModel():admTerritory;
+    public void setAdmTerritoryId(Long admTerritoryId) {
+        this.admTerritoryId = admTerritoryId;
     }
 
     public String getCityCode() {
@@ -155,11 +155,11 @@ public class TownModel extends ModelBase {
         this.cityCode = cityCode;
     }
 
-    public CityModel getCity() {
-        return city;
+    public Long getCityId() {
+        return cityId;
     }
 
-    public void setCity(CityModel city) {
-        this.city = city==null?new CityModel():city;
+    public void setCityId(Long cityId) {
+        this.cityId = cityId;
     }
 }

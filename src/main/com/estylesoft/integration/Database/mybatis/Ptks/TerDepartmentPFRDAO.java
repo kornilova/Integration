@@ -26,9 +26,9 @@ public class TerDepartmentPFRDAO extends DAOBase<TerDepartmentPFRModel>  {
         return super.create(namespace + "." + "insert", obj).getId();
     }
 
-    public void delete(TerDepartmentPFRModel obj)
+    public void delete(Long id)
     {
-        super.delete(namespace + "." + "delete", obj);
+        super.delete(namespace + "." + "delete", id);
     }
 
     public TerDepartmentPFRModel getByCode(String code)
@@ -39,5 +39,10 @@ public class TerDepartmentPFRDAO extends DAOBase<TerDepartmentPFRModel>  {
     public TerDepartmentPFRModel getByCodeBaseDepTerOrgan(Map params)
     {
         return super.getByMap(namespace + "." + "getByCodeBaseDepTerOrgan", params);
+    }
+
+    public TerDepartmentPFRModel getById(Long id)
+    {
+        return super.getById(namespace + "." + "getById", id);
     }
 }

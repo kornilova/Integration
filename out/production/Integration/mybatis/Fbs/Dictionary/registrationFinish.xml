@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="registrationFinish">
+
+
+ <insert id="insert" parameterType="com.estylesoft.integration.Model.Fbs.Dictionary.RegistrationFinishModel">
+        insert into FBS_REG_FINISH( REG_FINISH_CODE, REG_FINISH_NAME)
+        values (
+        #{code},
+        #{name})
+    </insert>
+
+    <delete id="delete" parameterType="Long">
+        delete from FBS_REG_FINISH
+        where REG_START_ID = #{id}
+    </delete>
+
+    <select id="getByCode" parameterType="String" resultType="com.estylesoft.integration.Model.Fbs.Dictionary.RegistrationFinishModel">
+          SELECT REG_FINISH_ID as id, REG_FINISH_CODE as code
+          FROM FBS_REG_FINISH
+          WHERE REG_FINISH_CODE = #{code}
+    </select>
+
+    <select id="getById" parameterType="Long" resultType="com.estylesoft.integration.Model.Fbs.Dictionary.RegistrationFinishModel">
+          SELECT REG_FINISH_ID as id,  REG_FINISH_CODE as code, REG_FINISH_NAME as name
+          FROM FBS_REG_FINISH
+          WHERE REG_FINISH_CODE = #{id}
+    </select>
+
+</mapper>

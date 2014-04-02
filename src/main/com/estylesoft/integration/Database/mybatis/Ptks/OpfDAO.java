@@ -24,12 +24,17 @@ public class OpfDAO extends DAOBase<OpfModel> {
         return super.create(namespace + "." + "insert", obj).getId();
     }
 
-    public void delete(OpfModel obj) {
-        super.delete(namespace + "." + "delete", obj.getId());
+    public void delete(Long id) {
+        super.delete(namespace + "." + "delete", id);
     }
 
     public OpfModel getByCode(String code)
     {
         return super.getByCode(namespace + "." + "getByCode", code);
+    }
+
+    public OpfModel getById(Long id)
+    {
+        return super.getById(namespace + "." + "getById", id);
     }
 }

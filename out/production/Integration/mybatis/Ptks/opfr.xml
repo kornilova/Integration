@@ -8,4 +8,9 @@
           WHERE MRDV_CODE = #{code}
     </select>
 
+<!--    <delete id="delete" parameterType="Long">
+        delete from STH_MAIN_REG_DIV_PFR
+        where MRDV_ID = #{id}
+    </delete>-->
+
 </mapper>

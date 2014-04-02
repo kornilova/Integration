@@ -17,14 +17,14 @@ public class BaseDepartmentModel extends ModelBase {
     private String name;
     private String opfrCode;
 
-    private OpfrModel opfr;
+    private Long opfrId;
 
-    public OpfrModel getOpfr() {
-        return opfr;
+    public Long getOpfrId() {
+        return opfrId;
     }
 
-    public void setOpfr(OpfrModel opfr) {
-        this.opfr = opfr;
+    public void setOpfrId(Long opfrId) {
+        this.opfrId = opfrId;
     }
 
     public String getOpfrCode() {

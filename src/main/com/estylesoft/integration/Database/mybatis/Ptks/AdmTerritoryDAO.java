@@ -26,13 +26,18 @@ public class AdmTerritoryDAO extends DAOBase<AdmTerritoryModel> {
         return super.create(namespace + "." + "insert", obj).getId();
     }
 
-    public void delete(AdmTerritoryModel obj)
+    public void delete(Long id)
     {
-        super.delete(namespace + "." + "delete", obj.getCode());
+        super.delete(namespace + "." + "delete", id);
     }
 
     public AdmTerritoryModel getByCodeRegionIdTerDepIdBaseDepId(Map params)
     {
         return super.getByMap(namespace + "." + "getByCodeRegionIdTerDepIdBaseDepId", params);
+    }
+
+    public AdmTerritoryModel getById(Long id)
+    {
+        return super.getById(namespace + "." + "getById", id);
     }
 }

@@ -5,8 +5,8 @@
     <select id="insert" parameterType="com.estylesoft.integration.Model.Ptks.TerDepartmentPFRModel"
             statementType="CALLABLE">
  {CALL P_ADD_TER_DPT_PFR(
-  #{baseDepartment.id,javaType=Long,jdbcType=BIGINT,mode=IN},
-  #{terOrgan.id,javaType=Long,jdbcType=BIGINT,mode=IN},
+  #{baseDepartmentId,javaType=Long,jdbcType=BIGINT,mode=IN},
+  #{terOrganId,javaType=Long,jdbcType=BIGINT,mode=IN},
   #{code,javaType=String,jdbcType=INTEGER,mode=IN},
   #{name,javaType=String,jdbcType=VARCHAR,mode=IN},
   NULL,
@@ -45,11 +45,9 @@
         )
     </insert>-->
 
-    <delete id="delete" parameterType="com.estylesoft.integration.Model.Ptks.TerDepartmentPFRModel">
+    <delete id="delete" parameterType="Long">
         delete from STH_TERRITORY_DPT_PFR
-        WHERE TDP_CODE=#{code} AND
-        RDV_ID = #{baseDepartment.id} AND
-        TER_ORGAN_ID =  #{terOrgan.id}
+        WHERE  TDP_ID = #{id}
     </delete>
 
     <select id="getByCodeBaseDepTerOrgan" parameterType="Map" resultType="com.estylesoft.integration.Model.Ptks.TerDepartmentPFRModel">
@@ -58,6 +56,12 @@
           WHERE TDP_CODE=#{code} AND
           RDV_ID = #{baseDepartmentId} AND
           TER_ORGAN_ID =  #{terOrganId}
+    </select>
+
+    <select id="getById" parameterType="Long" resultType="com.estylesoft.integration.Model.Ptks.TerDepartmentPFRModel">
+          SELECT TDP_ID as id, TDP_CODE as code
+          FROM STH_TERRITORY_DPT_PFR
+          WHERE TDP_ID = #{id}
     </select>
 
 </mapper>

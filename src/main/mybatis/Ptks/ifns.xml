@@ -23,15 +23,21 @@
    )}
 </select>
 
-    <delete id="delete" parameterType="java.lang.String">
+    <delete id="delete" parameterType="Long">
         delete from STH_TERRITORY_DPT_FNS
-        where FNSD_CODE = #{code}
+        where FNSD_ID = #{id}
     </delete>
 
     <select id="getByCode" parameterType="String" resultType="com.estylesoft.integration.Model.Ptks.IfnsModel">
           SELECT FNSD_ID as id, FNSD_CODE as code
           FROM STH_TERRITORY_DPT_FNS
           WHERE FNSD_CODE = #{code}
+    </select>
+
+    <select id="getById" parameterType="Long" resultType="com.estylesoft.integration.Model.Ptks.IfnsModel">
+          SELECT FNSD_ID as id, FNSD_CODE as code
+          FROM STH_TERRITORY_DPT_FNS
+          WHERE FNSD_ID = #{id}
     </select>
 
 </mapper>

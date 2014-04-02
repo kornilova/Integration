@@ -27,13 +27,18 @@ public class TownDAO extends DAOBase<TownModel> {
         return super.create(namespace + "." + "insert", obj).getId();
     }
 
-    public void delete(TownModel obj)
+    public void delete(Long id)
     {
-        super.delete(namespace + "." + "delete", obj.getCode());
+        super.delete(namespace + "." + "delete", id);
     }
 
     public TownModel getByCodeCityIdAdmTerritoryIdRegionIdTerDepIdBaseDepId(Map params)
     {
         return super.getByMap(namespace + "." + "getByCodeCityIdAdmTerritoryIdRegionIdTerDepIdBaseDepId", params);
+    }
+
+    public TownModel getById(Long id)
+    {
+        return super.getById(namespace + "." + "getById", id);
     }
 }

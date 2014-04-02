@@ -9,19 +9,19 @@
         insert into STH_TOWN(TOWN_ID, CITY_ID, TER_ID, RGN_ID, TDP_ID, TOWN_NAME, TOWN_KLADR_CODE, RDV_ID)
         values (
         #{id,javaType=Long,jdbcType=BIGINT},
-        #{city.id,javaType=Long,jdbcType=BIGINT},
-        #{admTerritory.id,javaType=Long,jdbcType=BIGINT},
-        #{region.id,javaType=Long,jdbcType=BIGINT},
-        #{terDepartmentPFR.id,javaType=Long,jdbcType=BIGINT},
+        #{cityId,javaType=Long,jdbcType=BIGINT},
+        #{admTerritoryId,javaType=Long,jdbcType=BIGINT},
+        #{regionId,javaType=Long,jdbcType=BIGINT},
+        #{terDepartmentPFRId,javaType=Long,jdbcType=BIGINT},
         #{name},
         #{code},
-        #{baseDepartment.id,javaType=Long,jdbcType=BIGINT}
+        #{baseDepartmentId,javaType=Long,jdbcType=BIGINT}
         )
     </insert>
 
     <delete id="delete" parameterType="java.lang.Long">
         delete from STH_TOWN
-        where TOWN_KLADR_CODE = #{code}
+        where TOWN_ID = #{id}
     </delete>
 
     <select id="getByCodeCityIdAdmTerritoryIdRegionIdTerDepIdBaseDepId" parameterType="Map" resultType="com.estylesoft.integration.Model.Ptks.TownModel">
@@ -31,20 +31,26 @@
           <if test="code != null">=#{code}</if>
           <if test="code == null"> IS NULL</if>
 
-          <if test="city != null and city.id != null">
+          <if test="cityId != null">
               and CITY_ID = #{cityId}
           </if>
-          <if test="admTerritory != null and admTerritory.id != null">
+          <if test="admTerritoryId != null">
             and TER_ID = #{admTerritoryId}
           </if>
-          <if test="region != null and region.id != null">
+          <if test="regionId != null">
             and RGN_ID = #{regionId}
           </if>
-          <if test="terDepartmentPFR != null and terDepartmentPFR.id != null">
+          <if test="terDepartmentPFRId != null">
             and TDP_ID = #{terDepartmentPFRId}
           </if>
-          <if test="baseDepartment != null and baseDepartment.id != null">
+          <if test="baseDepartmentId != null">
             and RDV_ID = #{baseDepartmentId}
           </if>
+    </select>
+
+    <select id="getById" parameterType="Long" resultType="com.estylesoft.integration.Model.Ptks.TownModel">
+        SELECT TOWN_ID as id, TOWN_KLADR_CODE as code, TOWN_NAME as name
+        FROM STH_TOWN
+        WHERE TOWN_ID = #{id}
     </select>
 </mapper>

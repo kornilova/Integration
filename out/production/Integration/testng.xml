@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="CheckImportMigration" verbose="5" data-provider-thread-count="1">
-    <!--<listeners>
-        <listener class-name="CheckReporter" />
-    </listeners>-->
-    <test name="CreateMigrationDataInPtks" preserve-order="false">
-        <parameter name="path" value="/"/>
+<suite name="CheckCreateMigrationDataInPtks">
+    <test name="CreateMigrationDataInPtks">
         <classes>
-            <class name="com.estylesoft.integration.test.CreateMigrationDataInPtks">
-            <methods>
-                <include name="CreateBaseDepartment" />
-            </methods>
-            </class>
+            <class name="com.estylesoft.integration.test.Ptks.CreateMigrationDataInPtks" />
         </classes>
     </test>
 </suite>

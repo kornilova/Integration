@@ -21,13 +21,19 @@
         #{name})
     </insert>-->
 
-    <delete id="delete" parameterType="java.lang.String">
+    <delete id="delete" parameterType="Long">
         delete from STH_OKVED
-        where OKVED_CODE = #{code}
+        where OKVED_ID = #{id}
     </delete>
 
     <select id="getByCode" parameterType="String" resultType="com.estylesoft.integration.Model.Ptks.OkvedModel">
           SELECT OKVED_ID as id, OKVED_CODE as code FROM STH_OKVED WHERE OKVED_CODE = #{code}
+    </select>
+
+    <select id="getById" parameterType="Long" resultType="com.estylesoft.integration.Model.Ptks.OkvedModel">
+          SELECT OKVED_ID as id, OKVED_CODE as code
+          FROM STH_OKVED
+          WHERE OKVED_ID = #{id}
     </select>
 
 </mapper>

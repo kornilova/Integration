@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="category">
+
+
+ <insert id="insert" parameterType="com.estylesoft.integration.Model.Fbs.Dictionary.CategoryModel">
+        insert into FBS_CATEGORY(CATEGORY_CODE, CATEGORY_NAME, CATEGORY_BY_OO, CATEGORY_IS_EMPLOYER, CATEGORY_TO_FOMS, CATEGORY_REG_IS_PFR)
+        values (
+        #{code},
+        #{name},
+        #{oneWindow},
+        #{employer},
+        #{foms},
+        #{isPfr}
+        )
+    </insert>
+
+    <delete id="delete" parameterType="Long">
+        delete from FBS_CATEGORY
+        where CATEGORY_ID = #{id}
+    </delete>
+
+    <select id="getByCode" parameterType="String" resultType="com.estylesoft.integration.Model.Fbs.Dictionary.CategoryModel">
+          SELECT CATEGORY_ID as id, CATEGORY_CODE as code
+          FROM FBS_CATEGORY
+          WHERE CATEGORY_CODE = #{code}
+    </select>
+
+    <select id="getById" parameterType="Long" resultType="com.estylesoft.integration.Model.Fbs.Dictionary.CategoryModel">
+          SELECT CATEGORY_ID as id, CATEGORY_CODE as code
+          FROM FBS_CATEGORY
+          WHERE KBK_ID = #{id}
+    </select>
+
+</mapper>

@@ -27,9 +27,9 @@ public class CityDAO extends DAOBase<CityModel> {
         return super.create(namespace + "." + "insert", obj).getId();
     }
 
-    public void delete(CityModel obj)
+    public void delete(Long id)
     {
-        super.delete(namespace + "." + "delete", obj.getCode());
+        super.delete(namespace + "." + "delete", id);
     }
 
     public CityModel getByCodeAdmTerrIdRegionIdTerDepIdBaseDepId(Map params)
@@ -40,5 +40,10 @@ public class CityDAO extends DAOBase<CityModel> {
     public CityModel getByCode(String code)
     {
         return super.getByCode(namespace + "." + "getByCode", code);
+    }
+
+    public CityModel getById(Long id)
+    {
+        return super.getById(namespace + "." + "getById", id);
     }
 }

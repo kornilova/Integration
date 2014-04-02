@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="journalChangeData">
+
+    <delete id="delete">
+        delete from STH_JOURNAL_CHANGE_DATA
+    </delete>
+
+    <select id="getByObjectIdDictTypeId" parameterType="Map"
+            resultType="com.estylesoft.integration.Model.Ptks.JournalChangeDataModel">
+        SELECT JCD_ID as id,
+        EP_ID as packageId,
+        JCD_OPER_TYPE as operType,
+        JDC_OBJECT_ID as objectId,
+        ED_ID as dictionaryTypeId,
+        JCD_CHANGE_DATE as changeDate
+        FROM STH_JOURNAL_CHANGE_DATA
+        WHERE
+        <if test="objectId != null">
+             ED_ID = #{dictionaryTypeId}
+        </if>
+        <if test="dictionaryTypeId">
+            and JDC_OBJECT_ID = #{objectId}
+        </if>
+        and JCD_OPER_TYPE= #{operType}
+    </select>
+
+</mapper>

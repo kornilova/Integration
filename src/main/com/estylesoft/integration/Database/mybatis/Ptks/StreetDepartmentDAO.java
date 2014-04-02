@@ -2,7 +2,6 @@ package com.estylesoft.integration.Database.mybatis.Ptks;
 
 import com.estylesoft.integration.Database.mybatis.DAOBase;
 import com.estylesoft.integration.Model.Ptks.StreetDepartmentModel;
-import com.estylesoft.integration.Model.Ptks.StreetModel;
 import org.apache.ibatis.session.SqlSessionFactory;
 
 import java.util.Map;
@@ -27,13 +26,18 @@ public class StreetDepartmentDAO extends DAOBase<StreetDepartmentModel> {
         return super.create(namespace + "." + "insert", obj).getId();
     }
 
-    public void delete(StreetDepartmentModel obj)
+    public void delete(Long id)
     {
-        super.delete(namespace + "." + "delete", obj.getStreetCode());
+        super.delete(namespace + "." + "delete", id);
     }
 
     public StreetDepartmentModel getByStreetIdTerDepId(Map params)
     {
         return super.getByMap(namespace + "." + "getByStreetIdTerDepId", params);
+    }
+
+    public StreetDepartmentModel getById(Long id)
+    {
+        return super.getById(namespace + "." + "getById", id);
     }
 }

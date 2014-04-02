@@ -15,9 +15,9 @@
         #{isCity})
     </insert>
 
-    <delete id="delete" parameterType="java.lang.String">
+    <delete id="delete" parameterType="Long">
         delete from STH_REGION
-        where RGN_CODE = #{code}
+        where RGN_ID = #{id}
     </delete>
 
     <select id="getByCode" parameterType="Map" resultType="com.estylesoft.integration.Model.Ptks.RegionModel">
@@ -26,6 +26,12 @@
           WHERE RGN_KLADR_CODE
           <if test="code != null">=#{code}</if>
           <if test="code == null"> IS NULL </if>
+    </select>
+
+    <select id="getById" parameterType="Map" resultType="com.estylesoft.integration.Model.Ptks.RegionModel">
+        SELECT RGN_ID as id, RGN_KLADR_CODE as code, RGN_NAME as name
+        FROM STH_REGION
+        WHERE RGN_ID = #{id}
     </select>
 
 </mapper>

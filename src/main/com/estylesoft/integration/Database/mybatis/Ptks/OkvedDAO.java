@@ -1,7 +1,6 @@
 package com.estylesoft.integration.Database.mybatis.Ptks;
 
 import com.estylesoft.integration.Database.mybatis.DAOBase;
-import com.estylesoft.integration.Model.Ptks.OkatoModel;
 import com.estylesoft.integration.Model.Ptks.OkvedModel;
 import org.apache.ibatis.session.SqlSessionFactory;
 
@@ -25,13 +24,18 @@ public class OkvedDAO extends DAOBase<OkvedModel> {
         return super.create(namespace + "." + "insert", obj).getId();
     }
 
-    public void delete(OkvedModel obj)
+    public void delete(Long id)
     {
-        super.delete(namespace + "." + "delete", obj.getCode());
+        super.delete(namespace + "." + "delete", id);
     }
 
     public OkvedModel getByCode(String code)
     {
         return super.getByCode(namespace + "." + "getByCode", code);
+    }
+
+    public OkvedModel getById(Long id)
+    {
+        return super.getById(namespace + "." + "getById", id);
     }
 }

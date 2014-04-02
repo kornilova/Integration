@@ -9,14 +9,26 @@
         insert into STH_STREET_HOUSES(STRH_ID, STREET_TDP_ID, STRH_HOUSE)
         values (
         #{id,javaType=Long,jdbcType=BIGINT},
-        #{streetDepartment.id,javaType=Long,jdbcType=BIGINT},
+        #{streetDepartmentId,javaType=Long,jdbcType=BIGINT},
         #{houses}
         )
     </insert>
 
-    <delete id="delete" parameterType="java.lang.Long">
+    <delete id="delete" parameterType="Long">
         delete from STH_STREET_HOUSES
-        where STREET_TDP_ID = {#streetDepartmentId}
+        where STRH_ID = #{id}
     </delete>
+
+    <select id="getByHousesIdStreetDepId" parameterType="Map" resultType="com.estylesoft.integration.Model.Ptks.StreetHousesModel">
+          SELECT STRH_ID as id, STREET_TDP_ID as streetDepartmentId, STRH_HOUSE as houses
+          FROM STH_STREET_HOUSES
+          WHERE STREET_TDP_ID = #{streetDepartmentId} AND STRH_HOUSE = #{houses}
+    </select>
+
+    <select id="getById" parameterType="Map" resultType="com.estylesoft.integration.Model.Ptks.StreetHousesModel">
+          SELECT STRH_ID as id, STREET_TDP_ID as streetDepartmentId, STRH_HOUSE as houses
+          FROM STH_STREET_HOUSES
+          WHERE STRH_ID = #{id}
+    </select>
 
 </mapper>

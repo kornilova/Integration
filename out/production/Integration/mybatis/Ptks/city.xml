@@ -9,18 +9,18 @@
         insert into STH_CITY(CITY_ID, TER_ID, RGN_ID, TDP_ID, CITY_NAME, CITY_KLADR_CODE, RDV_ID)
         values (
         #{id,javaType=Long,jdbcType=BIGINT},
-        #{admTerritory.id,javaType=Long,jdbcType=BIGINT},
-        #{region.id,javaType=Long,jdbcType=BIGINT},
-        #{terDepartmentPFR.id,javaType=Long,jdbcType=BIGINT},
+        #{admTerritoryId,javaType=Long,jdbcType=BIGINT},
+        #{regionId,javaType=Long,jdbcType=BIGINT},
+        #{terDepartmentPFRId,javaType=Long,jdbcType=BIGINT},
         #{name},
         #{code},
-        #{baseDepartment.id,javaType=Long,jdbcType=BIGINT}
+        #{baseDepartmentId,javaType=Long,jdbcType=BIGINT}
         )
     </insert>
 
     <delete id="delete" parameterType="java.lang.Long">
         delete from STH_CITY
-        where CITY_KLADR_CODE = #{code}
+        where CITY_ID = #{id}
     </delete>
 
     <select id="getByCodeAdmTerrIdRegionIdTerDepIdBaseDepId" parameterType="Map" resultType="com.estylesoft.integration.Model.Ptks.CityModel">
@@ -44,10 +44,10 @@
           </if>
     </select>
 
-    <select id="getByCode" parameterType="String" resultType="com.estylesoft.integration.Model.Ptks.CityModel">
-          SELECT CITY_ID as id, CITY_KLADR_CODE as code, CITY_NAME as name
-          FROM STH_CITY
-          WHERE CITY_KLADR_CODE = #{code}
+    <select id="getById" parameterType="Map" resultType="com.estylesoft.integration.Model.Ptks.CityModel">
+        SELECT CITY_ID as id, CITY_KLADR_CODE as code, CITY_NAME as name
+        FROM STH_CITY
+        WHERE CITY_ID = #{id}
     </select>
 
 </mapper>

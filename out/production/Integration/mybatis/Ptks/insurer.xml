@@ -88,23 +88,23 @@
         select
         #{insRegNum,javaType=Long,jdbcType=BIGINT},
         (SELECT TP_ID FROM STH_TYPE WHERE TP_NAME=#{insTypeName,jdbcType=VARCHAR}),
-        #{ifns.id,javaType=Long,jdbcType=BIGINT},
-        #{baseDepartment.id,javaType=Long,jdbcType=BIGINT},
-        #{baseDepartment.code,javaType=String,jdbcType=INTEGER},
-        #{terDepartmentPFR.id,javaType=Long,jdbcType=BIGINT},
-        #{terDepartmentPFR.code,javaType=String,jdbcType=INTEGER},
-        #{registrationDepartment.id,javaType=Long,jdbcType=BIGINT},
-        #{city.id,javaType=Long,jdbcType=BIGINT},
-        #{street.id,javaType=Long,jdbcType=BIGINT},
+        #{ifnsId,javaType=Long,jdbcType=BIGINT},
+        #{baseDepartmentId,javaType=Long,jdbcType=BIGINT},
+        #{baseDepartmentCode,javaType=String,jdbcType=INTEGER},
+        #{terDepartmentPFRId,javaType=Long,jdbcType=BIGINT},
+        #{terDepartmentPFRCode,javaType=String,jdbcType=INTEGER},
+        #{registrationDepartmentId,javaType=Long,jdbcType=BIGINT},
+        #{cityId,javaType=Long,jdbcType=BIGINT},
+        #{streetId,javaType=Long,jdbcType=BIGINT},
         (SELECT CT_ID FROM STH_CATEGORY WHERE CT_CODE=#{insCategoryCode,jdbcType=VARCHAR}),
-        #{okved.id,javaType=Long,jdbcType=BIGINT},
-        #{opf.id,javaType=Long,jdbcType=BIGINT},
+        #{okvedId,javaType=Long,jdbcType=BIGINT},
+        #{opfId,javaType=Long,jdbcType=BIGINT},
         (SELECT AR_ID FROM STH_ARRANGE_REG WHERE AR_CODE=#{insStartTypeCode,jdbcType=BIGINT}),
         (SELECT RR_ID FROM STH_RELEASE_REG WHERE RR_CODE=#{insFinishTypeCode,jdbcType=BIGINT}),
         (SELECT STS_ID FROM STH_STATUS WHERE STS_CODE=#{insStatusCode,jdbcType=VARCHAR}),
-        #{town.id,javaType=Long,jdbcType=BIGINT},
-        #{startRegistrationKind.id,javaType=Long,jdbcType=BIGINT},
-        #{finishRegistrationKind.id,javaType=Long,jdbcType=BIGINT},
+        #{townId,javaType=Long,jdbcType=BIGINT},
+        #{startRegistrationKindId,javaType=Long,jdbcType=BIGINT},
+        #{finishRegistrationKindId,javaType=Long,jdbcType=BIGINT},
         (SELECT USR_ID FROM STH_USER WHERE USR_LOGIN=#{userLogin,jdbcType=VARCHAR}),
         #{ogrn,javaType=Long,jdbcType=BIGINT},
         #{inn,javaType=Long,jdbcType=BIGINT},
@@ -122,12 +122,12 @@
         #{house,jdbcType=VARCHAR},
         #{building,jdbcType=VARCHAR},
         #{room,jdbcType=VARCHAR},
-        #{region.name,jdbcType=VARCHAR},
-        #{admTerritory.name,jdbcType=VARCHAR},
+        #{regionId.name,jdbcType=VARCHAR},
+        #{admTerritoryName,jdbcType=VARCHAR},
         #{factZipCode,jdbcType=VARCHAR},
-        #{city.name,jdbcType=VARCHAR},
-        #{town.name,jdbcType=VARCHAR},
-        #{street.name,jdbcType=VARCHAR},
+        #{cityName,jdbcType=VARCHAR},
+        #{townName,jdbcType=VARCHAR},
+        #{streetName,jdbcType=VARCHAR},
         #{factHouse,jdbcType=VARCHAR},
         #{factBuilding,jdbcType=VARCHAR},
         #{factRoom,jdbcType=VARCHAR},
@@ -173,5 +173,11 @@
     <delete id="delete" parameterType="com.estylesoft.integration.Model.Ptks.InsurerModel">
         delete from STH_INSURER where  INS_REG_NUM = #{insRegNum}
     </delete>
+
+    <select id="getByRegNum" parameterType="Long" resultType="com.estylesoft.integration.Model.Ptks.InsurerModel">
+          SELECT INS_REG_NUM as insRegNum
+          FROM STH_INSURER
+          WHERE INS_REG_NUM = #{insRegNum}
+    </select>
 
 </mapper>

@@ -24,13 +24,18 @@ public class OkatoDAO extends DAOBase<OkatoModel> {
         return super.create(namespace + "." + "insert", obj).getId();
     }
 
-    public void delete(OkatoModel obj)
+    public void delete(Long id)
     {
-        super.delete(namespace + "." + "delete", obj.getId());
+        super.delete(namespace + "." + "delete", id);
     }
 
     public OkatoModel getByCode(String code)
     {
         return super.getByCode(namespace + "." + "getByCode", code);
+    }
+
+    public OkatoModel getById(Long id)
+    {
+        return super.getById(namespace + "." + "getById", id);
     }
 }

@@ -25,13 +25,18 @@ public class IfnsDAO extends DAOBase<IfnsModel> {
         return super.create(namespace + "." + "insert", obj).getId();
     }
 
-    public void delete(IfnsModel obj)
+    public void delete(Long id)
     {
-        super.delete(namespace + "." + "delete", obj.getId());
+        super.delete(namespace + "." + "delete", id);
     }
 
     public IfnsModel getByCode(String code)
     {
         return super.getByCode(namespace + "." + "getByCode", code);
+    }
+
+    public IfnsModel getById(Long id)
+    {
+        return super.getById(namespace + "." + "getById", id);
     }
 }

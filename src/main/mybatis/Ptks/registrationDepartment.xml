@@ -11,15 +11,21 @@
    )}
 </select>
 
-    <delete id="delete" parameterType="java.lang.String">
+    <delete id="delete" parameterType="Long">
         delete from STH_TERRITORY_DPT_REG
-        where REGD_CODE = #{code}
+        where REGD_ID = #{id}
     </delete>
 
     <select id="getByCode" parameterType="String" resultType="com.estylesoft.integration.Model.Ptks.RegistrationDepartmentModel">
           SELECT REGD_ID as id, REGD_CODE as code, REGD_NAME as name
           FROM STH_TERRITORY_DPT_REG
           WHERE REGD_CODE = #{code}
+    </select>
+
+    <select id="getById" parameterType="Long" resultType="com.estylesoft.integration.Model.Ptks.RegistrationDepartmentModel">
+          SELECT REGD_ID as id, REGD_CODE as code, REGD_NAME as name
+          FROM STH_TERRITORY_DPT_REG
+          WHERE REGD_ID = #{id}
     </select>
 
 </mapper>

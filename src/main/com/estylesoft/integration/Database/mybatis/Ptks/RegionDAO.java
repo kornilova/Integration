@@ -27,13 +27,18 @@ public class RegionDAO extends DAOBase<RegionModel> {
         return super.create(namespace + "." + "insert", obj).getId();
     }
 
-    public void delete(RegionModel obj)
+    public void delete(Long id)
     {
-        super.delete(namespace + "." + "delete", obj.getCode());
+        super.delete(namespace + "." + "delete", id);
     }
 
     public RegionModel getByCode(Map params)
     {
         return super.getByMap(namespace + "." + "getByCode", params);
+    }
+
+    public RegionModel getById(Long id)
+    {
+        return super.getById(namespace + "." + "getById", id);
     }
 }

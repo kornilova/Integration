@@ -24,12 +24,12 @@ public class InsurerDAO extends DAOBase<InsurerModel> {
         super.create(namespace + "." + "insert", obj);
     }
 
-    public void delete(InsurerModel obj) {
-        super.delete(namespace + "." + "delete", obj.getId());
+    public void delete(Long id) {
+        super.delete(namespace + "." + "delete", id);
     }
 
-    public InsurerModel getByCode(String regNum)
+    public InsurerModel getById(Long regNum)
     {
-        return super.getByCode(namespace + "." + "getByCode", regNum);
+        return super.getById(namespace + "." + "getByRegNum", regNum);
     }
 }

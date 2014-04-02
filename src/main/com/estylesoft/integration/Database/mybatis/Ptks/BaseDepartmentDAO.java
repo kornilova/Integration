@@ -3,6 +3,9 @@ package com.estylesoft.integration.Database.mybatis.Ptks;
 import com.estylesoft.integration.Database.mybatis.DAOBase;
 import com.estylesoft.integration.Model.Ptks.BaseDepartmentModel;
 import org.apache.ibatis.session.SqlSessionFactory;
+import org.jcp.xml.dsig.internal.MacOutputStream;
+
+import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
@@ -24,13 +27,18 @@ public class BaseDepartmentDAO extends DAOBase<BaseDepartmentModel>{
         return super.create(namespace + "." + "insert", obj).getId();
      }
 
-    public void delete(BaseDepartmentModel obj)
+    public void delete(Long id)
     {
-        super.delete(namespace + "." + "delete", obj.getId());
+        super.delete(namespace + "." + "delete", id);
     }
 
-    public BaseDepartmentModel getByCode(String code)
+    public BaseDepartmentModel getByCodeOpfr(Map params)
     {
-        return super.getByCode(namespace + "." + "getByCode", code);
+        return super.getByMap(namespace + "." + "getByCodeOpfr", params);
+    }
+
+    public BaseDepartmentModel getById(Long id)
+    {
+        return super.getById(namespace + "." + "getById", id);
     }
 }

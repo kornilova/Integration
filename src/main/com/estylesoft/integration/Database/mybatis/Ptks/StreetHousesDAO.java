@@ -4,6 +4,8 @@ import com.estylesoft.integration.Database.mybatis.DAOBase;
 import com.estylesoft.integration.Model.Ptks.StreetHousesModel;
 import org.apache.ibatis.session.SqlSessionFactory;
 
+import java.util.Map;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Nataliya.Gordeeva
@@ -24,8 +26,18 @@ public class StreetHousesDAO extends DAOBase<StreetHousesModel> {
         return super.create(namespace + "." + "insert", obj).getId();
     }
 
-    public void delete(StreetHousesModel obj)
+    public void delete(Long id)
     {
-        super.delete(namespace + "." + "delete", obj.getStreetDepartment().getId());
+        super.delete(namespace + "." + "delete", id);
+    }
+
+    public StreetHousesModel getByHousesIdStreetDepId(Map params)
+    {
+        return super.getByMap(namespace + "." + "getByHousesIdStreetDepId", params);
+    }
+
+    public StreetHousesModel getById(Long id)
+    {
+        return super.getById(namespace + "." + "getById", id);
     }
 }

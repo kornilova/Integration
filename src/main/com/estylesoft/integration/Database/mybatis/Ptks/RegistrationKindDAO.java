@@ -27,13 +27,18 @@ public class RegistrationKindDAO extends DAOBase<RegistrationKindModel> {
         super.create(namespace + "." + "insert", obj);
     }
 
-    public void delete(RegistrationKindModel obj)
+    public void delete(Long id)
     {
-        super.delete(namespace + "." + "delete", obj.getCode());
+        super.delete(namespace + "." + "delete", id);
     }
 
     public RegistrationKindModel getByCode(Map params)
     {
         return super.getByMap(namespace + "." + "getByCode", params);
+    }
+
+    public RegistrationKindModel getById(Long id)
+    {
+        return super.getById(namespace + "." + "getById", id);
     }
 }

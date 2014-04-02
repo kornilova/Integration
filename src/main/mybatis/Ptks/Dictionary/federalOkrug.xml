@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ptks.federalOkrug">
+
+
+<!-- <insert id="insert" keyColumn="OPF_ID" parameterType="com.estylesoft.integration.Model.Ptks.Dictionary.FederalOkrugModel">
+        insert into STH_FED_OKRUG(FO_CODE, FO_NAME)
+        values (
+        #{code},
+        #{name})
+    </insert>-->
+
+    <delete id="delete" parameterType="Long">
+        delete from STH_FED_OKRUG
+        where FDOK_ID = #{id}
+    </delete>
+
+    <select id="getByCode" parameterType="String" resultType="com.estylesoft.integration.Model.Ptks.Dictionary.FederalOkrugModel">
+          SELECT FDOK_ID as id, FDOK_NAME as name, FDOK_CODE as code, FDOC_ACTUAL_FBS as isActualFbs
+          FROM STH_FED_OKRUG
+          WHERE FDOK_CODE = #{code}
+    </select>
+
+    <select id="getById" parameterType="Long" resultType="com.estylesoft.integration.Model.Ptks.Dictionary.FederalOkrugModel">
+          SELECT FDOK_ID as id, FDOK_NAME as name, FDOK_CODE as code, FDOC_ACTUAL_FBS as isActualFbs
+          FROM STH_FED_OKRUG
+          WHERE FDOK_ID = #{id}
+    </select>
+
+    <select id="getAll" resultType="com.estylesoft.integration.Model.Ptks.Dictionary.FederalOkrugModel">
+          SELECT FDOK_ID as id, FDOK_NAME as name, FDOK_CODE as code, FDOC_ACTUAL_FBS as isActualFbs
+          FROM STH_FED_OKRUG
+    </select>
+
+</mapper>

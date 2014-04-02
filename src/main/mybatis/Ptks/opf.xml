@@ -18,15 +18,21 @@
         #{name})
     </insert>-->
 
-    <delete id="delete" parameterType="java.lang.String">
+    <delete id="delete" parameterType="Long">
         delete from STH_OPF
-        where OPF_CODE = #{code}
+        where OPF_ID = #{id}
     </delete>
 
     <select id="getByCode" parameterType="String" resultType="com.estylesoft.integration.Model.Ptks.OpfModel">
           SELECT OPF_ID as id, OPF_CODE as code
           FROM STH_OPF
           WHERE OPF_CODE = #{code}
+    </select>
+
+    <select id="getById" parameterType="Long" resultType="com.estylesoft.integration.Model.Ptks.OpfModel">
+          SELECT OPF_ID as id, OPF_CODE as code
+          FROM STH_OPF
+          WHERE OPF_ID = #{id}
     </select>
 
 </mapper>

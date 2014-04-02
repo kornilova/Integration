@@ -27,13 +27,18 @@ public class StreetDAO extends DAOBase<StreetModel> {
         return super.create(namespace + "." + "insert", obj).getId();
     }
 
-    public void delete(StreetModel obj)
+    public void delete(Long id)
     {
-        super.delete(namespace + "." + "delete", obj.getCode());
+        super.delete(namespace + "." + "delete", id);
     }
 
     public StreetModel getByCodeCityIdTownIdAdmTerIdRegionIdBaseDepId(Map params)
     {
         return super.getByMap(namespace + "." + "getByCodeCityIdTownIdAdmTerIdRegionIdBaseDepId", params);
+    }
+
+    public StreetModel getById(Long id)
+    {
+        return super.getById(namespace + "." + "getById", id);
     }
 }

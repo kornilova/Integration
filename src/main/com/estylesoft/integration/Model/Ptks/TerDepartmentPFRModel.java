@@ -24,37 +24,13 @@ public class TerDepartmentPFRModel extends ModelBase {
     private String head;
 
     private String terOrganCode;
-    private TerOrganModel terOrgan;
+    private Long terOrganId;
 
     private String baseDepartmentCode;
-    private BaseDepartmentModel baseDepartment;
+    private Long baseDepartmentId;
 
     private String opfrCode;
-
-    public TerOrganModel getTerOrgan() {
-        return terOrgan;
-    }
-
-    public void setTerOrgan(TerOrganModel terOrgan) {
-        this.terOrgan = terOrgan;
-    }
-
-    public String getOpfrCode() {
-        return opfrCode;
-    }
-
-    public void setOpfrCode(String opfrCode) {
-        this.opfrCode = opfrCode;
-    }
-
-    public BaseDepartmentModel getBaseDepartment() {
-        return baseDepartment;
-    }
-
-    public void setBaseDepartment(BaseDepartmentModel baseDepartment) {
-        this.baseDepartment = baseDepartment;
-    }
-
+    private Long opfrId;
 
     public String getCode() {
         return code;
@@ -136,11 +112,43 @@ public class TerDepartmentPFRModel extends ModelBase {
         this.terOrganCode = terOrganCode;
     }
 
+    public Long getTerOrganId() {
+        return terOrganId;
+    }
+
+    public void setTerOrganId(Long terOrganId) {
+        this.terOrganId = terOrganId;
+    }
+
     public String getBaseDepartmentCode() {
         return baseDepartmentCode;
     }
 
     public void setBaseDepartmentCode(String baseDepartmentCode) {
         this.baseDepartmentCode = baseDepartmentCode;
+    }
+
+    public Long getBaseDepartmentId() {
+        return baseDepartmentId;
+    }
+
+    public void setBaseDepartmentId(Long baseDepartmentId) {
+        this.baseDepartmentId = baseDepartmentId;
+    }
+
+    public String getOpfrCode() {
+        return opfrCode;
+    }
+
+    public void setOpfrCode(String opfrCode) {
+        this.opfrCode = opfrCode;
+    }
+
+    public Long getOpfrId() {
+        return opfrId;
+    }
+
+    public void setOpfrId(Long opfrId) {
+        this.opfrId = opfrId;
     }
 }

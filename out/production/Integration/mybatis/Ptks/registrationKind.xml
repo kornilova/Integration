@@ -20,9 +20,9 @@
    )}
 </select>
 
-    <delete id="delete" parameterType="java.lang.String">
+    <delete id="delete" parameterType="Long">
         delete from STH_REGISTER_KIND
-        where RGK_CODE = #{code}
+        where RGK_ID = #{id}
     </delete>
 
     <select id="getByCode" parameterType="Map" resultType="com.estylesoft.integration.Model.Ptks.RegistrationKindModel">
@@ -30,6 +30,12 @@
           FROM STH_REGISTER_KIND
           WHERE RGK_CODE = #{code}
           and RGK_PERSON = #{isPerson}
+    </select>
+
+    <select id="getById" parameterType="Long" resultType="com.estylesoft.integration.Model.Ptks.RegistrationKindModel">
+          SELECT RGK_ID as id, RGK_CODE as code, RGK_NAME as name, RGK_PERSON as isPerson
+          FROM STH_REGISTER_KIND
+          WHERE RGK_ID = #{id}
     </select>
 
 </mapper>

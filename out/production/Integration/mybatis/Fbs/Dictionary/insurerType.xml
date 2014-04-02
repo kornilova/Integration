@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="insurerType">
+
+
+ <insert id="insert" parameterType="com.estylesoft.integration.Model.Fbs.Dictionary.InsurerTypeModel">
+        insert into FBS_INSURER_TYPE(INSURER_TYPE_ID, INSURER_TYPE_NAME, INSURER_TYPE_IS_PERSON)
+        values (
+        (select max(INSURER_TYPE_ID)+1 from FBS_INSURER_TYPE),
+        #{name},
+        #{isPerson}
+        )
+    </insert>
+
+    <delete id="delete" parameterType="Long">
+        delete from FBS_INSURER_TYPE
+        where INSURER_TYPE_ID = #{id}
+    </delete>
+
+    <select id="getByName" parameterType="String" resultType="com.estylesoft.integration.Model.Fbs.Dictionary.InsurerTypeModel">
+          SELECT INSURER_TYPE_ID as id, INSURER_TYPE_NAME as name
+          FROM FBS_INSURER_TYPE
+          WHERE INSURER_TYPE_NAME = #{name}
+    </select>
+
+    <select id="getById" parameterType="Long" resultType="com.estylesoft.integration.Model.Fbs.Dictionary.InsurerTypeModel">
+          SELECT INSURER_TYPE_ID as id, INSURER_TYPE_NAME as name
+          FROM FBS_INSURER_TYPE
+          WHERE INSURER_TYPE_ID = #{id}
+    </select>
+
+</mapper>

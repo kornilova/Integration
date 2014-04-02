@@ -25,13 +25,18 @@ public class RegistrationDepartmentDAO extends DAOBase<RegistrationDepartmentMod
         return super.create(namespace + "." + "insert", obj).getId();
     }
 
-    public void delete(RegistrationDepartmentModel obj)
+    public void delete(Long id)
     {
-        super.delete(namespace + "." + "delete", obj.getCode());
+        super.delete(namespace + "." + "delete", id);
     }
 
     public RegistrationDepartmentModel getByCode(String code)
     {
         return super.getByCode(namespace + "." + "getByCode", code);
+    }
+
+    public RegistrationDepartmentModel getById(Long id)
+    {
+        return super.getById(namespace + "." + "getById", id);
     }
 }
