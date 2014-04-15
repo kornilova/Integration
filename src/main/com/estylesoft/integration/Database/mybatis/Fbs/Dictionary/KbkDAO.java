@@ -4,6 +4,8 @@ import com.estylesoft.integration.Database.mybatis.DAOBase;
 import com.estylesoft.integration.Model.Fbs.Dictionary.KbkModel;
 import org.apache.ibatis.session.SqlSessionFactory;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Nataliya.Gordeeva
@@ -13,7 +15,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
  */
 public class KbkDAO extends DAOBase<KbkModel> {
 
-    private final String namespace = "kbk";
+    private final String namespace = "fbs.kbk";
 
     public KbkDAO(Class<KbkModel> type, SqlSessionFactory containerSessionFactory) {
         super(type, containerSessionFactory);
@@ -35,5 +37,10 @@ public class KbkDAO extends DAOBase<KbkModel> {
     public KbkModel getById(Long id)
     {
         return super.getById(namespace + "." + "getById", id);
+    }
+
+    public List<KbkModel> getAll()
+    {
+        return super.getAll(namespace + "." + "getAll");
     }
 }

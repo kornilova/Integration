@@ -19,6 +19,24 @@ public class KbkModel extends ModelBase {
     private Integer startYear;
     private Integer endYear;
     private Integer exported;
+    private Long kbkAdminId;
+    private Long kbkTypeId;
+
+    public Long getKbkTypeId() {
+        return kbkTypeId;
+    }
+
+    public void setKbkTypeId(Long kbkTypeId) {
+        this.kbkTypeId = kbkTypeId;
+    }
+
+    public Long getKbkAdminId() {
+        return kbkAdminId;
+    }
+
+    public void setKbkAdminId(Long kbkAdminId) {
+        this.kbkAdminId = kbkAdminId;
+    }
 
     public Integer getExported() {
         return exported;

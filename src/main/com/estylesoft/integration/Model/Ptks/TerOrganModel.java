@@ -2,6 +2,8 @@ package com.estylesoft.integration.Model.Ptks;
 
 import com.estylesoft.integration.Model.ModelBase;
 
+import java.util.Date;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Nataliya.Gordeeva
@@ -17,6 +19,7 @@ public class TerOrganModel extends ModelBase {
     private String name;
     private Long opfrId;
     private String opfrCode;
+    private Integer isOpfrCurrent;
     private String shortName;
     private String companyName;
     private String address;
@@ -27,6 +30,42 @@ public class TerOrganModel extends ModelBase {
     private Long kpp;
     private Long ogrn;
     private String comment;
+
+    private Integer isExported;
+    private Date defectFbsDate;
+    private Integer isCurrent;
+
+    public Integer getOpfrCurrent() {
+        return isOpfrCurrent;
+    }
+
+    public void setOpfrCurrent(Integer opfrCurrent) {
+        isOpfrCurrent = opfrCurrent;
+    }
+
+    public Integer getCurrent() {
+        return isCurrent;
+    }
+
+    public void setCurrent(Integer current) {
+        isCurrent = current;
+    }
+
+    public Date getDefectFbsDate() {
+        return defectFbsDate;
+    }
+
+    public void setDefectFbsDate(Date defectFbsDate) {
+        this.defectFbsDate = defectFbsDate;
+    }
+
+    public Integer getExported() {
+        return isExported;
+    }
+
+    public void setExported(Integer exported) {
+        isExported = exported;
+    }
 
     public Long getOpfrId() {
         return opfrId;

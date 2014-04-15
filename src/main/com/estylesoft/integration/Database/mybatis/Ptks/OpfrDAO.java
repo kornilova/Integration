@@ -5,6 +5,9 @@ import com.estylesoft.integration.Model.Ptks.OpfModel;
 import com.estylesoft.integration.Model.Ptks.OpfrModel;
 import org.apache.ibatis.session.SqlSessionFactory;
 
+import java.util.List;
+import java.util.Map;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Nataliya.Gordeeva
@@ -14,7 +17,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
  */
 public class OpfrDAO extends DAOBase<OpfrModel> {
 
-    private final String namespace = "opfr";
+    private final String namespace = "ptks.opfr";
 
     public OpfrDAO(Class<OpfrModel> type, SqlSessionFactory containerSessionFactory) {
         super(type, containerSessionFactory);
@@ -23,5 +26,15 @@ public class OpfrDAO extends DAOBase<OpfrModel> {
     public OpfrModel getByCode(String code)
     {
         return super.getByCode(namespace + "." + "getByCode", code);
+    }
+
+    public OpfrModel getPfrCurrent(Map params)
+    {
+        return super.getByMap(namespace + "." + "getCurrent", params);
+    }
+
+    public List<OpfrModel> getAll()
+    {
+        return super.getAll(namespace + "." + "getAll");
     }
 }

@@ -6,6 +6,8 @@ import com.estylesoft.integration.IntegrationException;
 import com.estylesoft.integration.Model.Fbs.Dictionary.RegistrationStartModel;
 import org.apache.ibatis.session.SqlSessionFactory;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Nataliya.Gordeeva
@@ -53,5 +55,9 @@ public class RegistrationStartHelper {
 
     public RegistrationStartModel getByCode(String code) throws IntegrationException {
         return registrationStartDAO.getByCode(code);
+    }
+
+    public List<RegistrationStartModel> getAll() throws IntegrationException {
+        return registrationStartDAO.getAll();
     }
 }

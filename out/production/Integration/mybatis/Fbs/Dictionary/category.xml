@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="category">
+<mapper namespace="fbs.category">
 
 
  <insert id="insert" parameterType="com.estylesoft.integration.Model.Fbs.Dictionary.CategoryModel">
@@ -15,21 +15,37 @@
         )
     </insert>
 
+    <sql id="selectAllFields">
+    select
+          CATEGORY_ID as id,
+          CATEGORY_CODE as code,
+          CATEGORY_NAME as name,
+          CATEGORY_BY_OO as oneWindow,
+          CATEGORY_IS_EMPLOYER as employer,
+          CATEGORY_TO_FOMS as foms,
+          CATEGORY_REG_IS_PFR as isPfr
+    </sql>
+
     <delete id="delete" parameterType="Long">
         delete from FBS_CATEGORY
         where CATEGORY_ID = #{id}
     </delete>
 
     <select id="getByCode" parameterType="String" resultType="com.estylesoft.integration.Model.Fbs.Dictionary.CategoryModel">
-          SELECT CATEGORY_ID as id, CATEGORY_CODE as code
+        <include refid="selectAllFields"/>
           FROM FBS_CATEGORY
           WHERE CATEGORY_CODE = #{code}
     </select>
 
     <select id="getById" parameterType="Long" resultType="com.estylesoft.integration.Model.Fbs.Dictionary.CategoryModel">
-          SELECT CATEGORY_ID as id, CATEGORY_CODE as code
+        <include refid="selectAllFields"/>
           FROM FBS_CATEGORY
           WHERE KBK_ID = #{id}
+    </select>
+
+    <select id="getAll" parameterType="Long" resultType="com.estylesoft.integration.Model.Fbs.Dictionary.CategoryModel">
+        <include refid="selectAllFields"/>
+        FROM FBS_CATEGORY
     </select>
 
 </mapper>

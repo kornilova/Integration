@@ -1,16 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="opfr">
+<mapper namespace="ptks.opfr">
+
+    <sql id="selectAllFields">
+    SELECT
+          opfr.MRDV_ID as id,
+          opfr.FDOK_ID as federalOkrugId,
+          opfr.MRDV_CODE as code,
+          opfr.MRDV_NAME as name,
+          opfr.MRDV_FULL_NAME as fullName,
+          opfr.MRDV_SHORT_NAME as shortName,
+          opfr.MRDV_ADDRESS as address,
+          opfr.MRDV_PHONE as phone,
+          opfr.MRDV_INN as inn,
+          opfr.MRDV_KPP as kpp,
+          opfr.MRDV_IS_EXPORTED as isExported,
+          opfr.MRDV_DEFLECT_BY_FBS_DATE as defectFbsDate,
+          opfr.MRDV_CURRENT as isCurrent,
+          fo.FDOK_CODE as federalOkrugCode
+    </sql>
+
+    <sql id="dictJoin">
+    left outer join STH_FED_OKRUG fo on opfr.FDOK_ID = fo.FDOK_ID
+     </sql>
 
     <select id="getByCode" parameterType="String" resultType="com.estylesoft.integration.Model.Ptks.OpfrModel">
-          SELECT MRDV_ID as id, MRDV_CODE as code
-          FROM STH_MAIN_REG_DIV_PFR
-          WHERE MRDV_CODE = #{code}
+        <include refid="selectAllFields"/>
+        FROM STH_MAIN_REG_DIV_PFR opfr
+        <include refid="dictJoin"/>
+        WHERE opfr.MRDV_CODE = #{code}
     </select>
 
-<!--    <delete id="delete" parameterType="Long">
-        delete from STH_MAIN_REG_DIV_PFR
-        where MRDV_ID = #{id}
-    </delete>-->
+    <select id="getCurrent" parameterType="Map" resultType="com.estylesoft.integration.Model.Ptks.OpfrModel">
+        <include refid="selectAllFields"/>
+        FROM STH_MAIN_REG_DIV_PFR opfr
+        <include refid="dictJoin"/>
+        where opfr.MRDV_CURRENT=#{isCurrent}
+    </select>
+
+    <select id="getAll" resultType="com.estylesoft.integration.Model.Ptks.OpfrModel">
+        <include refid="selectAllFields"/>
+        FROM STH_MAIN_REG_DIV_PFR opfr
+        <include refid="dictJoin"/>
+    </select>
 
 </mapper>

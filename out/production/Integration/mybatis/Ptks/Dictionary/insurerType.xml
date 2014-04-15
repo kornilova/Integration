@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ptks.insurerType">
+
+
+ <insert id="insert" parameterType="com.estylesoft.integration.Model.Ptks.Dictionary.InsurerTypeModel">
+        insert into STH_TYPE(TP_ID, TP_NAME, TP_PERSON, TP_ACTUAL_FBS )
+        values (
+        #{id},
+        #{name},
+        #{isPerson}
+        )
+    </insert>
+
+    <sql id="selectAllFields">
+    select  TP_ID as id,
+    TP_NAME as name,
+    TP_PERSON as isPerson,
+    TP_ACTUAL_FBS as isActualFbs
+    </sql>
+
+    <delete id="delete" parameterType="Long">
+        delete from STH_TYPE
+        where TP_ID = #{id}
+    </delete>
+
+    <select id="getByName" parameterType="String" resultType="com.estylesoft.integration.Model.Ptks.Dictionary.InsurerTypeModel">
+        <include refid="selectAllFields"/>
+          FROM STH_TYPE
+          WHERE TP_NAME = #{name}
+    </select>
+
+    <select id="getById" parameterType="Long" resultType="com.estylesoft.integration.Model.Ptks.Dictionary.InsurerTypeModel">
+        <include refid="selectAllFields"/>
+          FROM STH_TYPE
+          WHERE TP_ID = #{id}
+    </select>
+
+    <select id="getAll" parameterType="Long" resultType="com.estylesoft.integration.Model.Ptks.Dictionary.InsurerTypeModel">
+        <include refid="selectAllFields"/>
+        FROM STH_TYPE
+    </select>
+
+</mapper>

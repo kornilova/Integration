@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="CheckCreateMigrationDataInPtks">
-    <test name="CreateMigrationDataInPtks">
-        <classes>
-            <class name="com.estylesoft.integration.test.Ptks.CreateMigrationDataInPtks" />
-        </classes>
-    </test>
+<suite name="CompareExportedDictionaryInPtks">
+<listeners>
+    <listener class-name="Reporter.CheckReporter" />
+</listeners>
+<test name="CompareExportedDictionaryInPtks">
+    <classes>
+        <class name="com.estylesoft.integration.test.Ptks.CompareExportedDictionaryInPtks">
+        <methods>
+            <include name="CheckFederalOkrug"/>
+            <include name="CheckRegistrationStart"/>
+            <include name="CheckRegistrationFinish"/>
+            <include name="CheckKbk"/>
+            <include name="CheckCategory"/>
+            <include name="CheckInsurerType"/>
+        </methods>
+         </class>
+    </classes>
+</test>
 </suite>
 
 

@@ -4,6 +4,7 @@ import com.estylesoft.integration.Database.mybatis.DAOBase;
 import com.estylesoft.integration.Model.Ptks.TerOrganModel;
 import org.apache.ibatis.session.SqlSessionFactory;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -15,7 +16,7 @@ import java.util.Map;
  */
 public class TerOrganDAO extends DAOBase<TerOrganModel> {
 
-    private final String namespace = "terOrgan";
+    private final String namespace = "ptks.terOrgan";
 
     public TerOrganDAO(Class<TerOrganModel> type, SqlSessionFactory containerSessionFactory) {
         super(type, containerSessionFactory);
@@ -38,5 +39,10 @@ public class TerOrganDAO extends DAOBase<TerOrganModel> {
     public TerOrganModel getById(Long id)
     {
         return super.getById(namespace + "." + "getById", id);
+    }
+
+    public List<TerOrganModel> getAll()
+    {
+        return super.getAll(namespace + "." + "getAll");
     }
 }

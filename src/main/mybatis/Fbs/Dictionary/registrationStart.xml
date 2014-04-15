@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="registrationStart">
+<mapper namespace="fbs.registrationStart">
 
 
  <insert id="insert" parameterType="com.estylesoft.integration.Model.Fbs.Dictionary.RegistrationStartModel">
@@ -10,21 +10,32 @@
         #{name})
     </insert>
 
+    <sql id="selectAllFields">
+    select  REG_START_ID as id,
+            REG_START_CODE as code,
+            REG_START_NAME as name
+    </sql>
+
     <delete id="delete" parameterType="Long">
         delete from FBS_REG_START
         where REG_START_ID = #{id}
     </delete>
 
     <select id="getByCode" parameterType="String" resultType="com.estylesoft.integration.Model.Fbs.Dictionary.RegistrationStartModel">
-          SELECT REG_START_ID as id, REG_START_CODE as code
+        <include refid="selectAllFields"/>
           FROM FBS_REG_START
           WHERE REG_START_CODE = #{code}
     </select>
 
     <select id="getById" parameterType="Long" resultType="com.estylesoft.integration.Model.Fbs.Dictionary.RegistrationStartModel">
-          SELECT REG_START_ID as id, REG_START_CODE as code, REG_START_NAME as name
+        <include refid="selectAllFields"/>
           FROM FBS_REG_START
           WHERE REG_START_ID = #{id}
+    </select>
+
+    <select id="getAll" resultType="com.estylesoft.integration.Model.Fbs.Dictionary.RegistrationStartModel">
+        <include refid="selectAllFields"/>
+        FROM FBS_REG_START
     </select>
 
 </mapper>

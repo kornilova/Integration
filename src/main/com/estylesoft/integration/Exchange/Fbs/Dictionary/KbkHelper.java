@@ -6,6 +6,8 @@ import com.estylesoft.integration.IntegrationException;
 import com.estylesoft.integration.Model.Fbs.Dictionary.KbkModel;
 import org.apache.ibatis.session.SqlSessionFactory;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Nataliya.Gordeeva
@@ -53,5 +55,9 @@ public class KbkHelper {
 
     public KbkModel getByCode(String code) throws IntegrationException {
         return kbkDAO.getByCode(code);
+    }
+
+    public List<KbkModel> getAll() throws IntegrationException {
+        return kbkDAO.getAll();
     }
 }

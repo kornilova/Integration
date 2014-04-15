@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ptks.registrationFinish">
+    <insert id="insert" parameterType="com.estylesoft.integration.Model.Ptks.Dictionary.RegistrationStartModel">
+        insert into STH_RELEASE_REG(RR_ID, RR_NAME, RR_CODE, RR_ACTUAL_FBS)
+        values (
+        #{id},
+        #{name},
+        #{code},
+        #{isActualFbs})
+    </insert>
+
+    <sql id="selectAllFields">
+    select  RR_ID as id,
+            RR_NAME as name,
+            RR_CODE as code,
+            RR_ACTUAL_FBS as isActualFbs
+    </sql>
+
+    <delete id="delete" parameterType="Long">
+        delete from STH_RELEASE_REG
+        where RR_ID = #{id}
+    </delete>
+
+    <select id="getByCode" parameterType="Integer" resultType="com.estylesoft.integration.Model.Ptks.Dictionary.RegistrationFinishModel">
+        <include refid="selectAllFields"/>
+        FROM STH_RELEASE_REG
+        WHERE RR_CODE = #{code}
+    </select>
+
+    <select id="getById" parameterType="Long" resultType="com.estylesoft.integration.Model.Ptks.Dictionary.RegistrationFinishModel">
+        <include refid="selectAllFields"/>
+        FROM STH_RELEASE_REG
+        WHERE RR_ID = #{id}
+    </select>
+
+    <select id="getAll" resultType="com.estylesoft.integration.Model.Ptks.Dictionary.RegistrationFinishModel">
+        <include refid="selectAllFields"/>
+        FROM STH_RELEASE_REG
+    </select>
+
+</mapper>

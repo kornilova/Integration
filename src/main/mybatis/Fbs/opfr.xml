@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="fbs.opfr">
+
+    <sql id="selectAllFields">
+    SELECT
+          opfr.OPFR_ID as id,
+          opfr.FO_ID as federalOkrugId,
+          opfr.OPFR_CODE as code,
+          opfr.OPFR_NAME as name,
+          opfr.OPFR_FULL_NAME as fullName,
+          opfr.OPFR_SHORT_NAME as shortName,
+          opfr.OPFR_ADDRESS as address,
+          opfr.OPFR_PHONE as phone,
+          opfr.OPFR_INN as inn,
+          opfr.OPFR_KPP as kpp,
+          fo.FO_CODE as federalOkrugCode
+    </sql>
+
+    <sql id="dictJoin">
+    left outer join FBS_FO fo on  opfr.FO_ID= fo.FO_ID
+     </sql>
+
+    <select id="getByCode" parameterType="String" resultType="com.estylesoft.integration.Model.Fbs.OpfrModel">
+        <include refid="selectAllFields"/>
+        FROM FBS_OPFR opfr
+        <include refid="dictJoin"/>
+        WHERE opfr.OPFR_CODE = #{code}
+    </select>
+
+    <select id="getAll" resultType="com.estylesoft.integration.Model.Fbs.OpfrModel">
+        <include refid="selectAllFields"/>
+        FROM FBS_OPFR opfr
+        <include refid="dictJoin"/>
+    </select>
+
+</mapper>

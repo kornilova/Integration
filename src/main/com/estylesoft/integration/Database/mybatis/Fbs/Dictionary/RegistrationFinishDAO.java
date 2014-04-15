@@ -4,6 +4,8 @@ import com.estylesoft.integration.Database.mybatis.DAOBase;
 import com.estylesoft.integration.Model.Fbs.Dictionary.RegistrationFinishModel;
 import org.apache.ibatis.session.SqlSessionFactory;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Nataliya.Gordeeva
@@ -13,7 +15,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
  */
 public class RegistrationFinishDAO extends DAOBase<RegistrationFinishModel> {
 
-    private final String namespace = "registrationFinish";
+    private final String namespace = "fbs.registrationFinish";
 
     public RegistrationFinishDAO(Class<RegistrationFinishModel> type, SqlSessionFactory containerSessionFactory) {
         super(type, containerSessionFactory);
@@ -35,5 +37,10 @@ public class RegistrationFinishDAO extends DAOBase<RegistrationFinishModel> {
     public RegistrationFinishModel getById(Long id)
     {
         return super.getById(namespace + "." + "getById", id);
+    }
+
+    public List<RegistrationFinishModel> getAll()
+    {
+        return super.getAll(namespace + "." + "getAll");
     }
 }

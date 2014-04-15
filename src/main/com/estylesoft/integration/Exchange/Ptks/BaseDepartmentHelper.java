@@ -7,6 +7,7 @@ import com.estylesoft.integration.Model.Ptks.BaseDepartmentModel;
 import org.apache.ibatis.session.SqlSessionFactory;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -59,5 +60,10 @@ public class BaseDepartmentHelper {
         params.put("code", code);
         params.put("opfrId", opfrId);
         return code!=null?boDAO.getByCodeOpfr(params):null;
+    }
+
+    public List<BaseDepartmentModel> getAll()
+    {
+        return boDAO.getAll();
     }
 }

@@ -49,8 +49,19 @@
         <mapper resource="mybatis/Fbs/Dictionary/kbk.xml"/>
         <mapper resource="mybatis/Fbs/Dictionary/category.xml"/>
         <mapper resource="mybatis/Fbs/Dictionary/insurerType.xml"/>
+        <mapper resource="mybatis/Fbs/baseDepartment.xml"/>
         <mapper resource="mybatis/Ptks/Dictionary/federalOkrug.xml"/>
+        <mapper resource="mybatis/Ptks/Dictionary/registrationStart.xml"/>
+        <mapper resource="mybatis/Ptks/Dictionary/registrationFinish.xml"/>
+        <mapper resource="mybatis/Ptks/Dictionary/kbk.xml"/>
+        <mapper resource="mybatis/Ptks/Dictionary/category.xml"/>
+        <mapper resource="mybatis/Ptks/Dictionary/insurerType.xml"/>
+        <mapper resource="mybatis/Fbs/opfr.xml"/>
+        <mapper resource="mybatis/Fbs/protocol.xml"/>
+        <mapper resource="mybatis/Fbs/package.xml"/>
+        <mapper resource="mybatis/Fbs/terOgran.xml"/>
     </mappers>
+
 </configuration>
 
 

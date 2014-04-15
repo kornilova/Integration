@@ -7,6 +7,7 @@ import com.estylesoft.integration.Model.Ptks.TerOrganModel;
 import org.apache.ibatis.session.SqlSessionFactory;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -59,5 +60,10 @@ public class TerOrganHelper {
         params.put("code", code);
         params.put("opfrId", opfrId);
         return terOrganDAO.getByCodeOpfr(params);
+    }
+
+    public List<TerOrganModel> getAll()
+    {
+        return terOrganDAO.getAll();
     }
 }

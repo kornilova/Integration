@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="kbk">
+<mapper namespace="fbs.kbk">
 
 
  <insert id="insert" parameterType="com.estylesoft.integration.Model.Fbs.Dictionary.KbkModel">
@@ -17,21 +17,48 @@
         )
     </insert>
 
+    <sql id="selectAllFields">
+    SELECT kbk.KBK_ID as id,
+    kbk.KBK_MARKER_ID as kbkTypeId,
+    kbk.KBK_ADMIN_ID as kbkAdminId,
+    kbk.KBK_CODE as code,
+    kbk.KBK_FULL_NAME as fullName,
+    kbk.KBK_SHORT_NAME as shortName,
+    kbk.KBK_EXPORT as exported,
+    kbk.KBK_START_DATE as startYear,
+    kbk.KBK_END_DATE as endYear,
+    mrk.KBK_MARKER_NAME as typeName,
+    adm.KBK_ADMIN_NAME as adminName
+    </sql>
+
+    <sql id="dictJoin">
+    join FBS_KBK_MARKER mrk on mrk.KBK_MARKER_ID = kbk.KBK_MARKER_ID
+    join FBS_KBK_ADMIN adm on adm.KBK_ADMIN_ID = kbk.KBK_ADMIN_ID
+     </sql>
+
     <delete id="delete" parameterType="Long">
         delete from FBS_KBK
         where KBK_ID = #{id}
     </delete>
 
     <select id="getByCode" parameterType="String" resultType="com.estylesoft.integration.Model.Fbs.Dictionary.KbkModel">
-          SELECT KBK_ID as id, KBK_CODE as code
-          FROM FBS_KBK
-          WHERE KBK_CODE = #{code}
+        <include refid="selectAllFields"/>
+          FROM FBS_KBK kbk
+        <include refid="dictJoin"/>
+          WHERE kbk.KBK_CODE = #{code}
     </select>
 
     <select id="getById" parameterType="Long" resultType="com.estylesoft.integration.Model.Fbs.Dictionary.KbkModel">
-          SELECT KBK_ID as id, KBK_CODE as code
-          FROM FBS_KBK
-          WHERE KBK_ID = #{id}
+        <include refid="selectAllFields"/>
+          FROM FBS_KBK kbk
+        <include refid="dictJoin"/>
+          WHERE kbk.KBK_ID = #{id}
+    </select>
+
+    <select id="getAll" resultType="com.estylesoft.integration.Model.Fbs.Dictionary.KbkModel">
+        <include refid="selectAllFields"/>
+        FROM FBS_KBK kbk
+        <include refid="dictJoin"/>
     </select>
 
 </mapper>

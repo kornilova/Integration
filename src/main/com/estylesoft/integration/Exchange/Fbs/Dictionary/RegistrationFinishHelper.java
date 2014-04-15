@@ -6,6 +6,8 @@ import com.estylesoft.integration.IntegrationException;
 import com.estylesoft.integration.Model.Fbs.Dictionary.RegistrationFinishModel;
 import org.apache.ibatis.session.SqlSessionFactory;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Nataliya.Gordeeva
@@ -53,5 +55,9 @@ public class RegistrationFinishHelper {
 
     public RegistrationFinishModel getByCode(String code) throws IntegrationException {
         return registrationFinishDAO.getByCode(code);
+    }
+
+    public List<RegistrationFinishModel> getAll() throws IntegrationException {
+        return registrationFinishDAO.getAll();
     }
 }

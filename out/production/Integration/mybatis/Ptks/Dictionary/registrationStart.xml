@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ptks.registrationStart">
+    <insert id="insert" parameterType="com.estylesoft.integration.Model.Ptks.Dictionary.RegistrationStartModel">
+        insert into STH_ARRANGE_REG(AR_ID, AR_NAME, AR_CODE, AR_ACTUAL_FBS)
+        values (
+        #{id},
+        #{name},
+        #{code},
+        #{isActualFbs})
+    </insert>
+
+    <sql id="selectAllFields">
+    select  AR_ID as id,
+            AR_NAME as name,
+            AR_CODE as code,
+            AR_ACTUAL_FBS as isActualFbs
+    </sql>
+
+    <delete id="delete" parameterType="Long">
+        delete from STH_ARRANGE_REG
+        where AR_ID = #{id}
+    </delete>
+
+    <select id="getByCode" parameterType="Integer" resultType="com.estylesoft.integration.Model.Ptks.Dictionary.RegistrationStartModel">
+        <include refid="selectAllFields"/>
+        FROM STH_ARRANGE_REG
+        WHERE AR_CODE = #{code}
+    </select>
+
+    <select id="getById" parameterType="Long" resultType="com.estylesoft.integration.Model.Ptks.Dictionary.RegistrationStartModel">
+        <include refid="selectAllFields"/>
+        FROM STH_ARRANGE_REG
+        WHERE AR_ID = #{id}
+    </select>
+
+    <select id="getAll" resultType="com.estylesoft.integration.Model.Ptks.Dictionary.RegistrationStartModel">
+        <include refid="selectAllFields"/>
+        FROM STH_ARRANGE_REG
+    </select>
+
+</mapper>

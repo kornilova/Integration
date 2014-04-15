@@ -58,42 +58,42 @@ public class CreateExportedDictionaryInFbs extends TestBase {
     }
 
     @Test(description = "Создать Федеральный округ",dataProvider = "getDataFromExcel")
-    @DataProviderParams("source=" + "Fbs" + ";fileName="+ fileName +";tabName="+ tabName +";class="+"FederalOkrugModel"+";testTableName="+ "CreateDictionaryDataInFbs.CreateFederalOkrug")
+    @DataProviderParams("source=" + "Fbs.Dictionary" + ";fileName="+ fileName +";tabName="+ tabName +";class="+"FederalOkrugModel"+";testTableName="+ "CreateDictionaryDataInFbs.CreateFederalOkrug")
     public void CreateFederalOkrug(FederalOkrugModel fo) throws SQLException, IntegrationException {
         CheckResult res = federalOkrugHelper.create(fo);
         assertTrue(res.getIsSuccess(), res.getMessageTest());
     }
 
     @Test(description = "Создать Признак постановки на учет",dataProvider = "getDataFromExcel")
-    @DataProviderParams("source=" + "Fbs" + ";fileName="+ fileName +";tabName="+ tabName +";class="+"RegistrationStartModel"+";testTableName="+ "CreateDictionaryDataInFbs.CreateRegistrationStart")
+    @DataProviderParams("source=" + "Fbs.Dictionary" + ";fileName="+ fileName +";tabName="+ tabName +";class="+"RegistrationStartModel"+";testTableName="+ "CreateDictionaryDataInFbs.CreateRegistrationStart")
     public void CreateRegistrationStart(RegistrationStartModel regStart) throws SQLException, IntegrationException {
         CheckResult res = registrationStartHelper.create(regStart);
         assertTrue(res.getIsSuccess(), res.getMessageTest());
     }
 
     @Test(description = "Создать Признак сняия с учета",dataProvider = "getDataFromExcel")
-    @DataProviderParams("source=" + "Fbs" + ";fileName="+ fileName +";tabName="+ tabName +";class="+"RegistrationFinishModel"+";testTableName="+ "CreateDictionaryDataInFbs.CreateRegistrationFinish")
+    @DataProviderParams("source=" + "Fbs.Dictionary" + ";fileName="+ fileName +";tabName="+ tabName +";class="+"RegistrationFinishModel"+";testTableName="+ "CreateDictionaryDataInFbs.CreateRegistrationFinish")
     public void CreateRegistrationFinish(RegistrationFinishModel regFinish) throws SQLException, IntegrationException {
         CheckResult res = registrationFinishHelper.create(regFinish);
         assertTrue(res.getIsSuccess(), res.getMessageTest());
     }
 
     @Test(description = "Создать Код бюджетной классификации",dataProvider = "getDataFromExcel")
-    @DataProviderParams("source=" + "Fbs" + ";fileName="+ fileName +";tabName="+ tabName +";class="+"KbkModel"+";testTableName="+ "CreateDictionaryDataInFbs.CreateKbk")
+    @DataProviderParams("source=" + "Fbs.Dictionary" + ";fileName="+ fileName +";tabName="+ tabName +";class="+"KbkModel"+";testTableName="+ "CreateDictionaryDataInFbs.CreateKbk")
     public void CreateKbk(KbkModel kbk) throws SQLException, IntegrationException {
         CheckResult res = kbkHelper.create(kbk);
         assertTrue(res.getIsSuccess(), res.getMessageTest());
     }
 
     @Test(description = "Создать Категории плательщика",dataProvider = "getDataFromExcel")
-    @DataProviderParams("source=" + "Fbs" + ";fileName="+ fileName +";tabName="+ tabName +";class="+"CategoryModel"+";testTableName="+ "CreateDictionaryDataInFbs.CreateCategory")
+    @DataProviderParams("source=" + "Fbs.Dictionary" + ";fileName="+ fileName +";tabName="+ tabName +";class="+"CategoryModel"+";testTableName="+ "CreateDictionaryDataInFbs.CreateCategory")
     public void CreateCategory(CategoryModel category) throws SQLException, IntegrationException {
         CheckResult res = categoryHelper.create(category);
         assertTrue(res.getIsSuccess(), res.getMessageTest());
     }
 
     @Test(description = "Создать Тип плательщика",dataProvider = "getDataFromExcel")
-    @DataProviderParams("source=" + "Fbs" + ";fileName="+ fileName +";tabName="+ tabName +";class="+"InsurerTypeModel"+";testTableName="+ "CreateDictionaryDataInFbs.CreateInsurerType")
+    @DataProviderParams("source=" + "Fbs.Dictionary" + ";fileName="+ fileName +";tabName="+ tabName +";class="+"InsurerTypeModel"+";testTableName="+ "CreateDictionaryDataInFbs.CreateInsurerType")
     public void CreateInsurerType(InsurerTypeModel insurerType) throws SQLException, IntegrationException {
         CheckResult res = insurerTypeHelper.create(insurerType);
         assertTrue(res.getIsSuccess(), res.getMessageTest());

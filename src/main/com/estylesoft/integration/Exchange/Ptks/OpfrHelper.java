@@ -8,6 +8,10 @@ import com.estylesoft.integration.Model.Ptks.BaseDepartmentModel;
 import com.estylesoft.integration.Model.Ptks.OpfrModel;
 import org.apache.ibatis.session.SqlSessionFactory;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Nataliya.Gordeeva
@@ -26,5 +30,17 @@ public class OpfrHelper {
 
     public OpfrModel getByCode(String code) throws IntegrationException {
         return opfrDAO.getByCode(code);
+    }
+
+    public OpfrModel getPfrCurrent()
+    {
+        Map<String, Object> params = new HashMap<String, Object>(1);
+        params.put("isCurrent", 1);
+        return opfrDAO.getPfrCurrent(params);
+    }
+
+    public List<OpfrModel> getAll()
+    {
+        return opfrDAO.getAll();
     }
 }

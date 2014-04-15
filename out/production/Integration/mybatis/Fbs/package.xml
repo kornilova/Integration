@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="fbs.package">
+
+    <sql id="selectAllFields">
+    SELECT
+        pckg.PACKAGE_ID as id ,
+        pckg.PACKAGE_ERROR_ID as errorId,
+        pckg.PACKAGE_NAME as name,
+        pckg.PACKAGE_LOAD_DATE,
+        pckg.PACKAGE_OPER_TYPE,
+        pckg.PACKAGE_STATUS as status,
+        pckg.OPFR_ID as opfrId,
+        pckg.PACKAGE_NUMBER as number
+    </sql>
+
+    <sql id="dictJoin">
+    inner join FBS_OPFR opfr on opfr.OPFR_ID = pckg.OPFR_ID
+     </sql>
+
+    <select id="getMaxNumberByOpfrId" parameterType="Long" resultType="com.estylesoft.integration.Model.Fbs.PackageModel">
+    <include refid="selectAllFields"/>
+    FROM FBS_PACKAGE pckg
+    <include refid="dictJoin"/>
+    WHERE pckg.OPFR_ID = #{opfrId}
+    and    pckg.PACKAGE_NUMBER =  (select max(pckgi.PACKAGE_NUMBER)
+    FROM FBS_PACKAGE pckgi where pckgi.OPFR_ID = #{opfrId})
+</select>
+
+    <select id="getMaxNumberByName" parameterType="String" resultType="com.estylesoft.integration.Model.Fbs.PackageModel">
+        SELECT
+        pckg.PACKAGE_ID as id,
+        pckg.PACKAGE_ERROR_ID as errorId,
+        pckg.PACKAGE_NAME as name,
+        err.PACKAGE_ERROR_CODE as errorCode,
+        err.PACKAGE_ERROR_DESCR as errorDesc
+        FROM FBS_PACKAGE pckg
+        LEFT OUTER JOIN FBS_PACKAGE_ERROR err on err.PACKAGE_ERROR_ID = pckg.PACKAGE_ERROR_ID
+        WHERE pckg.PACKAGE_NUMBER =  (select max(pckgi.PACKAGE_NUMBER)
+        FROM FBS_PACKAGE pckgi where pckgi.PACKAGE_NUMBER like #{number})
+    </select>
+</mapper>

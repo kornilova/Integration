@@ -4,6 +4,8 @@ import com.estylesoft.integration.Database.mybatis.DAOBase;
 import com.estylesoft.integration.Model.Fbs.Dictionary.RegistrationStartModel;
 import org.apache.ibatis.session.SqlSessionFactory;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Nataliya.Gordeeva
@@ -13,7 +15,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
  */
 public class RegistrationStartDAO extends DAOBase<RegistrationStartModel> {
 
-    private final String namespace = "registrationStart";
+    private final String namespace = "fbs.registrationStart";
 
     public RegistrationStartDAO(Class<RegistrationStartModel> type, SqlSessionFactory containerSessionFactory) {
         super(type, containerSessionFactory);
@@ -35,5 +37,10 @@ public class RegistrationStartDAO extends DAOBase<RegistrationStartModel> {
     public RegistrationStartModel getById(Long id)
     {
         return super.getById(namespace + "." + "getById", id);
+    }
+
+    public List<RegistrationStartModel> getAll()
+    {
+        return super.getAll(namespace + "." + "getAll");
     }
 }

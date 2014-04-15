@@ -7,9 +7,9 @@
     <list default="true" id="21776f48-21a0-4ecb-ba73-d47519fe1d3d" name="Default" comment="" />
     <ignored path="Integration.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/build.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1390482478267" ignored="false" />
+    <file path="/build.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396522484592" ignored="false" />
     <file path="/Main.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1383118959608" ignored="false" />
-    <file path="/testng.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396423619689" ignored="false" />
+    <file path="/testng.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396518867546" ignored="false" />
     <file path="/test.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1383120160128" ignored="false" />
     <file path="$PROJECT_DIR$/../GenerateScripts/src/IntegrationFBSPTKS/CompareIntegrationData.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1383124913306" ignored="false" />
     <file path="/CompareIntegrationData.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1383121772436" ignored="false" />
@@ -23,8 +23,8 @@
     <file path="/IntegrationException.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1383135129006" ignored="false" />
     <file path="/ExportDictionaryDataFromFBS.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1383227941066" ignored="false" />
     <file path="/DB2Connection.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1383137857180" ignored="false" />
-    <file path="/CheckResult.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1383140653832" ignored="false" />
-    <file path="/fragment.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396452946772" ignored="false" />
+    <file path="/CheckResult.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396516206799" ignored="false" />
+    <file path="/fragment.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1397575393830" ignored="false" />
     <file path="/Dummy.txt" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1395822438529" ignored="false" />
     <file path="/JdbcMultipleResultSets.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1383200564456" ignored="false" />
     <file path="/MigrationDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1383216634352" ignored="false" />
@@ -42,7 +42,7 @@
     <file path="/IntegrationTester.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1383223545268" ignored="false" />
     <file path="/fragment.js2" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1383224397450" ignored="false" />
     <file path="/MANIFEST.TXT" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1383224685975" ignored="false" />
-    <file path="/mybatis.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396444446197" ignored="false" />
+    <file path="/mybatis.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396615316854" ignored="false" />
     <file path="/DictionaryPtksDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1383226770182" ignored="false" />
     <file path="/DictionaryFbsDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1390919644290" ignored="false" />
     <file path="$PROJECT_DIR$/../GenerateScripts/build.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1390482822995" ignored="false" />
@@ -62,7 +62,7 @@
     <file path="$PROJECT_DIR$/../GenerateScripts/src/HIMKI/CompareOracleMySQLDatabase.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1390482349966" ignored="false" />
     <file path="$PROJECT_DIR$/../GenerateScripts/src/FBS/CreateDatabaseScript.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1390483056517" ignored="false" />
     <file path="/Bo.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1391006225861" ignored="false" />
-    <file path="/BaseDepartmentModel.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396338802498" ignored="false" />
+    <file path="/BaseDepartmentModel.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1397559434956" ignored="false" />
     <file path="/TbModelBase.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1390920975457" ignored="false" />
     <file path="/ModelBase.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1395754199163" ignored="false" />
     <file path="/GenericPersistence.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1390940764150" ignored="false" />
@@ -70,21 +70,21 @@
     <file path="/FbsDAOBase.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1390922208573" ignored="false" />
     <file path="/PtksDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1390922384236" ignored="false" />
     <file path="/MyBatisFbsSqlSessionFactory.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1390925587180" ignored="false" />
-    <file path="/BaseDepartmentDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396341213975" ignored="false" />
-    <file path="/BaseDepartmentHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396355360060" ignored="false" />
+    <file path="/BaseDepartmentDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1397559737117" ignored="false" />
+    <file path="/BaseDepartmentHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1397561474010" ignored="false" />
     <file path="/CreateMigrationDataInPtks.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396427619537" ignored="false" />
     <file path="/DAOBase.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1395822126646" ignored="false" />
     <file path="/MyBatisSqlSession.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1390978731314" ignored="false" />
     <file path="/IDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1393843128168" ignored="false" />
-    <file path="/ptksBaseDepartment.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396354829929" ignored="false" />
-    <file path="/CheckReporter.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1391065421766" ignored="false" />
+    <file path="/ptksBaseDepartment.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1397562127786" ignored="false" />
+    <file path="/CheckReporter.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396610788186" ignored="false" />
     <file path="/TestBase.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396450663173" ignored="false" />
     <file path="/ExcelHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1391698886616" ignored="false" />
     <file path="/TerOrgan.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1391175629128" ignored="false" />
     <file path="/TerOrganDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396341341955" ignored="false" />
-    <file path="/terOgran.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396354996865" ignored="false" />
-    <file path="/TerOrganModel.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396342600224" ignored="false" />
-    <file path="/TerOrganHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396355637764" ignored="false" />
+    <file path="/terOgran.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1397571857284" ignored="false" />
+    <file path="/TerOrganModel.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1397572068493" ignored="false" />
+    <file path="/TerOrganHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1397570989651" ignored="false" />
     <file path="/TerDepartmentPFR.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392021074579" ignored="false" />
     <file path="/TerDepartmentPFRDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396341331427" ignored="false" />
     <file path="/TerDepartmentPFRHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396355609634" ignored="false" />
@@ -142,9 +142,9 @@
     <file path="/IfnsHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396355401882" ignored="false" />
     <file path="/ifns.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396354733032" ignored="false" />
     <file path="/FillMigrationDataInPtks.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392132616352" ignored="false" />
-    <file path="/opfr.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392189406395" ignored="false" />
-    <file path="/OpfrDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392189236311" ignored="false" />
-    <file path="/OpfrHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1392189329782" ignored="false" />
+    <file path="/opfr.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396970729159" ignored="false" />
+    <file path="/OpfrDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396855013288" ignored="false" />
+    <file path="/OpfrHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396615236242" ignored="false" />
     <file path="/insurer.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396343443062" ignored="false" />
     <file path="/InsurerModel.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396437579434" ignored="false" />
     <file path="/InsurerDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396341246712" ignored="false" />
@@ -162,26 +162,42 @@
     <file path="/federalOkrug.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396450924111" ignored="false" />
     <file path="/FederalOkrugHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396444967450" ignored="false" />
     <file path="/RegistrationStartModel.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396434487717" ignored="false" />
-    <file path="/RegistrationStartHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396434610616" ignored="false" />
-    <file path="/RegistrationStartDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396434551238" ignored="false" />
-    <file path="/registrationStart.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396434722059" ignored="false" />
-    <file path="/RegistrationFinishDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396435127822" ignored="false" />
-    <file path="/RegistrationFinishHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396435195059" ignored="false" />
-    <file path="/registrationFinish.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396435289797" ignored="false" />
-    <file path="/KbkModel.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396436618680" ignored="false" />
-    <file path="/KbkDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396435722895" ignored="false" />
-    <file path="/KbkHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396435773707" ignored="false" />
-    <file path="/kbk.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396436149264" ignored="false" />
+    <file path="/RegistrationStartHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396509675473" ignored="false" />
+    <file path="/RegistrationStartDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396509611928" ignored="false" />
+    <file path="/registrationStart.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396508115274" ignored="false" />
+    <file path="/RegistrationFinishDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396516611551" ignored="false" />
+    <file path="/RegistrationFinishHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396516976679" ignored="false" />
+    <file path="/registrationFinish.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396516572721" ignored="false" />
+    <file path="/KbkModel.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396522824395" ignored="false" />
+    <file path="/KbkDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396523085030" ignored="false" />
+    <file path="/KbkHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396523108867" ignored="false" />
+    <file path="/kbk.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396524063178" ignored="false" />
     <file path="/CategoryModel.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396436900447" ignored="false" />
-    <file path="/CategoryDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396436949044" ignored="false" />
-    <file path="/CategoryHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396437006014" ignored="false" />
-    <file path="/category.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396437188014" ignored="false" />
-    <file path="/InsurerTypeDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396437742597" ignored="false" />
-    <file path="/InsurerTypeHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396437977781" ignored="false" />
-    <file path="/insurerType.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396438312578" ignored="false" />
+    <file path="/CategoryDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396598619070" ignored="false" />
+    <file path="/CategoryHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396598644938" ignored="false" />
+    <file path="/category.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396602186434" ignored="false" />
+    <file path="/InsurerTypeDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396609052709" ignored="false" />
+    <file path="/InsurerTypeHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396609143834" ignored="false" />
+    <file path="/insurerType.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396609750891" ignored="false" />
     <file path="/CompareExportedDistionaryInPtks.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396450643296" ignored="false" />
-    <file path="/CompareDictionaryDataFromFBSHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396453202001" ignored="false" />
-    <file path="/Util.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396445703875" ignored="false" />
+    <file path="/CompareDictionaryDataFromFBSHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396609601569" ignored="false" />
+    <file path="/Util.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1397575549666" ignored="false" />
+    <file path="/CompareExportedDictionaryInPtks.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396609641747" ignored="false" />
+    <file path="/OpfrModel.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1396971271396" ignored="false" />
+    <file path="/CheckIntegrationResult.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1397573444265" ignored="false" />
+    <file path="/CheckIntegrationResultHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1397573392924" ignored="false" />
+    <file path="/CompareModelHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1397028292759" ignored="false" />
+    <file path="/EqualModelHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1397575628918" ignored="false" />
+    <file path="/PackageModel.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1397550375800" ignored="false" />
+    <file path="/Protocol.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1397053331137" ignored="false" />
+    <file path="/protocol.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1397054052499" ignored="false" />
+    <file path="/ProtocolDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1397550436181" ignored="false" />
+    <file path="/ProtocolHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1397486291099" ignored="false" />
+    <file path="/package.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1397550396196" ignored="false" />
+    <file path="/PackageDAO.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1397550697746" ignored="false" />
+    <file path="/PackageHelper.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1397550533215" ignored="false" />
+    <file path="/ProtocolModel.java" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1397486263365" ignored="false" />
+    <file path="/baseDepartment.xml" changelist="21776f48-21a0-4ecb-ba73-d47519fe1d3d" time="1397561319312" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,6 +215,9 @@
     <SUITE FILE_PATH="coverage/Integration$CreateMigrationDataInPtks_CreateOkato.coverage" NAME="CreateMigrationDataInPtks.CreateOkato Coverage Results" MODIFIED="1395674392180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.estylesoft.integration.test.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/Integration$CompareExportedDictionaryInPtks_CheckKbk.coverage" NAME="CompareExportedDictionaryInPtks.CheckKbk Coverage Results" MODIFIED="1396534162671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.estylesoft.integration.test.Ptks.*</FILTER>
+    </SUITE>
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -212,7 +231,6 @@
     <sortChildren value="false" />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint url="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Database/mybatis/Ptks/OkvedDAO.java" line="2" class="OkvedDAO.java" package="">
         <option name="ENABLED" value="true" />
@@ -228,7 +246,21 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Model/Ptks/Dictionary/FederalOkrugModel.java" line="18" class="com.estylesoft.integration.Model.Ptks.Dictionary.FederalOkrugModel" package="com.estylesoft.integration.Model.Ptks.Dictionary">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/Ptks/Dictionary/RegistrationStartHelper.java" line="2" class="RegistrationStartHelper.java" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/CompareDictionaryDataFromFBSHelper.java" line="252" class="com.estylesoft.integration.Exchange.CompareDictionaryDataFromFBSHelper" package="com.estylesoft.integration.Exchange">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -243,6 +275,8 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </line_breakpoints>
+    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -277,7 +311,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -287,13 +320,76 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CompareDictionaryDataFromFBSHelper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/CompareDictionaryDataFromFBSHelper.java">
+      <file leaf-file-name="terOgran.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/mybatis/Fbs/terOgran.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="45" selection-start="2225" selection-end="2225" vertical-scroll-proportion="0.0">
+            <state line="12" column="37" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EqualModelHelper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/EqualModelHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="54" column="31" selection-start="3684" selection-end="3684" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProtocolHelper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/Fbs/ProtocolHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="0" selection-start="1110" selection-end="1110" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TerOrganModel.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Model/Ptks/TerOrganModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="86" column="0" selection-start="1863" selection-end="1863" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CheckIntegrationResultHelper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/CheckIntegrationResultHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="208" column="219" selection-start="12099" selection-end="12099" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CheckReporter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/Reporter/CheckReporter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="13" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CheckIntegrationResult.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/com/estylesoft/integration/test/CheckIntegrationResult.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="4" selection-start="1056" selection-end="1056" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GitHelp.txt" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/GitHelp.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -301,85 +397,16 @@
       <file leaf-file-name="Util.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Util/Util.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="25" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0">
+            <state line="34" column="105" selection-start="972" selection-end="972" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FederalOkrugModel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Model/Ptks/Dictionary/FederalOkrugModel.java">
+      <file leaf-file-name="TerOrganModel.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Model/Fbs/TerOrganModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FederalOkrugHelper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/Ptks/Dictionary/FederalOkrugHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="0" selection-start="1992" selection-end="1992" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FederalOkrugHelper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/Fbs/Dictionary/FederalOkrugHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="0" selection-start="1975" selection-end="1975" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CompareExportedDictionaryInPtks.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/com/estylesoft/integration/test/Ptks/CompareExportedDictionaryInPtks.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="75" selection-start="943" selection-end="943" vertical-scroll-proportion="0.575">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FederalOkrugDAO.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Database/mybatis/Ptks/Dictionary/FederalOkrugDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="0" selection-start="1254" selection-end="1254" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FederalOkrugDAO.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Database/mybatis/Fbs/Dictionary/FederalOkrugDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="0" selection-start="1251" selection-end="1251" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DAOBase.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Database/mybatis/DAOBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="0" selection-start="2193" selection-end="2193" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="federalOkrug.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/mybatis/Fbs/Dictionary/federalOkrug.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="23" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0">
+            <state line="41" column="0" selection-start="902" selection-end="902" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -395,22 +422,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/com/estylesoft/integration/test/CompareExportedDictionaryInPtks.java" />
-        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Database/mybatis/DictionaryFbsDAO.java" />
-        <option value="$PROJECT_DIR$/src/test/com/estylesoft/integration/test/Fbs/CreateExportedDictionaryInFbs.java" />
-        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Model/Ptks/Dictionary/FederalOkrugModel.java" />
+        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Database/mybatis/Ptks/BaseDepartmentDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/Ptks/BaseDepartmentHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/mybatis/Ptks/ptksBaseDepartment.xml" />
+        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Model/Ptks/TerOrganModel.java" />
+        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Database/mybatis/Ptks/TerOrganDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/Ptks/TerOrganHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/Fbs/TerOrganHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Database/mybatis/Fbs/TerOrganDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/mybatis/Fbs/terOgran.xml" />
+        <option value="$PROJECT_DIR$/src/main/mybatis/Ptks/terOgran.xml" />
         <option value="$PROJECT_DIR$/src/main/mybatis/mybatis.xml" />
-        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/CompareDictionaryDataFromFBS.java" />
-        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/Fbs/Dictionary/FederalOkrugHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/Ptks/Dictionary/FederalOkrugHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Model/Fbs/TerOrganModel.java" />
+        <option value="$PROJECT_DIR$/src/test/com/estylesoft/integration/test/CheckIntegrationResult.java" />
         <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Util/Util.java" />
-        <option value="$PROJECT_DIR$/src/test/com/estylesoft/integration/test/TestBase.java" />
-        <option value="$PROJECT_DIR$/src/test/com/estylesoft/integration/test/Ptks/CompareExportedDictionaryInPtks.java" />
-        <option value="$PROJECT_DIR$/src/main/mybatis/Ptks/Dictionary/federalOkrug.xml" />
-        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Database/mybatis/Ptks/Dictionary/FederalOkrugDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Database/mybatis/Fbs/Dictionary/FederalOkrugDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/mybatis/Fbs/Dictionary/federalOkrug.xml" />
-        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/CompareDictionaryDataFromFBSHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/EqualModelHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/CheckIntegrationResultHelper.java" />
       </list>
     </option>
   </component>
@@ -467,6 +494,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -526,6 +555,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Reporter" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -616,6 +667,10 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -714,6 +769,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mybatis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fbs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mybatis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fbs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -791,6 +876,280 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ptks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ptks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dictionary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fbs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fbs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dictionary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Exchange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Exchange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ptks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Exchange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fbs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Exchange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fbs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dictionary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Database" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -924,6 +1283,44 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mybatis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fbs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mybatis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fbs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -947,8 +1344,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -975,15 +1370,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.estylesoft.integration.Exchange.Ptks.Dictionary" />
-      <recent name="com.estylesoft.integration.Database.mybatis.Ptks.Dictionary" />
-      <recent name="com.estylesoft.integration.Model.Ptks.Dictionary" />
       <recent name="com.estylesoft.integration.Exchange.Fbs" />
+      <recent name="com.estylesoft.integration.Model.Fbs" />
       <recent name="com.estylesoft.integration.Database.mybatis.Fbs" />
+      <recent name="com.estylesoft.integration.Model.Fbs.Dictionary" />
+      <recent name="com.estylesoft.integration.Exchange.Ptks.Dictionary" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\IdeaProjects\Integration\src\main\mybatis\Ptks\Dictionary" />
       <recent name="C:\IdeaProjects\Integration\src\main\mybatis\Fbs" />
+      <recent name="C:\IdeaProjects\Integration\src\main\mybatis\Ptks\Dictionary" />
       <recent name="C:\IdeaProjects\Integration\src\main\com\estylesoft\integration" />
       <recent name="C:\IdeaProjects\Integration\src\main\mybatis\Ptks" />
       <recent name="C:\IdeaProjects\Integration\src" />
@@ -996,11 +1391,11 @@
       <recent name="C:\IdeaProjects\Integration" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CompareExportedDictionaryInPtks.CheckFederalOkrug">
-    <configuration default="false" name="CreateExportedDictionaryInFbs.CreateRegistrationFinish" type="TestNG" factoryName="TestNG" temporary="true">
+  <component name="RunManager" selected="TestNG.CheckIntegrationResult.CheckTerOrgan">
+    <configuration default="false" name="CreateExportedDictionaryInFbs" type="TestNG" factoryName="TestNG" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.estylesoft.integration.test.*" />
+          <option name="PATTERN" value="com.estylesoft.integration.test.Fbs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1008,11 +1403,11 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="com.estylesoft.integration.test" />
+      <option name="PACKAGE_NAME" value="com.estylesoft.integration.test.Fbs" />
       <option name="MAIN_CLASS_NAME" value="com.estylesoft.integration.test.Fbs.CreateExportedDictionaryInFbs" />
-      <option name="METHOD_NAME" value="CreateRegistrationFinish" />
+      <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1032,118 +1427,7 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="CreateExportedDictionaryInFbs.CreateKbk" type="TestNG" factoryName="TestNG" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.estylesoft.integration.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Integration" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="com.estylesoft.integration.test" />
-      <option name="MAIN_CLASS_NAME" value="com.estylesoft.integration.test.Fbs.CreateExportedDictionaryInFbs" />
-      <option name="METHOD_NAME" value="CreateKbk" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="51890" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="CreateExportedDictionaryInFbs.CreateCategory" type="TestNG" factoryName="TestNG" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.estylesoft.integration.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Integration" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="com.estylesoft.integration.test" />
-      <option name="MAIN_CLASS_NAME" value="com.estylesoft.integration.test.Fbs.CreateExportedDictionaryInFbs" />
-      <option name="METHOD_NAME" value="CreateCategory" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="CreateExportedDictionaryInFbs.CreateInsurerType" type="TestNG" factoryName="TestNG" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.estylesoft.integration.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Integration" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="com.estylesoft.integration.test" />
-      <option name="MAIN_CLASS_NAME" value="com.estylesoft.integration.test.Fbs.CreateExportedDictionaryInFbs" />
-      <option name="METHOD_NAME" value="CreateInsurerType" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="CompareExportedDictionaryInPtks.CheckFederalOkrug" type="TestNG" factoryName="TestNG" temporary="true">
+    <configuration default="false" name="CompareExportedDictionaryInPtks" type="TestNG" factoryName="TestNG" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.estylesoft.integration.test.Ptks.*" />
@@ -1156,6 +1440,41 @@
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="com.estylesoft.integration.test.Ptks" />
       <option name="MAIN_CLASS_NAME" value="com.estylesoft.integration.test.Ptks.CompareExportedDictionaryInPtks" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CheckIntegrationResult.CheckFederalOkrug" type="TestNG" factoryName="TestNG" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.estylesoft.integration.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Integration" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.estylesoft.integration.test" />
+      <option name="MAIN_CLASS_NAME" value="com.estylesoft.integration.test.CheckIntegrationResult" />
       <option name="METHOD_NAME" value="CheckFederalOkrug" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
@@ -1174,8 +1493,84 @@
       <envs />
       <properties />
       <listeners />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CheckIntegrationResult.CheckBaseDepartment" type="TestNG" factoryName="TestNG" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.estylesoft.integration.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Integration" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.estylesoft.integration.test" />
+      <option name="MAIN_CLASS_NAME" value="com.estylesoft.integration.test.CheckIntegrationResult" />
+      <option name="METHOD_NAME" value="CheckBaseDepartment" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="60757" />
+        <option name="DEBUG_PORT" value="61800" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CheckIntegrationResult.CheckTerOrgan" type="TestNG" factoryName="TestNG" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.estylesoft.integration.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Integration" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.estylesoft.integration.test" />
+      <option name="MAIN_CLASS_NAME" value="com.estylesoft.integration.test.CheckIntegrationResult" />
+      <option name="METHOD_NAME" value="CheckTerOrgan" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="50942" />
         <option name="TRANSPORT" value="0" />
         <option name="LOCAL" value="true" />
       </RunnerSettings>
@@ -1310,19 +1705,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="TestNG.CreateExportedDictionaryInFbs.CreateRegistrationFinish" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.CreateExportedDictionaryInFbs.CreateKbk" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.CreateExportedDictionaryInFbs.CreateCategory" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.CreateExportedDictionaryInFbs.CreateInsurerType" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.CompareExportedDictionaryInPtks.CheckFederalOkrug" />
+      <item index="0" class="java.lang.String" itemvalue="TestNG.CreateExportedDictionaryInFbs" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.CompareExportedDictionaryInPtks" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.CheckIntegrationResult.CheckFederalOkrug" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.CheckIntegrationResult.CheckBaseDepartment" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.CheckIntegrationResult.CheckTerOrgan" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.CompareExportedDictionaryInPtks.CheckFederalOkrug" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.CreateExportedDictionaryInFbs.CreateInsurerType" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.CreateExportedDictionaryInFbs.CreateCategory" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.CreateExportedDictionaryInFbs.CreateKbk" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.CreateExportedDictionaryInFbs.CreateRegistrationFinish" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.CheckIntegrationResult.CheckTerOrgan" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.CheckIntegrationResult.CheckBaseDepartment" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.CheckIntegrationResult.CheckFederalOkrug" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.CompareExportedDictionaryInPtks" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.CreateExportedDictionaryInFbs" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1379,33 +1774,33 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="2" y="1" width="1278" height="940" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23431498" sideWeight="0.48379254" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.70630205" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976973" sideWeight="0.6120359" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.065635" sideWeight="0.6456599" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35339308" sideWeight="0.90625" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.03841229" sideWeight="0.90049344" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37772086" sideWeight="0.08799342" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23431498" sideWeight="0.24177632" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18009868" sideWeight="0.17925736" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4084507" sideWeight="0.75445706" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.117797695" sideWeight="0.75445706" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.124177635" sideWeight="0.7259923" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27400768" sideWeight="0.8166118" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2944079" sideWeight="0.50576186" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49423817" sideWeight="0.7524671" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.030427631" sideWeight="0.7887324" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23431498" sideWeight="0.48379254" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.030427631" sideWeight="0.5825864" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -1477,16 +1872,32 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/com/estylesoft/integration/test/TestBase.java">
+    <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/Fbs/TerOrganHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="18" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0">
+        <state line="26" column="29" selection-start="675" selection-end="675" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Database/mybatis/Ptks/TerOrganDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="36" selection-start="1178" selection-end="1178" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/com/estylesoft/integration/test/Fbs/CreateExportedDictionaryInFbs.java">
+    <entry file="file://$PROJECT_DIR$/src/main/mybatis/Ptks/terOgran.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="56" selection-start="965" selection-end="1017" vertical-scroll-proportion="0.0">
+        <state line="71" column="44" selection-start="2636" selection-end="2636" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Database/mybatis/Fbs/TerOrganDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="29" selection-start="706" selection-end="706" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1495,61 +1906,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/mybatis/mybatis.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="70" selection-start="2592" selection-end="2592" vertical-scroll-proportion="0.0">
+        <state line="61" column="53" selection-start="3210" selection-end="3210" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/mybatis/Ptks/Dictionary/federalOkrug.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/mybatis/Fbs/terOgran.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="36" selection-start="166" selection-end="183" vertical-scroll-proportion="0.0">
+        <state line="12" column="37" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/mybatis/Fbs/Dictionary/federalOkrug.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="23" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Database/mybatis/Fbs/Dictionary/FederalOkrugDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="1251" selection-end="1251" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/Fbs/Dictionary/FederalOkrugHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="0" selection-start="1975" selection-end="1975" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Database/mybatis/DAOBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="0" selection-start="2193" selection-end="2193" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Database/mybatis/Ptks/Dictionary/FederalOkrugDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="1254" selection-end="1254" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/Ptks/Dictionary/FederalOkrugHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="0" selection-start="1992" selection-end="1992" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1560,42 +1925,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/testng-6.8.jar!/org/testng/internal/Invoker.class">
+    <entry file="file://$PROJECT_DIR$/src/test/Reporter/CheckReporter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="35" selection-start="5163" selection-end="5163" vertical-scroll-proportion="0.33333334">
+        <state line="16" column="13" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Model/Ptks/Dictionary/FederalOkrugModel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/Fbs/ProtocolHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0">
+        <state line="35" column="0" selection-start="1110" selection-end="1110" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Model/Ptks/TerOrganModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="0" selection-start="1863" selection-end="1863" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Model/Fbs/TerOrganModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="0" selection-start="902" selection-end="902" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Util/Util.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="25" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0">
+        <state line="34" column="105" selection-start="972" selection-end="972" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/CompareDictionaryDataFromFBSHelper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/EqualModelHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="45" selection-start="2225" selection-end="2225" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="54" column="31" selection-start="3684" selection-end="3684" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/com/estylesoft/integration/test/Ptks/CompareExportedDictionaryInPtks.java">
+    <entry file="file://$PROJECT_DIR$/src/main/com/estylesoft/integration/Exchange/CheckIntegrationResultHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="75" selection-start="943" selection-end="943" vertical-scroll-proportion="0.575">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="208" column="219" selection-start="12099" selection-end="12099" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/com/estylesoft/integration/test/CheckIntegrationResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="4" selection-start="1056" selection-end="1056" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GitHelp.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>

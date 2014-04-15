@@ -12,19 +12,27 @@
         )
     </insert>
 
-  <!--  <insert id="insert" keyColumn="RDV_ID" parameterType="com.estylesoft.integration.Model.Ptks.BaseDepartmentModel">
-        insert into STH_REG_DIV_PFR (
-        RDV_ID, MRDV_ID, RDV_NAME, RDV_CODE) values (
-        #{id}, (SELECT MRDV_ID FROM STH_MAIN_REG_DIV_PFR WHERE MRDV_CURRENT=1 FETCH FIRST 1 ROWS ONLY),
-        #{name},
-        #{code}
-        )
-    </insert>-->
 
     <delete id="delete" parameterType="java.lang.Long">
         delete from STH_REG_DIV_PFR
         where RDV_ID=#{id}
     </delete>
+
+    <sql id="selectAllFields">
+    SELECT
+          bo.RDV_ID as id,
+          bo.RDV_CODE as code,
+          bo.RDV_NAME as name,
+          bo.RDV_IS_EXPORTED as isExported,
+          bo.RDV_DEFLECT_BY_FBS_DATE as defectFbsDate,
+          bo.MRDV_ID as opfrId,
+          opfr.MRDV_CODE as opfrCode,
+          opfr.MRDV_CURRENT as isOpfrCurrent
+    </sql>
+
+    <sql id="dictJoin">
+    inner join STH_MAIN_REG_DIV_PFR opfr on  opfr.MRDV_ID= bo.MRDV_ID
+     </sql>
 
     <select id="getByCodeOpfr" parameterType="Map" resultType="com.estylesoft.integration.Model.Ptks.BaseDepartmentModel">
           SELECT RDV_ID as id, RDV_CODE as code
@@ -36,6 +44,12 @@
           SELECT RDV_ID as id, RDV_CODE as code
           FROM STH_REG_DIV_PFR
           WHERE RDV_ID=#{id}
+    </select>
+
+    <select id="getAll" resultType="com.estylesoft.integration.Model.Ptks.BaseDepartmentModel">
+        <include refid="selectAllFields"/>
+        FROM STH_REG_DIV_PFR bo
+        <include refid="dictJoin"/>
     </select>
 
 </mapper>

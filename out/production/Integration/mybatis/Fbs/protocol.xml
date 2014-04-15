@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="fbs.protocol">
+
+    <sql id="selectAllFields">
+    SELECT
+         protocol.PROTOCOL_PFR_ID as id,
+         protocol.PACKAGE_ID as packageId,
+         protocol.PFR_MARKER_ID as markerId,
+         protocol.PROTOCOL_PFR_IDENTIF as recordId,
+         protocol.PROTOCOL_PFR_OBJ_NAME as invalidFieldName,
+         protocol.PROTOCOL_PFR_OBJ_VAL as invalidFieldValue,
+         protocol.PACKAGE_ERROR_ID as errorId,
+         protocol.PROTOCOL_PFR_EXTERNAL_ID as extRecordId
+    </sql>
+
+    <sql id="dictJoin">
+    inner join FBS_PACKAGE_ERROR err on err.PACKAGE_ERROR_ID = protocol.PACKAGE_ERROR_ID
+     </sql>
+
+    <select id="getByPackageId" parameterType="Long" resultType="com.estylesoft.integration.Model.Fbs.ProtocolModel">
+        <include refid="selectAllFields"/>
+        FROM FBS_PROTOCOL_PFR protocol
+        <include refid="dictJoin"/>
+        WHERE protocol.PACKAGE_ID = #{packageId}
+    </select>
+
+    <select id="getByPackageIdRecordId" resultType="com.estylesoft.integration.Model.Fbs.ProtocolModel">
+        <include refid="selectAllFields"/>
+        FROM FBS_PROTOCOL_PFR protocol
+        <include refid="dictJoin"/>
+        WHERE protocol.PACKAGE_ID = #{packageId}
+        and   protocol.PROTOCOL_PFR_IDENTIF = #{recordId}
+    </select>
+
+</mapper>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="fbs.terOrgan">
+
+    <sql id="selectAllFields">
+    select
+         organ.TO_ID as id,
+         organ.OPFR_ID as opfrId,
+         organ.TO_NAME as name,
+         organ.TO_SHORT_NAME as shortName,
+         organ.TO_FULL_NAME as companyName,
+         organ.TO_CODE as code,
+         organ.TO_ADDRESS  as address,
+         organ.TO_MANAGER as headName,
+         organ.TO_PHONE as phone,
+         organ.TO_OKATO as okato,
+         organ.TO_INN as inn,
+         organ.TO_KPP as kpp,
+         organ.TO_OGRN as ogrn,
+         organ.TO_INFO as info,
+         opfr.OPFR_CODE as opfrCode
+    </sql>
+
+
+    <sql id="dictJoin">
+   inner join FBS_OPFR opfr on opfr.OPFR_ID=organ.OPFR_ID
+     </sql>
+
+    <select id="getAll" resultType="com.estylesoft.integration.Model.Fbs.TerOrganModel">
+        <include refid="selectAllFields"/>
+        FROM FBS_TO organ
+        <include refid="dictJoin"/>
+    </select>
+
+
+</mapper>

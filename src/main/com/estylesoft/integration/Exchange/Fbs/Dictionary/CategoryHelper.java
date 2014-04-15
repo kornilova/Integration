@@ -6,6 +6,8 @@ import com.estylesoft.integration.IntegrationException;
 import com.estylesoft.integration.Model.Fbs.Dictionary.CategoryModel;
 import org.apache.ibatis.session.SqlSessionFactory;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Nataliya.Gordeeva
@@ -53,5 +55,9 @@ public class CategoryHelper {
 
     public CategoryModel getByCode(String code) throws IntegrationException {
         return categoryDAO.getByCode(code);
+    }
+
+    public List<CategoryModel> getAll() throws IntegrationException {
+        return categoryDAO.getAll();
     }
 }

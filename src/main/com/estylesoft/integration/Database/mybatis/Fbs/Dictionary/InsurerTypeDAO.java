@@ -4,6 +4,8 @@ import com.estylesoft.integration.Database.mybatis.DAOBase;
 import com.estylesoft.integration.Model.Fbs.Dictionary.InsurerTypeModel;
 import org.apache.ibatis.session.SqlSessionFactory;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Nataliya.Gordeeva
@@ -13,7 +15,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
  */
 public class InsurerTypeDAO extends DAOBase<InsurerTypeModel> {
 
-    private final String namespace = "insurerType";
+    private final String namespace = "fbs.insurerType";
 
     public InsurerTypeDAO(Class<InsurerTypeModel> type, SqlSessionFactory containerSessionFactory) {
         super(type, containerSessionFactory);
@@ -35,5 +37,10 @@ public class InsurerTypeDAO extends DAOBase<InsurerTypeModel> {
     public InsurerTypeModel getById(Long id)
     {
         return super.getById(namespace + "." + "getById", id);
+    }
+
+    public List<InsurerTypeModel> getAll()
+    {
+        return super.getAll(namespace + "." + "getAll");
     }
 }

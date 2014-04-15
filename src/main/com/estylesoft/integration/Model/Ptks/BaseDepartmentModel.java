@@ -2,6 +2,8 @@ package com.estylesoft.integration.Model.Ptks;
 
 import com.estylesoft.integration.Model.ModelBase;
 
+import java.util.Date;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Nataliya.Gordeeva
@@ -16,8 +18,34 @@ public class BaseDepartmentModel extends ModelBase {
     private String code;
     private String name;
     private String opfrCode;
-
     private Long opfrId;
+    private Integer isExported;
+    private Date defectFbsDate;
+    private Integer isOpfrCurrent;
+
+    public Integer getExported() {
+        return isExported;
+    }
+
+    public void setExported(Integer exported) {
+        isExported = exported;
+    }
+
+    public Integer getOpfrCurrent() {
+        return isOpfrCurrent;
+    }
+
+    public void setOpfrCurrent(Integer opfrCurrent) {
+        isOpfrCurrent = opfrCurrent;
+    }
+
+    public Date getDefectFbsDate() {
+        return defectFbsDate;
+    }
+
+    public void setDefectFbsDate(Date defectFbsDate) {
+        this.defectFbsDate = defectFbsDate;
+    }
 
     public Long getOpfrId() {
         return opfrId;

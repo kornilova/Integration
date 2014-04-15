@@ -86,7 +86,7 @@ public class CreateMigrationDataInPtks extends TestBase {
     }
 
     @Test(description = "Создать Базовое отделение",dataProvider = "getDataFromExcel", priority=1)
-    @DataProviderParams("fileName="+ fileName +";tabName="+ tabName +";class="+"BaseDepartmentModel"+";testTableName="+ "CreateMigrationDataInPtks.CreateBaseDepartment")
+    @DataProviderParams("source=" + "Ptks" + ";fileName="+ fileName +";tabName="+ tabName +";class="+"BaseDepartmentModel"+";testTableName="+ "CreateMigrationDataInPtks.CreateBaseDepartment")
     public void CreateBaseDepartment(BaseDepartmentModel bo) throws SQLException, IntegrationException {
         bo.setOpfrId(opfrHelper.getByCode(bo.getOpfrCode()).getId());
         CheckResult res = boHelper.create(bo);
@@ -100,7 +100,7 @@ public class CreateMigrationDataInPtks extends TestBase {
     }
 
     @Test(description = "Создать Территориальный орган",dataProvider = "getDataFromExcel", priority=1)
-    @DataProviderParams("fileName="+ fileName +";tabName="+ tabName +";class="+ "TerOrganModel" +";testTableName="+ "CreateMigrationDataInPtks.CreateTerOrgan")
+    @DataProviderParams("source=" + "Ptks" + ";fileName="+ fileName +";tabName="+ tabName +";class="+ "TerOrganModel" +";testTableName="+ "CreateMigrationDataInPtks.CreateTerOrgan")
     public void CreateTerOrgan(TerOrganModel terOrgan) throws SQLException, IntegrationException {
         terOrgan.setOpfrId(opfrHelper.getByCode(terOrgan.getOpfrCode()).getId());
         CheckResult res = terOrganHelper.create(terOrgan);
@@ -114,7 +114,7 @@ public class CreateMigrationDataInPtks extends TestBase {
     }
 
     @Test(description = "Создать Районный орган",dataProvider = "getDataFromExcel", priority=2)
-    @DataProviderParams("fileName="+ fileName +";tabName="+ tabName +";class="+ "TerDepartmentPFRModel" +";testTableName="+ "CreateMigrationDataInPtks.CreateTerDepartmentPFR")
+    @DataProviderParams("source=" + "Ptks" + ";fileName="+ fileName +";tabName="+ tabName +";class="+ "TerDepartmentPFRModel" +";testTableName="+ "CreateMigrationDataInPtks.CreateTerDepartmentPFR")
     public void CreateTerDepartmentPFR(TerDepartmentPFRModel terDepartment) throws SQLException, IntegrationException {
         terDepartment.setOpfrId(opfrHelper.getByCode(terDepartment.getOpfrCode()).getId());
         terDepartment.setTerOrganId(terOrganHelper.getByCodeOpfr(terDepartment.getTerOrganCode(),
@@ -136,7 +136,7 @@ public class CreateMigrationDataInPtks extends TestBase {
     }
 
     @Test(description = "Создать ОКАТО",dataProvider = "getDataFromExcel", priority=3)
-    @DataProviderParams("fileName="+ fileName +";tabName="+ tabName +";class="+ "OkatoModel" +";testTableName="+ "CreateMigrationDataInPtks.CreateOkato")
+    @DataProviderParams("source=" + "Ptks" + ";fileName="+ fileName +";tabName="+ tabName +";class="+ "OkatoModel" +";testTableName="+ "CreateMigrationDataInPtks.CreateOkato")
     public void CreateOkato(OkatoModel okato) throws SQLException, IntegrationException {
         okato.setOpfrId(opfrHelper.getByCode(okato.getOpfrCode()).getId());
         okato.setBaseDepartmentId(boHelper.getByCodeOpfr(okato.getBaseDepartmentCode(), okato.getOpfrId()).getId());
@@ -157,7 +157,7 @@ public class CreateMigrationDataInPtks extends TestBase {
     }
 
     @Test(description = "Создать ОПФ",dataProvider = "getDataFromExcel", priority=1)
-    @DataProviderParams("fileName="+ fileName +";tabName="+ tabName +";class="+ "OpfModel" +";testTableName="+ "CreateMigrationDataInPtks.CreateOpf")
+    @DataProviderParams("source=" + "Ptks" + ";fileName="+ fileName +";tabName="+ tabName +";class="+ "OpfModel" +";testTableName="+ "CreateMigrationDataInPtks.CreateOpf")
     public void CreateOpf(OpfModel opf) throws SQLException, IntegrationException {
         CheckResult res = opfHelper.create(opf);
         assertTrue(res.getIsSuccess(), res.getMessageTest());
@@ -170,7 +170,7 @@ public class CreateMigrationDataInPtks extends TestBase {
     }
 
     @Test(description = "Создать ОКВЭД",dataProvider = "getDataFromExcel", priority=1)
-    @DataProviderParams("fileName="+ fileName +";tabName="+ tabName +";class="+ "OkvedModel" +";testTableName="+ "CreateMigrationDataInPtks.CreateOkved")
+    @DataProviderParams("source=" + "Ptks" + ";fileName="+ fileName +";tabName="+ tabName +";class="+ "OkvedModel" +";testTableName="+ "CreateMigrationDataInPtks.CreateOkved")
     public void CreateOkved(OkvedModel okved) throws SQLException, IntegrationException {
         CheckResult res = okvedHelper.create(okved);
 
@@ -184,7 +184,7 @@ public class CreateMigrationDataInPtks extends TestBase {
     }
 
     @Test(description = "Создать КЛАДР.Субъект РФ",dataProvider = "getDataFromExcel", priority=1)
-    @DataProviderParams("fileName="+ fileName +";tabName="+ tabName +";class="+ "RegionModel" +";testTableName="+ "CreateMigrationDataInPtks.CreateRegion")
+    @DataProviderParams("source=" + "Ptks" + ";fileName="+ fileName +";tabName="+ tabName +";class="+ "RegionModel" +";testTableName="+ "CreateMigrationDataInPtks.CreateRegion")
     public void CreateKladrRegion(RegionModel region) throws SQLException, IntegrationException {
         CheckResult res = regionHelper.create(region);
         assertTrue(res.getIsSuccess(), res.getMessageTest());
@@ -197,7 +197,7 @@ public class CreateMigrationDataInPtks extends TestBase {
     }
 
     @Test(description = "Создать КЛАДР.Административный район",dataProvider = "getDataFromExcel", priority=4)
-    @DataProviderParams("fileName="+ fileName +";tabName="+ tabName +";class="+ "AdmTerritoryModel" +";testTableName="+ "CreateMigrationDataInPtks.CreateAdmTerritory")
+    @DataProviderParams("source=" + "Ptks" + ";fileName="+ fileName +";tabName="+ tabName +";class="+ "AdmTerritoryModel" +";testTableName="+ "CreateMigrationDataInPtks.CreateAdmTerritory")
     public void CreateKladrAdmTerritory(AdmTerritoryModel admTerritory) throws SQLException, IntegrationException {
         admTerritory.setOpfrId(opfrHelper.getByCode(admTerritory.getOpfrCode()).getId());
         admTerritory.setBaseDepartmentId(boHelper.getByCodeOpfr(admTerritory.getBaseDepartmentCode(), admTerritory.getOpfrId()).getId());
@@ -221,7 +221,7 @@ public class CreateMigrationDataInPtks extends TestBase {
     }
 
     @Test(description = "Создать КЛАДР.Населенный пункт",dataProvider = "getDataFromExcel", priority=5)
-    @DataProviderParams("fileName="+ fileName +";tabName="+ tabName +";class="+ "CityModel" +";testTableName="+ "CreateMigrationDataInPtks.CreateCity")
+    @DataProviderParams("source=" + "Ptks" + ";fileName="+ fileName +";tabName="+ tabName +";class="+ "CityModel" +";testTableName="+ "CreateMigrationDataInPtks.CreateCity")
     public void CreateKladrCity(CityModel city) throws SQLException, IntegrationException {
         city.setOpfrId(opfrHelper.getByCode(city.getOpfrCode()).getId());
         city.setBaseDepartmentId(boHelper.getByCodeOpfr(city.getBaseDepartmentCode(), city.getOpfrId()).getId());
@@ -255,7 +255,7 @@ public class CreateMigrationDataInPtks extends TestBase {
     }
 
     @Test(description = "Создать КЛАДР.Город",dataProvider = "getDataFromExcel", priority=6)
-      @DataProviderParams("fileName="+ fileName +";tabName="+ tabName +";class="+ "TownModel" +";testTableName="+ "CreateMigrationDataInPtks.CreateTown")
+      @DataProviderParams("source=" + "Ptks" + ";fileName="+ fileName +";tabName="+ tabName +";class="+ "TownModel" +";testTableName="+ "CreateMigrationDataInPtks.CreateTown")
       public void CreateKladrTown(TownModel town) throws SQLException, IntegrationException {
         town.setOpfrId(opfrHelper.getByCode(town.getOpfrCode()).getId());
         town.setBaseDepartmentId(boHelper.getByCodeOpfr(town.getBaseDepartmentCode(), town.getOpfrId()).getId());
@@ -296,7 +296,7 @@ public class CreateMigrationDataInPtks extends TestBase {
     }
 
     @Test(description = "Создать КЛАДР.Улица",dataProvider = "getDataFromExcel", priority=7)
-    @DataProviderParams("fileName="+ fileName +";tabName="+ tabName +";class="+ "StreetModel" +";testTableName="+ "CreateMigrationDataInPtks.CreateStreet")
+    @DataProviderParams("source=" + "Ptks" + ";fileName="+ fileName +";tabName="+ tabName +";class="+ "StreetModel" +";testTableName="+ "CreateMigrationDataInPtks.CreateStreet")
     public void CreateKladrStreet(StreetModel street) throws SQLException, IntegrationException {
         street.setOpfrId(opfrHelper.getByCode(street.getOpfrCode()).getId());
         street.setBaseDepartmentId(boHelper.getByCodeOpfr(street.getBaseDepartmentCode(), street.getOpfrId()).getId());
@@ -346,7 +346,7 @@ public class CreateMigrationDataInPtks extends TestBase {
     }
 
     @Test(description = "Создать КЛАДР.Улица.Список диапазонов",dataProvider = "getDataFromExcel", priority=8)
-    @DataProviderParams("fileName="+ fileName +";tabName="+ tabName +";class="+ "StreetDepartmentModel" +";testTableName="+ "CreateMigrationDataInPtks.CreateStreetDepartment")
+    @DataProviderParams("source=" + "Ptks" + ";fileName="+ fileName +";tabName="+ tabName +";class="+ "StreetDepartmentModel" +";testTableName="+ "CreateMigrationDataInPtks.CreateStreetDepartment")
     public void CreateKladrStreetDepartment(StreetDepartmentModel streetDepartment) throws SQLException, IntegrationException {
         streetDepartment.setOpfrId(opfrHelper.getByCode(streetDepartment.getOpfrCode()).getId());
         streetDepartment.setBaseDepartmentId(boHelper.getByCodeOpfr(streetDepartment.getBaseDepartmentCode(), streetDepartment.getOpfrId()).getId());
@@ -401,7 +401,7 @@ public class CreateMigrationDataInPtks extends TestBase {
     }
 
     @Test(description = "Создать КЛАДР.Улица.Список диапазонов.Список домов",dataProvider = "getDataFromExcel", priority=9)
-    @DataProviderParams("fileName="+ fileName +";tabName="+ tabName +";class="+ "StreetHousesModel" +";testTableName="+ "CreateMigrationDataInPtks.CreateStreetHouses")
+    @DataProviderParams("source=" + "Ptks" + ";fileName="+ fileName +";tabName="+ tabName +";class="+ "StreetHousesModel" +";testTableName="+ "CreateMigrationDataInPtks.CreateStreetHouses")
     public void CreateKladrStreetHouses(StreetHousesModel streetHouses) throws SQLException, IntegrationException {
         streetHouses.setOpfrId(opfrHelper.getByCode(streetHouses.getOpfrCode()).getId());
         streetHouses.setBaseDepartmentId(boHelper.getByCodeOpfr(streetHouses.getBaseDepartmentCode(), streetHouses.getOpfrId()).getId());
@@ -459,7 +459,7 @@ public class CreateMigrationDataInPtks extends TestBase {
     }
 
     @Test(description = "Создать Вид регистрации",dataProvider = "getDataFromExcel", priority=1)
-    @DataProviderParams("fileName="+ fileName +";tabName="+ tabName +";class="+ "RegistrationKindModel" +";testTableName="+ "CreateMigrationDataInPtks.CreateRegistrationKind")
+    @DataProviderParams("source=" + "Ptks" + ";fileName="+ fileName +";tabName="+ tabName +";class="+ "RegistrationKindModel" +";testTableName="+ "CreateMigrationDataInPtks.CreateRegistrationKind")
     public void CreateRegistrationKind(RegistrationKindModel registrationKind) throws SQLException, IntegrationException {
 
        CheckResult res = registrationKindHelper.create(registrationKind);
@@ -473,7 +473,7 @@ public class CreateMigrationDataInPtks extends TestBase {
     }
 
     @Test(description = "Создать Регистрирующий орган",dataProvider = "getDataFromExcel", priority=1)
-    @DataProviderParams("fileName="+ fileName +";tabName="+ tabName +";class="+ "RegistrationDepartmentModel" +";testTableName="+ "CreateMigrationDataInPtks.CreateRegistrationDepartment")
+    @DataProviderParams("source=" + "Ptks" + ";fileName="+ fileName +";tabName="+ tabName +";class="+ "RegistrationDepartmentModel" +";testTableName="+ "CreateMigrationDataInPtks.CreateRegistrationDepartment")
     public void CreateRegistrationDepartment(RegistrationDepartmentModel registrationDepartment) throws SQLException, IntegrationException {
 
         CheckResult res = registrationDepartmentHelper.create(registrationDepartment);
@@ -487,7 +487,7 @@ public class CreateMigrationDataInPtks extends TestBase {
     }
 
     @Test(description = "Создать ИФНС",dataProvider = "getDataFromExcel", priority=1)
-    @DataProviderParams("fileName="+ fileName +";tabName="+ tabName +";class="+ "IfnsModel" +";testTableName="+ "CreateMigrationDataInPtks.CreateIfns")
+    @DataProviderParams("source=" + "Ptks" + ";fileName="+ fileName +";tabName="+ tabName +";class="+ "IfnsModel" +";testTableName="+ "CreateMigrationDataInPtks.CreateIfns")
     public void CreateIfns(IfnsModel ifns) throws SQLException, IntegrationException {
         CheckResult res = ifnsHelper.create(ifns);
         assertTrue(res.getIsSuccess(), res.getMessageTest());
@@ -500,7 +500,7 @@ public class CreateMigrationDataInPtks extends TestBase {
     }
 
     @Test(description = "Создать Плательщика",dataProvider = "getDataFromExcel", priority=10)
-    @DataProviderParams("fileName="+ fileName +";tabName="+ tabName +";class="+ "InsurerModel" +";testTableName="+ "CreateMigrationDataInPtks.CreateInsurer")
+    @DataProviderParams("source=" + "Ptks" + ";fileName="+ fileName +";tabName="+ tabName +";class="+ "InsurerModel" +";testTableName="+ "CreateMigrationDataInPtks.CreateInsurer")
     public void CreateInsurer(InsurerModel insurer) throws SQLException, IntegrationException {
 
         insurer.setOpfrId(opfrHelper.getByCode(insurer.getOpfrCode()).getId());

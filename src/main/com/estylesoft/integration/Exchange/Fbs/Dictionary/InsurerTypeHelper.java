@@ -6,6 +6,8 @@ import com.estylesoft.integration.IntegrationException;
 import com.estylesoft.integration.Model.Fbs.Dictionary.InsurerTypeModel;
 import org.apache.ibatis.session.SqlSessionFactory;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Nataliya.Gordeeva
@@ -53,5 +55,9 @@ public class InsurerTypeHelper {
 
     public InsurerTypeModel getByName(String code) throws IntegrationException {
         return insurerTypeDAO.getByName(code);
+    }
+
+    public List<InsurerTypeModel> getAll() throws IntegrationException {
+        return insurerTypeDAO.getAll();
     }
 }

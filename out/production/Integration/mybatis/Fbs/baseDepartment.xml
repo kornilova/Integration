@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="fbs.baseDepartment">
+
+    <sql id="selectAllFields">
+    SELECT
+          bo.BO_ID as id,
+          bo.BO_CODE as code,
+          bo.BO_NAME as name,
+          bo.OPFR_ID as opfrId,
+          opfr.OPFR_CODE as opfrCode
+    </sql>
+
+    <sql id="dictJoin">
+    inner join FBS_OPFR opfr on  opfr.OPFR_ID= bo.OPFR_ID
+     </sql>
+
+    <select id="getByCodeOpfrId" parameterType="Map" resultType="com.estylesoft.integration.Model.Fbs.BaseDepartmentModel">
+        <include refid="selectAllFields"/>
+        FROM FBS_BO bo
+        <include refid="dictJoin"/>
+        WHERE bo.OPFR_ID = #{opfrId} and  bo.BO_CODE = #{code}
+    </select>
+
+    <select id="getAll" resultType="com.estylesoft.integration.Model.Fbs.BaseDepartmentModel">
+        <include refid="selectAllFields"/>
+        FROM FBS_BO bo
+        <include refid="dictJoin"/>
+    </select>
+
+</mapper>

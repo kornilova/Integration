@@ -3,8 +3,8 @@ package com.estylesoft.integration.Database.mybatis.Ptks;
 import com.estylesoft.integration.Database.mybatis.DAOBase;
 import com.estylesoft.integration.Model.Ptks.BaseDepartmentModel;
 import org.apache.ibatis.session.SqlSessionFactory;
-import org.jcp.xml.dsig.internal.MacOutputStream;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -40,5 +40,10 @@ public class BaseDepartmentDAO extends DAOBase<BaseDepartmentModel>{
     public BaseDepartmentModel getById(Long id)
     {
         return super.getById(namespace + "." + "getById", id);
+    }
+
+    public List<BaseDepartmentModel> getAll()
+    {
+        return super.getAll(namespace + "." + "getAll");
     }
 }

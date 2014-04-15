@@ -4,6 +4,8 @@ import com.estylesoft.integration.Database.mybatis.DAOBase;
 import com.estylesoft.integration.Model.Fbs.Dictionary.CategoryModel;
 import org.apache.ibatis.session.SqlSessionFactory;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Nataliya.Gordeeva
@@ -13,7 +15,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
  */
 public class CategoryDAO extends DAOBase<CategoryModel> {
 
-    private final String namespace = "category";
+    private final String namespace = "fbs.category";
 
     public CategoryDAO(Class<CategoryModel> type, SqlSessionFactory containerSessionFactory) {
         super(type, containerSessionFactory);
@@ -35,5 +37,10 @@ public class CategoryDAO extends DAOBase<CategoryModel> {
     public CategoryModel getById(Long id)
     {
         return super.getById(namespace + "." + "getById", id);
+    }
+
+    public List<CategoryModel> getAll()
+    {
+        return super.getAll(namespace + "." + "getAll");
     }
 }

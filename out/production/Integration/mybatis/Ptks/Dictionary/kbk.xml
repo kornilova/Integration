@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ptks.kbk">
+
+<!--
+ <insert id="insert" parameterType="com.estylesoft.integration.Model.Fbs.Dictionary.KbkModel">
+        insert into STH_KBK(KBK_ID, KBK_CODE, KBK_NAME_FULL, KBK_NAME_SHORT, KBK_ADMIN, KBK_TYPE_ID, KBK_UNLOAD_PAY, KBK_START_YEAR, KBK_END_YEAR, KBK_ACTUAL_FBS)
+        values (
+        (SELECT KBK_MARKER_ID FROM FBS_KBK_MARKER WHERE UPPER(KBK_MARKER_NAME)=#{typeName}),
+        (SELECT KBK_ADMIN_ID FROM FBS_KBK_ADMIN WHERE UPPER(KBK_ADMIN_NAME)=#{adminName}),
+        #{code},
+        #{fullName},
+        #{shortName},
+        #{exported},
+        #{startYear},
+        #{endYear,javaType=Integer,jdbcType=NUMERIC}
+        )
+    </insert>-->
+
+    <sql id="selectAllFields">
+    SELECT kbk.KBK_ID as id,
+    kbk.KBK_TYPE_ID as kbkTypeId,
+    kbk.KBK_ADMIN as kbkAdmin,
+    kbk.KBK_CODE as code,
+    kbk.KBK_NAME_FULL as fullName,
+    kbk.KBK_NAME_SHORT as shortName,
+    kbk.KBK_UNLOAD_PAY as exported,
+    kbk.KBK_START_YEAR as startYear,
+    kbk.KBK_END_YEAR as endYear,
+    kbk.KBK_ACTUAL_FBS as isActualFbs,
+    mrk.KBK_TYPE_NAME as typeName
+    </sql>
+
+    <sql id="dictJoin">
+    join STH_KBK_TYPE mrk on mrk.KBK_TYPE_ID = kbk.KBK_TYPE_ID
+     </sql>
+
+    <delete id="delete" parameterType="Long">
+        delete from STH_KBK
+        where KBK_ID = #{id}
+    </delete>
+
+    <select id="getByCode" parameterType="String" resultType="com.estylesoft.integration.Model.Ptks.Dictionary.KbkModel">
+        <include refid="selectAllFields"/>
+          FROM STH_KBK kbk
+        <include refid="dictJoin"/>
+          WHERE kbk.KBK_CODE = #{code}
+    </select>
+
+    <select id="getById" parameterType="Long" resultType="com.estylesoft.integration.Model.Ptks.Dictionary.KbkModel">
+        <include refid="selectAllFields"/>
+          FROM STH_KBK kbk
+        <include refid="dictJoin"/>
+          WHERE kbk.KBK_ID = #{id}
+    </select>
+
+    <select id="getAll" resultType="com.estylesoft.integration.Model.Ptks.Dictionary.KbkModel">
+        <include refid="selectAllFields"/>
+        FROM STH_KBK kbk
+        <include refid="dictJoin"/>
+    </select>
+
+</mapper>

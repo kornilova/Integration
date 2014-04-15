@@ -32,6 +32,36 @@ public class CompareExportedDictionaryInPtks extends TestBase {
     @Test(description = "Проверка актуализации Федеральный округ")
     public void CheckFederalOkrug() throws IntegrationException {
         CheckResult res = compareDictionaryHelper.compareActualFederalOkrug();
-        assertTrue(res.getIsSuccess(), res.getMessageTest());
+        assertTrue(res.getIsSuccess(), res.getFullMessage());
+    }
+
+    @Test(description = "Проверка актуализации Признак постановки на учет плательщкиа")
+    public void CheckRegistrationStart() throws IntegrationException {
+        CheckResult res = compareDictionaryHelper.compareActualRegistrationStart();
+        assertTrue(res.getIsSuccess(), res.getFullMessage());
+    }
+
+    @Test(description = "Проверка актуализации Признак снятия с учета плательщкиа")
+    public void CheckRegistrationFinish() throws IntegrationException {
+        CheckResult res = compareDictionaryHelper.compareActualRegistrationFinish();
+        assertTrue(res.getIsSuccess(), res.getFullMessage());
+    }
+
+    @Test(description = "Проверка актуализации Кода бюджетной классификации")
+    public void CheckKbk() throws IntegrationException {
+        CheckResult res = compareDictionaryHelper.compareActualKbk();
+        assertTrue(res.getIsSuccess(), res.getFullMessage());
+    }
+
+    @Test(description = "Проверка актуализации Категории плательщика")
+    public void CheckCategory() throws IntegrationException {
+        CheckResult res = compareDictionaryHelper.compareActualCategory();
+        assertTrue(res.getIsSuccess(), res.getFullMessage());
+    }
+
+    @Test(description = "Проверка актуализации Тип плательщика")
+    public void CheckInsurerType() throws IntegrationException {
+        CheckResult res = compareDictionaryHelper.compareActualInsurerType();
+        assertTrue(res.getIsSuccess(), res.getFullMessage());
     }
 }

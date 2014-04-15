@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="terOrgan">
+<mapper namespace="ptks.terOrgan">
 
     <select id="insert" parameterType="com.estylesoft.integration.Model.Ptks.TerOrganModel"
             statementType="CALLABLE">
@@ -54,6 +54,34 @@
          )
      </insert>-->
 
+    <sql id="selectAllFields">
+    select
+         organ.TER_ORGAN_ID as id,
+         organ.MRDV_ID as opfrId,
+         organ.TER_ORGAN_NAME as name,
+         organ.TER_ORGAN_SHORT_NAME as shortName,
+         organ.TER_ORGAN_COMPANY_NAME as companyName,
+         organ.TER_ORGAN_CODE as code,
+         organ.TER_ORGAN_ADDRESS as address,
+         organ.TER_ORGAN_HEAD_NAME as headName,
+         organ.TER_ORGAN_PHONE as phone,
+         organ.TER_ORGAN_OKATO as okato,
+         organ.TER_ORGAN_INN as inn,
+         organ.TER_ORGAN_KPP as kpp,
+         organ.TER_ORGAN_OGRN as ogrn,
+         organ.TER_ORGAN_COMMENT as comment,
+         organ.TER_ORGAN_IS_EXPORTED as isExported,
+         organ.TER_ORG_DEFLECT_BY_FBS_DATE as defectFbsDate,
+         opfr.MRDV_CODE as opfrCode,
+         opfr.MRDV_CURRENT as isOpfrCurrent
+    </sql>
+
+
+    <sql id="dictJoin">
+   inner join STH_MAIN_REG_DIV_PFR opfr on opfr.MRDV_ID=organ.MRDV_ID
+     </sql>
+
+
     <delete id="delete" parameterType="Long">
         delete from STH_TERRITORIAL_ORGAN
         where TER_ORGAN_ID = #{id}
@@ -71,5 +99,12 @@
           FROM STH_TERRITORIAL_ORGAN
           WHERE TER_ORGAN_ID = #{id}
     </select>
+
+    <select id="getAll" resultType="com.estylesoft.integration.Model.Ptks.TerOrganModel">
+        <include refid="selectAllFields"/>
+        FROM STH_TERRITORIAL_ORGAN organ
+        <include refid="dictJoin"/>
+    </select>
+
 
 </mapper>
